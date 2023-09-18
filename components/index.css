@@ -1,0 +1,13 @@
+/*стили UI-Kit*/
+
+/*кнопка*/
+
+@import url('../src/blocks/button/button.css');
+@import url('../src/blocks/button/__primary/button__primary.css');
+@import url('../src/blocks/button/__outline/button__outline.css');
+@import url('../src/blocks/button/__dark/button__dark.css');
+
+/*общие стили страниц*/
+
+@import url('../src/blocks/page/page.css');
+@import url('../src/blocks/section-title/section-title.css');
