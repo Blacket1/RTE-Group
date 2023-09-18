@@ -1,0 +1,9 @@
+.button__dark {
+    color: #fff;
+    background-color: transparent;
+    
+}
+
+.button__dark:hover {
+    background-color: rgba(255, 255, 255, 0.1);;
+}
