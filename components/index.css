@@ -28,4 +28,19 @@
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_d.css);
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_m.css);
 
+/*forms*/
+@import url(../src/blocks/form/form.css);
 
+@import url(../src/blocks/form/__title/form__title.css);
+@import url(../src/blocks/form/__content/form__content.css);
+@import url(../src/blocks/form/__field/form__field.css);
+@import url(../src/blocks/form/__fields/form__fields.css);
+@import url(../src/blocks/form/__field-container/form__field-container.css);
+@import url(../src/blocks/form/__field-name/form__field-name.css);
+@import url(../src/blocks/form/__field-container/_text/form__field-container_text.css);
+@import url(../src/blocks/form/__field-span/form__field-span.css);
+@import url(../src/blocks/form/__field-span/_accent/form__field-span_accent.css);
+@import url(../src/blocks/form/__checkbox-container/form__checkbox-container.css);
+@import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
+@import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
+@import url(../src/blocks/form/__button/form__button.css);
