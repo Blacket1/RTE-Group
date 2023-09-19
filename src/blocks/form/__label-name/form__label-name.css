@@ -1,0 +1,10 @@
+.form__label-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  position: absolute;
+  top: -20px;
+  pointer-events: none;
+  color: #808080;
+  transition: 0.2s ease all;
+}

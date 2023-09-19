@@ -8,21 +8,9 @@
   font-size: 16px;
   outline:none;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .form__field:last-of-type {
   resize: none;
-}
-
-/* .form__field:focus ~ .form__field-name, 
-.form__field:not(:placeholder-shown) ~ .form__field-name  {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
- */
-
-.form__field:not(:placeholder-shown) ~ .form__field-name {
-  color: #808097; /* сероватый */
-}
-.form__field:focus ~ .form__field-name {
-  color: #dc2f55; /* красный, фокус в поле */
 }

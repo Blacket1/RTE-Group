@@ -14,20 +14,27 @@
     <form class="form__content" name="mainForm" novalidate>
       <div class="form__fields">
         <div class="form__field-container">
-          <span class="form__field-name">Имя*</span>
-          <input type="text" id="user-name" class="form__field" name="userName" placeholder="Имя*" required value="">
-          <span class="form__field-error user-name_error"></span>
+          <input type="text" id="user-name" class="form__field" name="userName" placeholder="" required value="">
+          <div class="form__label-containter">
+            <label for="user-name" class="form__label-name">Имя*</label>
+          </div>  
         </div>
+        <span class="form__field-error user-name_error"></span>
 
-        <div class="form__field-container">
-          <span class="form__field-name"></span>
-          <input type="text" id="user-phone" class="form__field" name="userPhone" placeholder="Телефон*" value="" required>
-          <span class="form__field-error user-phone_error"></span>
+        
+        <div class="form__field-container">         
+          <input type="text" id="user-phone" class="form__field" name="userPhone" placeholder="" required value="">
+          <div class="form__label-containter">
+            <label for="user-phone" class="form__label-name">Телефон*</label>
+          </div> 
         </div>
+        <span class="form__field-error user-phone_error"></span>
 
         <div class="form__field-container form__field-container_text">
-          <textarea id="goods-data" class="form__field" name="goodsData" placeholder="Краткая характеристика груза"></textarea>
-          <span class="form__field-error user-name_error"></span>
+          <textarea id="goods-data" class="form__field" name="goodsData" placeholder="" rows=""></textarea>
+          <div class="form__label-containter">
+            <label for="goods-data" class="form__label-name">Краткая характеристика груза</label>
+          </div> 
         </div>
 
         <div class="form__checkbox-container">
