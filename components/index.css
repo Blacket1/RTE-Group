@@ -28,6 +28,26 @@
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_d.css);
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_m.css);
 
+/*message - всплывающее окно об отправке формы*/
+@import url(../src/blocks/submit-message/submit-message.css);
+@import url(../src/blocks/submit-message/__close-icon/submit-message__close-icon.css);
+@import url(../src/blocks/submit-message/__success-icon/submit-message__success-icon.css);
+@import url(../src/blocks/submit-message/__title/submit-message__title.css);
+@import url(../src/blocks/submit-message/__subtitle/submit-message__subtitle.css);
+
+/*inputs*/
+@import url(../src/blocks/input/__container/input__container.css);
+@import url(../src/blocks/input/__field/input__field.css);
+@import url(../src/blocks/input/__label-name/input__label-name.css);
+
+@import url(../src/blocks/input/_textarea/input_textarea.css);
+@import url(../src/blocks/input/__checkbox-container/input__checkbox-container.css);
+@import url(../src/blocks/input/_checkbox/input_checkbox.css);
+@import url(../src/blocks/input/_checkbox/_pseudo/input_checkbox-pseudo.css);
+@import url(../src/blocks/input/_checkbox/_error/input_checkbox_error.css);
+@import url(../src/blocks/input/__field/_error/input__field_error.css);
+@import url(../src/blocks/input/__error/input__error.css);
+
 /*forms*/
 @import url(../src/blocks/form/form.css);
 
@@ -44,12 +64,4 @@
 @import url(../src/blocks/form/__checkbox-container/form__checkbox-container.css);
 @import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
 @import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
-@import url(../src/blocks/form/__button/form__button.css);
 @import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);
-
-/*message - всплывающее окно об отправке формы*/
-@import url(../src/blocks/submit-message/submit-message.css);
-@import url(../src/blocks/submit-message/__close-icon/submit-message__close-icon.css);
-@import url(../src/blocks/submit-message/__success-icon/submit-message__success-icon.css);
-@import url(../src/blocks/submit-message/__title/submit-message__title.css);
-@import url(../src/blocks/submit-message/__subtitle/submit-message__subtitle.css);
