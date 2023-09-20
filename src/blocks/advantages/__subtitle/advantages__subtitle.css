@@ -1,4 +1,4 @@
-.services__subtitle {
+.advantages__subtitle {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 432px) {
-  .services__subtitle {
+  .advantages__subtitle {
     margin: 16px 0;
   }
 }
