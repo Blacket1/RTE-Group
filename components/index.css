@@ -37,7 +37,7 @@
 @import url(../src/blocks/form/__fields/form__fields.css);
 @import url(../src/blocks/form/__field-container/form__field-container.css);
 @import url(../src/blocks/form/__label-name/form__label-name.css);
-@import url(../src/blocks/form/__label-containter/form__label-containter.css);
+
 @import url(../src/blocks/form/__field-container/_text/form__field-container_text.css);
 @import url(../src/blocks/form/__field-span/form__field-span.css);
 @import url(../src/blocks/form/__field-span/_accent/form__field-span_accent.css);
@@ -45,3 +45,4 @@
 @import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
 @import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
 @import url(../src/blocks/form/__button/form__button.css);
+@import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);

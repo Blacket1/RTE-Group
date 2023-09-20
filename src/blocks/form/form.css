@@ -9,3 +9,25 @@
   border-radius: 24px;
   box-shadow: 0px 5px 150px 0px rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (min-width: 1024px) {
+  .form {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .form {
+    width: 400px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .form {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .form {
+    width: 328px;
+  }
+}

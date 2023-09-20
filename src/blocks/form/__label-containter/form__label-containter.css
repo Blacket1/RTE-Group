@@ -1,9 +1,0 @@
-.form__label-containter {
-  position: relative;
-}
-
-.form__field:focus ~ .form__label-containter .form__label-name,
-.form__field:valid ~ .form__label-containter .form__label-name {
-  font-size: 12px;
-  transform: translateY(-18px);
-}

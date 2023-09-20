@@ -11,6 +11,8 @@
   padding-right: 24px;
   height: 56px;
   transition: border 1s;
+  position: relative;
+    /* width: 100%; */
 }
 .form__field-container:hover {
   border: 1px solid #FFF;
