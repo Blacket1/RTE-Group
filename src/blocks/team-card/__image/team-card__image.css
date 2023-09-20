@@ -1,0 +1,13 @@
+.team-card__image {
+  width: 72px;
+  height: 72px;
+  border-radius: 80px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  margin-right: 24px;
+  filter: grayscale(1);
+}

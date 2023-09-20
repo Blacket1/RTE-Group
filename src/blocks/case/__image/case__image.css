@@ -1,0 +1,12 @@
+.case__image {
+    width: 328px;
+    height: 144px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 727px) {
+    .case__image {
+        width: 312px;
+    }
+}

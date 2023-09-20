@@ -44,7 +44,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/UI-Kit.html'
+      template: './src/section.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

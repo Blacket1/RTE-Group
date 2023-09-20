@@ -1,0 +1,13 @@
+.case__tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px 24px;
+    row-gap: 8px;
+}
+
+@media screen and (max-width: 727px) {
+    .case__tags {
+        padding: 0 16px 16px;
+    }
+}
