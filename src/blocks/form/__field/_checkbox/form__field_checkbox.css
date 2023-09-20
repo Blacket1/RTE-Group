@@ -1,0 +1,11 @@
+.form__field_checkbox {
+  position: absolute;
+  width: 1px; 
+  height: 1px;
+  overflow: hidden; 
+  clip-path: inset(0 0 0 0);
+}
+
+.form__field_checkbox:checked + .form__field_checkbox-pseudo {
+  background-image: url(../../../../images/_checkbox_checked.svg);
+}

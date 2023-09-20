@@ -1,0 +1,8 @@
+.input_checkbox-pseudo {
+  display: inline-block;
+  vertical-align: middle; 
+  width: 24px;
+  height: 24px;
+  background-image: url(../../../../images/_checkbox_disabled.svg);
+  margin-right: 16px;
+}

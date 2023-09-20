@@ -1,0 +1,9 @@
+.input_textarea {
+  margin-top: 20px;
+  cursor: pointer;
+  resize: none;
+}
+
+.input_textarea:not(:focus)::placeholder {
+  color: transparent;
+}
