@@ -4,7 +4,6 @@
   align-items: flex-start;
   box-sizing: border-box;
   max-width: 528px;
-  height: 250px;
   width: 100%;
   padding: 24px 32px 32px;
   border-radius: 24px;
@@ -14,6 +13,5 @@
 @media screen and (max-width: 548px) {
   .advantages__item {
     padding: 16px;
-    height: 338px;
   }
 }
