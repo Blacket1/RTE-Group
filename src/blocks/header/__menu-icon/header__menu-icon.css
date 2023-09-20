@@ -1,0 +1,8 @@
+.header__menu-icon {
+  display: none;
+}
+@media screen and (max-width: 424px) {
+  .header__menu-icon {
+    display: block;
+  }
+}

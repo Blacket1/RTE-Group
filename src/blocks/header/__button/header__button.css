@@ -18,5 +18,7 @@
   .header__button {
     height: 56px;
     width: 328px;
+    position: absolute;
+    display: none;
   }
 }

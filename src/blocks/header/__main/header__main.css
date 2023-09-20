@@ -4,3 +4,8 @@
   justify-content: space-between;
   padding: 0 100px;
 }
+@media screen and (max-width: 424px) {
+  .header__main {
+    padding: 8px 16px;
+  }
+}
