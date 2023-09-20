@@ -28,6 +28,22 @@
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_d.css);
 @import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_m.css);
 
+
+/*стили section*/
+
+/*блок case*/
+@import url('../src/blocks/case/case.css');
+@import url('../src/blocks/case/__button-all-cases/case__button-all-cases.css');
+@import url('../src/blocks/case/__card-content/case__card-content.css');
+@import url('../src/blocks/case/__card-description/case__card-description.css');
+@import url('../src/blocks/case/__card-title/case__card-title.css');
+@import url('../src/blocks/case/__card/case__card.css');
+@import url('../src/blocks/case/__cards/case__cards.css');
+@import url('../src/blocks/case/__header/case__header.css');
+@import url('../src/blocks/case/__image/case__image.css');
+@import url('../src/blocks/case/__tag/case__tag.css');
+@import url('../src/blocks/case/__tags/case__tags.css');
+
 /*forms*/
 @import url(../src/blocks/form/form.css);
 

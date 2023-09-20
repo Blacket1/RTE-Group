@@ -1,0 +1,15 @@
+.case__card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+    color: #fff;
+    padding: 0 24px;
+}
+
+@media screen and (max-width: 727px) {
+    .case__card-title {
+        padding: 0 16px;
+    }
+}
