@@ -11,7 +11,28 @@
 <body class='page'>
   <!--секция header-->
   <section>
-
+    <div class="header">
+      <div class="header__main">
+        <div class="logo__container logo__container_horizontal_d">
+          <img class="logo logo_horizontal_d" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+          <span class="logo__caption logo__caption_size_d">РТ Экспресс</span>
+        </div>
+        <div class="header__contact">
+          <img class="header__phone-icon" src="<%=require('../src/images/__phone.svg')%>" alt="Иконка трубки">
+          <span class="header__phone-number">+7 917 275-90-13</span>
+          <button class='button button__primary header__button'>Офоромить заказ</button> 
+        </div>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__options">
+          <li class="header__navigation-option">Услуги</li>
+          <li class="header__navigation-option">Автопарк</li>
+          <li class="header__navigation-option">Кейсы</li>
+          <li class="header__navigation-option">Города</li>
+          <li class="header__navigation-option">О компании</li>
+        </ul>
+      </nav>
+    </div>
   </section>
 
   <!--секция footer-->
