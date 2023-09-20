@@ -1,4 +1,4 @@
-.case__card-description {
+.case__description {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 727px) {
-    .case__card-description {
+    .case__description {
         padding: 0 16px;
     }
 }
