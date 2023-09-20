@@ -1,4 +1,4 @@
-.case__card-title {
+.case__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 727px) {
-    .case__card-title {
+    .case__title {
         padding: 0 16px;
     }
 }

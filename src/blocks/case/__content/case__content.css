@@ -1,11 +1,11 @@
-.case__card-content {
+.case__content {
     padding: 8px;
     display: grid;
     row-gap: 24px;
 }
 
 @media screen and (max-width: 727px) {
-    .case__card-content {
+    .case__content {
         row-gap: 16px;
     }
 }
