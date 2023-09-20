@@ -1,0 +1,13 @@
+.services__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #fff;
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 432px) {
+  .services__subtitle {
+    margin: 16px 0;
+  }
+}
