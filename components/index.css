@@ -11,3 +11,11 @@
 
 @import url('../src/blocks/page/page.css');
 @import url('../src/blocks/section-title/section-title.css');
+
+/*стили для блока advantages*/
+
+@import url('../src/blocks/advantages/__item/advantages__item.css');
+@import url('../src/blocks/advantages/__item/_dark/advantages__item_dark.css');
+@import url('../src/blocks/advantages/__icon/advantages__icon.css');
+@import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
+@import url('../src/blocks/advantages/__text/advantages__text.css');
