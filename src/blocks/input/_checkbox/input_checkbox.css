@@ -1,0 +1,11 @@
+.input_checkbox {
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    overflow: hidden; 
+    clip-path: inset(0 0 0 0);
+}
+  
+.input_checkbox:checked + .input_checkbox-pseudo {
+  background-image: url(../../../../src/images/_checkbox_checked.svg);
+}
