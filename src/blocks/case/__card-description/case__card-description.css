@@ -1,0 +1,20 @@
+.case__card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 24px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 727px) {
+    .case__card-description {
+        padding: 0 16px;
+    }
+}

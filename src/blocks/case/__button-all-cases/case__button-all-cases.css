@@ -1,0 +1,12 @@
+.case__button-all-cases {
+    position: absolute;
+    top: -6px;
+    right: 0px;
+}
+
+@media screen and (max-width: 727px) {
+    .case__button-all-cases {
+        position: relative;
+        margin-top: 24px;
+    }
+}
