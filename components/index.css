@@ -44,6 +44,15 @@
 @import url('../src/blocks/case/__tag/case__tag.css');
 @import url('../src/blocks/case/__tags/case__tags.css');
 
+/*team*/
+@import url(..//src/blocks/team-card/team-card.css);
+@import url(..//src/blocks/team-card/__about/team-card__about.css);
+@import url(..//src/blocks/team-card/__image/team-card__image.css);
+@import url(..//src/blocks/team-card/__user-info/team-card__user-info.css);
+@import url(..//src/blocks/team-card/__user-job/team-card__user-job.css);
+@import url(..//src/blocks/team-card/__user-name/team-card__user-name.css);
+@import url(..//src/blocks/team-card/__user-profile/team-card__user-profile.css);
+
 /*forms*/
 @import url(../src/blocks/form/form.css);
 
