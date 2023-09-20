@@ -1,17 +1,58 @@
+@import url(../src/vendor/normalize.css);
+@import url(../src/vendor/fonts.css);
+
+/*общие стили страниц*/
+@import url('../src/blocks/page/page.css');
+@import url('../src/blocks/section-title/section-title.css');
+
 /*стили UI-Kit*/
 
 /*кнопка*/
-
 @import url('../src/blocks/button/button.css');
 @import url('../src/blocks/button/__primary/button__primary.css');
 @import url('../src/blocks/button/__outline/button__outline.css');
 @import url('../src/blocks/button/__dark/button__dark.css');
 
-/*общие стили страниц*/
+/*logo*/
+@import url(../src/blocks/logo/logo.css);
+@import url(../src/blocks/logo/_horizontal/logo_horizontal_m.css);
+@import url(../src/blocks/logo/_horizontal/logo_horizontal_d.css);
 
-@import url('../src/blocks/page/page.css');
-@import url('../src/blocks/section-title/section-title.css');
+@import url(../src/blocks/logo/__caption/logo__caption.css);
+@import url(../src/blocks/logo/__caption/_size/logo__caption_size_d.css);
+@import url(../src/blocks/logo/__caption/_size/logo__caption_size_m.css);
 
+@import url(../src/blocks/logo/__container/logo__container.css);
+@import url(../src/blocks/logo/__container/_vertical/logo__container_vertical_m.css);
+@import url(../src/blocks/logo/__container/_vertical/logo__container_vertical_d.css);
+@import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_d.css);
+@import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_m.css);
+
+/*forms*/
+@import url(../src/blocks/form/form.css);
+
+@import url(../src/blocks/form/__title/form__title.css);
+@import url(../src/blocks/form/__content/form__content.css);
+@import url(../src/blocks/form/__field/form__field.css);
+@import url(../src/blocks/form/__fields/form__fields.css);
+@import url(../src/blocks/form/__field-container/form__field-container.css);
+@import url(../src/blocks/form/__label-name/form__label-name.css);
+
+@import url(../src/blocks/form/__field-container/_text/form__field-container_text.css);
+@import url(../src/blocks/form/__field-span/form__field-span.css);
+@import url(../src/blocks/form/__field-span/_accent/form__field-span_accent.css);
+@import url(../src/blocks/form/__checkbox-container/form__checkbox-container.css);
+@import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
+@import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
+@import url(../src/blocks/form/__button/form__button.css);
+@import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);
+
+/*message - всплывающее окно об отправке формы*/
+@import url(../src/blocks/submit-message/submit-message.css);
+@import url(../src/blocks/submit-message/__close-icon/submit-message__close-icon.css);
+@import url(../src/blocks/submit-message/__success-icon/submit-message__success-icon.css);
+@import url(../src/blocks/submit-message/__title/submit-message__title.css);
+@import url(../src/blocks/submit-message/__subtitle/submit-message__subtitle.css);
 
 /*стили services*/
 @import url('../src/blocks/services/__item/services__item.css');
