@@ -7,11 +7,54 @@
   <link rel="stylesheet" href="../components/index.css">
 </head>
 <body class='page'>
-
-
+  
   <!--form/main-->
   <section>
+    <div class="form form__form-main">
+      <h2 class="form__title">Оставить заявку на перевозку</h2>
+      <form class="form__content" name="mainForm" novalidate>
+        <div class="form__fields">
+          <div class="form__field-container">
+            <input type="text" id="user-name" class="form__field" name="userName" placeholder=" " required value="">
+            <label for="user-name" class="form__label-name">Имя*</label> 
+          </div>
+          <span class="form__field-error user-name_error"></span>
+          
+          <div class="form__field-container">         
+            <input type="text" id="user-phone" class="form__field" name="userPhone" placeholder=" " required value="" >
+            <label for="user-phone" class="form__label-name">Телефон*</label>
+          </div>
+          <span class="form__field-error user-phone_error"></span>
+  
+          <div class="form__field-container form__field-container_text">
+            <textarea id="goods-data" class="form__field form__field_textarea" name="goodsData" placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза" maxlength="255" rows="4"></textarea>
+            <label for="goods-data" class="form__label-name">Краткая характеристика груза</label> 
+          </div>
+  
+          <div class="form__checkbox-container">
+            <label for="check-field">
+              <input type="checkbox" id="check-field" class="form__field form__field_checkbox" name="dataConfirm" required>
+              <span class="form__field form__field_checkbox-pseudo"></span>
+            </label>
+  
+            <span class="form__field-span">Согласен на обработку персональных данных в соответствии с <span class="form__field-span_accent">политикой конфиденциальности</span></span>
+            <span class="form__field-error user-name_error"></span>
+          </div>
+        </div>
+        <!-- <button type="submit" name="sendButton" class="form__button">Отправить</button> -->
+        <button type="submit" name="sendButton" class='button button__primary'>Отправить</button>
+      </form>
+    </div>
+  </section>
 
+  <!--form/main всплывающее окно об отправке формы -->
+  <section>
+    <div class="form submit-message">
+      <button type="button" name="closeButton" class="submit-message__close-icon" aria-label="Кнопка закрытия всплывающего окна"></button>
+      <img class="submit-message__success-icon" src="<%=require('../src/images/__requestConfirm.svg')%>" alt="Иконка-подтверждение успешной отправки формы">
+      <h2 class="submit-message__title">Заявка отправлена!</h2>
+      <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+    </div>
   </section>
 
   <!--form/contact-->
@@ -31,7 +74,28 @@
 
   <!--logo-->
   <section>
+    <!-- лого с подписью size=m -->
+    <div class="logo__container logo__container_vertical_m">
+      <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+      <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
+    </div>
+    
+    <!-- без подписи, только само лого -->
+    <div class="logo__container logo__container_horizontal_m">
+      <img class="logo logo_horizontal_m" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+    </div>
 
+    <!-- лого с подписью size=d -->
+    <div class="logo__container logo__container_vertical_d">
+      <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+      <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
+    </div>
+    
+    <!-- лого с подписью в строку -->
+    <div class="logo__container logo__container_horizontal_d">
+      <img class="logo logo_horizontal_d" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+      <span class="logo__caption logo__caption_size_d">РТ Экспресс</span>
+    </div>
   </section>
 
   <!--button-->

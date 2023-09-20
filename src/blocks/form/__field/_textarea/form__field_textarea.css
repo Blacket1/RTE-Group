@@ -1,0 +1,9 @@
+.form__field_textarea {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.form__field_textarea:not(:focus)::placeholder {
+  color: transparent;
+}
