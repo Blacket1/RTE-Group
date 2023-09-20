@@ -5,7 +5,10 @@
     font-family: 'Montserrat', Arial, sans-serif;
     background-color: #262626;
     margin: 0 auto;
-    
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
     /*сглаживание*/
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
