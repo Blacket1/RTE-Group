@@ -1,153 +1,232 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI-KIT</title>
-  <link rel="stylesheet" href="../components/index.css">
-</head>
-<body class='page'>
-  
-  <!--form/main-->
-  <section>
-    <div class="form form__form-main">
-      <h2 class="form__title">Оставить заявку на перевозку</h2>
-      <form class="form__content" name="mainForm" novalidate>
-        <div class="form__fields">
-          <div class="input__container">         
-            <input type="text" id="user-name" class="input__field" name="userName" placeholder=" " required value="" >
-            <label for="user-name" class="input__label-name">Имя*</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-KIT</title>
+  </head>
+  <body class="page">
+    <!--form/main-->
+    <section>
+      <div class="form form__form-main">
+        <h2 class="form__title">Оставить заявку на перевозку</h2>
+        <form class="form__content" name="mainForm" novalidate>
+          <div class="form__fields">
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-name"
+                class="input__field"
+                name="userName"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-name" class="input__label-name">Имя*</label>
+            </div>
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-phone"
+                class="input__field"
+                name="userPhone"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-phone" class="input__label-name">Телефон*</label>
+            </div>
+            <div class="input__container form__field-container_text">
+              <textarea
+                id="goods-data"
+                class="input__field input_textarea"
+                name="goodsData"
+                placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
+                maxlength="255"
+                rows="3"
+              ></textarea>
+              <label for="goods-data" class="input__label-name">Краткая характеристика груза</label>
+            </div>
+            <div class="input__checkbox-container">
+              <label for="check-field">
+                <input
+                  type="checkbox"
+                  id="check-field"
+                  class="input__field input_checkbox"
+                  name="dataConfirm"
+                  required
+                />
+                <span class="input__field input_checkbox-pseudo"></span>
+              </label>
+              <span class="form__field-span"
+                >Согласен на обработку персональных данных в соответствии с
+                <span class="form__field-span_accent">политикой конфиденциальности</span></span
+              >
+              <span class="form__field-error user-name_error"></span>
+            </div>
           </div>
-          <div class="input__container">         
-            <input type="text" id="user-phone" class="input__field" name="userPhone" placeholder=" " required value="" >
-            <label for="user-phone" class="input__label-name">Телефон*</label>
-          </div>
-          <div class="input__container form__field-container_text">
-            <textarea id="goods-data" class="input__field input_textarea" name="goodsData" placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза" maxlength="255" rows="3"></textarea>
-            <label for="goods-data" class="input__label-name">Краткая характеристика груза</label> 
-          </div>
-          <div class="input__checkbox-container">
-            <label for="check-field">
-              <input type="checkbox" id="check-field" class="input__field input_checkbox" name="dataConfirm" required>
-              <span class="input__field input_checkbox-pseudo"></span>
-            </label>
-            <span class="form__field-span">Согласен на обработку персональных данных в соответствии с <span class="form__field-span_accent">политикой конфиденциальности</span></span>
-            <span class="form__field-error user-name_error"></span>
-          </div>
-        </div>
-        <button type="submit" name="sendButton" class='button button__primary'>Отправить</button>
-      </form>
-    </div>
-  </section>
+          <button type="submit" name="sendButton" class="button button__primary">Отправить</button>
+        </form>
+      </div>
+    </section>
 
-  <!--form/main всплывающее окно об отправке формы -->
-  <section>
-    <div class="form submit-message">
-      <button type="button" name="closeButton" class="submit-message__close-icon" aria-label="Кнопка закрытия всплывающего окна"></button>
-      <img class="submit-message__success-icon" src="<%=require('../src/images/__requestConfirm.svg')%>" alt="Иконка-подтверждение успешной отправки формы">
-      <h2 class="submit-message__title">Заявка отправлена!</h2>
-      <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
-    </div>
-  </section>
+    <!--form/main всплывающее окно об отправке формы -->
+    <section>
+      <div class="form submit-message">
+        <button
+          type="button"
+          name="closeButton"
+          class="submit-message__close-icon"
+          aria-label="Кнопка закрытия всплывающего окна"
+        ></button>
+        <img
+          class="submit-message__success-icon"
+          src="<%=require('../src/images/__requestConfirm.svg')%>"
+          alt="Иконка-подтверждение успешной отправки формы"
+        />
+        <h2 class="submit-message__title">Заявка отправлена!</h2>
+        <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+      </div>
+    </section>
 
-  <!--form/contact-->
-  <section>
+    <!--form/contact-->
+    <section></section>
 
-  </section>
+    <!--form/vacancy-->
+    <section></section>
 
-  <!--form/vacancy-->
-  <section>
+    <!--input-->
+    <section>
+      <!-- простой инпут -->
+      <div class="input__container">
+        <input
+          type="text"
+          id="input__id"
+          class="input__field"
+          name=""
+          placeholder=" "
+          required
+          value=""
+        />
+        <label for="input__id" class="input__label-name">Input</label>
+      </div>
+      <span class="input__field-error input__id_error"></span>
 
-  </section>
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 10px"></div>
 
-  <!--input-->
-  <section>
+      <div class="input__container">
+        <input
+          type="text"
+          id="input__id"
+          class="input__field input__field_error"
+          name=""
+          placeholder=" "
+          required
+          value="Error"
+        />
+        <label for="input__id" class="input__label-name">Input Error</label>
+      </div>
+      <span class="input__error">Description / Error</span>
 
-    <!-- простой инпут -->
-    <div class="input__container">         
-      <input type="text" id="input__id" class="input__field" name="" placeholder=" " required value="" >
-      <label for="input__id" class="input__label-name">Input</label>
-    </div>
-    <span class="input__field-error input__id_error"></span>
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 20px"></div>
 
-    <!-- отступ для визуального отображения (не обращать внимание) -->
-    <div style="height: 10px;"></div>
+      <!-- textarea  -->
+      <div class="input__container form__field-container_text">
+        <textarea
+          id="input__id"
+          class="input__field input_textarea"
+          name=""
+          placeholder="Text"
+          maxlength="255"
+          rows="3"
+        ></textarea>
+        <label for="input__id" class="input__label-name">Textarea</label>
+      </div>
 
-    <div class="input__container">         
-      <input type="text" id="input__id" class="input__field input__field_error" name="" placeholder=" " required value="Error" >
-      <label for="input__id" class="input__label-name">Input Error</label>
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 10px"></div>
 
-      
-    </div>
-    <span class="input__error">Description / Error</span>
+      <!-- checkbox -->
+      <div class="input__checkbox-container">
+        <label for="checkbox-field">
+          <input
+            type="checkbox"
+            id="checkbox-field"
+            class="input__field input_checkbox"
+            name=""
+            required
+          />
+          <span class="input__field input_checkbox-pseudo"></span>
+        </label>
 
-    <!-- отступ для визуального отображения (не обращать внимание) -->
-    <div style="height: 20px;"></div>
+        <label for="checkbox-field-error">
+          <input
+            type="checkbox"
+            id="checkbox-field-error"
+            class="input__field input_checkbox"
+            name=""
+            required
+          />
+          <span class="input__field input_checkbox-pseudo input_checkbox_error"></span>
+        </label>
+      </div>
+    </section>
 
-    <!-- textarea  -->
-    <div class="input__container form__field-container_text">
-      <textarea id="input__id" class="input__field input_textarea" name="" placeholder="Text" maxlength="255" rows="3"></textarea>
-      <label for="input__id" class="input__label-name">Textarea</label> 
-    </div>
+    <!--logo-->
+    <section>
+      <!-- лого с подписью size=m -->
+      <div class="logo__container logo__container_vertical_m">
+        <img
+          class="logo"
+          src="<%=require('../src/images/__logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+        <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
+      </div>
 
-    <!-- отступ для визуального отображения (не обращать внимание) -->
-    <div style="height: 10px;"></div>
+      <!-- без подписи, только само лого -->
+      <div class="logo__container logo__container_horizontal_m">
+        <img
+          class="logo logo_horizontal_m"
+          src="<%=require('../src/images/__logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+      </div>
 
-    <!-- checkbox -->
-    <div class="input__checkbox-container">
-      <label for="checkbox-field">
-        <input type="checkbox" id="checkbox-field" class="input__field input_checkbox" name="" required>
-        <span class="input__field input_checkbox-pseudo"></span>
-      </label>
+      <!-- лого с подписью size=d -->
+      <div class="logo__container logo__container_vertical_d">
+        <img
+          class="logo"
+          src="<%=require('../src/images/__logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+        <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
+      </div>
 
-      <label for="checkbox-field-error">
-        <input type="checkbox" id="checkbox-field-error" class="input__field input_checkbox" name="" required>
-        <span class="input__field input_checkbox-pseudo input_checkbox_error"></span>
-      </label>
-    </div>
-  </section>
+      <!-- лого с подписью в строку -->
+      <div class="logo__container logo__container_horizontal_d">
+        <img
+          class="logo logo_horizontal_d"
+          src="<%=require('../src/images/__logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+        <span class="logo__caption logo__caption_size_d">РТ Экспресс</span>
+      </div>
+    </section>
 
-  <!--logo-->
-  <section>
-    <!-- лого с подписью size=m -->
-    <div class="logo__container logo__container_vertical_m">
-      <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
-      <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
-    </div>
-    
-    <!-- без подписи, только само лого -->
-    <div class="logo__container logo__container_horizontal_m">
-      <img class="logo logo_horizontal_m" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
-    </div>
+    <!--button-->
+    <section>
+      <button class="button button__primary">Button</button>
+      <!--Зеленая кнопка с белым шрифтом-->
+      <button class="button button__outline">Button</button>
+      <!--Кнопка с зеленым шрифтом и бордером-->
+      <button class="button button__dark">Button</button>
+      <!--Черная кнопка-->
+    </section>
 
-    <!-- лого с подписью size=d -->
-    <div class="logo__container logo__container_vertical_d">
-      <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
-      <span class="logo__caption logo__caption_size_m">РТ Экспресс</span>
-    </div>
-    
-    <!-- лого с подписью в строку -->
-    <div class="logo__container logo__container_horizontal_d">
-      <img class="logo logo_horizontal_d" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
-      <span class="logo__caption logo__caption_size_d">РТ Экспресс</span>
-    </div>
-  </section>
-
-  <!--button-->
-  <section>
-    <button class='button button__primary'>Button</button> <!--Зеленая кнопка с белым шрифтом-->
-    <button class='button button__outline'>Button</button> <!--Кнопка с зеленым шрифтом и бордером-->
-    <button class='button button__dark'>Button</button> <!--Черная кнопка-->
-  </section>
-
-  <!--city-link-->
-  <section>
-
-  </section>
-
-
-
-
-  
-</body>
+    <!--city-link-->
+    <section></section>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-@import url(../src/vendor/normalize.css);
+@import url('~normalize.css');
 @import url(../src/vendor/fonts.css);
 
 /*общие стили страниц*/
@@ -78,7 +78,7 @@
 @import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
 @import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
 
-@import url(../src/blocks/form/__button/form__button.css);
+/* @import url(../src/blocks/form/__button/form__button.css); */
 @import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);
 
 /*message - всплывающее окно об отправке формы*/
@@ -106,7 +106,6 @@
 @import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
 @import url('../src/blocks/advantages/__text/advantages__text.css');
 
-
 /*блок whywe*/
 @import url('../src/blocks/whywe/__description/whyme__description.css');
 @import url('../src/blocks/whywe/__item/whywe__item.css');
@@ -118,4 +117,3 @@
 @import url('../src/blocks/feedback/__item/feedback__item.css');
 @import url('../src/blocks/feedback/__text/feedback__text.css');
 @import url('../src/blocks/feedback/__users-name/feedback__users-name.css');
-
