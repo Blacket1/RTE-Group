@@ -105,3 +105,10 @@
 @import url('../src/blocks/advantages/__icon/advantages__icon.css');
 @import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
 @import url('../src/blocks/advantages/__text/advantages__text.css');
+
+/*блок whywe*/
+@import url('../src/blocks/whywe/__description/whyme__description.css');
+@import url('../src/blocks/whywe/__item/whywe__item.css');
+@import url('../src/blocks/whywe/__number/whyme__number.css');
+@import url('../src/blocks/whywe/__title/whyme__title.css');
+
