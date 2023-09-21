@@ -105,3 +105,10 @@
 @import url('../src/blocks/advantages/__icon/advantages__icon.css');
 @import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
 @import url('../src/blocks/advantages/__text/advantages__text.css');
+
+/*блок feedback*/
+@import url('../src/blocks/feedback/__avatar/feedback__avatar.css');
+@import url('../src/blocks/feedback/__item/feedback__item.css');
+@import url('../src/blocks/feedback/__text/feedback__text.css');
+@import url('../src/blocks/feedback/__users-name/feedback__users-name.css');
+
