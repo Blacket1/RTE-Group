@@ -96,11 +96,3 @@
 
 /*header*/
 @import url(../src/blocks/header/header.css);
-@import url(../src/blocks/header/__main/header__main.css);
-@import url(../src/blocks/header/__contact/header__contact.css);
-@import url(../src/blocks/header/__phone-number/header__phone-number.css);
-@import url(../src/blocks/header/__button/header__button.css);
-@import url(../src/blocks/header/__navigation/header__navigation.css);
-@import url(../src/blocks/header/__options/header__options.css);
-@import url(../src/blocks/header/__navigation-option/header__navigation-option.css);
-@import url(../src/blocks/header/__menu-icon/header__menu-icon.css);

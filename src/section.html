@@ -11,31 +11,41 @@
 <body class='page'>
   <!--секция header-->
   <section>
-    <div class="header">
-      <div class="header__main">
-        <div class="logo__container logo__container_horizontal_d">
-          <img class="logo logo_horizontal_d" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
-          <span class="logo__caption logo__caption_size_d">РТ Экспресс</span>
-        </div>
-        <div class="header__contact">
-          <img class="header__phone-icon" src="<%=require('../src/images/__phone.svg')%>" alt="Иконка трубки">
-          <span class="header__phone-number">+7 917 275-90-13</span>
-          <button class='button button__primary header__button'>Офоромить заказ</button> 
-          <img class="header__menu-icon" src="<%=require('../src/images/__menu-icon.svg')%>" alt="Иконка меню">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="" class="header__logo">
+            <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс">
+          </a>
+
+          <div class="header__main">
+            
+            <div class="header__contact">
+              <img src="<%=require('../src/images/__phone.svg')%>">
+              <span class="header__phone">+7 917 275-90-13</span>
+            </div>
+          </div>
+
+          <label for="checkbox" class="header__burger header__checkbox-label"></label>
+          <input id="checkbox" type="checkbox" class="header__checkbox">
+
+          <button class='button button__primary header__button'>Оформить заявку</button>  
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a href="" class="header__link">Услуги</a></li>
+              <li><a href="" class="header__link">Автопарк</a></li>
+              <li><a href="" class="header__link">Кейсы</a></li>
+              <li><a href="" class="header__link">Города</a></li>
+              <li><a href="" class="header__link">О компании</a></li>
+            </ul>
+          </nav>
+
+
+    
         </div>
       </div>
-      <nav class="header__navigation">
-        <ul class="header__options">
-          <li class="header__navigation-option">Услуги</li>
-          <li class="header__navigation-option">Автопарк</li>
-          <li class="header__navigation-option">Кейсы</li>
-          <li class="header__navigation-option">Города</li>
-          <li class="header__navigation-option">О компании</li>
-        </ul>
-      </nav>
-    </div>
+    </header>
   </section>
-
   <!--секция footer-->
   <section>
 
@@ -47,7 +57,7 @@
   </section>
 
   <!--секция case-->
-  <section>
+  <!-- <section>
     <a href='#' target='_blank' class='case'>
       <article class='case__content'>
         <img class='case__image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s' alt='Кейс фотография'>
@@ -59,28 +69,28 @@
         </div>
       </article>
     </a>
-  </section>
+  </section> -->
 
   <!--секция services-->
   <section>
-    <div class="services__item">
+    <!-- <div class="services__item">
       <img src="./images/icon/icons96/icon2.svg" alt="icon1" class="services__icon">
       <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
       <p class="services__text">RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного оборудования и другие
         грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с тягачом. Помимо непосредственной перевозки
         получим все необходимые разрешения от надзорных органов и подберем оптимальный маршрут. </p>
       <button class='button button__outline'>Подробнее</button>  
-    </div>
+    </div> -->
 
     <!--services__item более темный-->
-    <div class="services__item services__item_dark">
+    <!-- <div class="services__item services__item_dark">
       <img src="./images/icon/icons96/icon2.svg" alt="icon1" class="services__icon">
       <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
       <p class="services__text">RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного оборудования и другие
         грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с тягачом. Помимо непосредственной перевозки
         получим все необходимые разрешения от надзорных органов и подберем оптимальный маршрут. </p>
       <button class='button button__outline'>Подробнее</button>  
-    </div>
+    </div> -->
   </section>
 
   <!--секция advantages-->
@@ -101,7 +111,7 @@
   <!--секция team-->
   <section>
     <!-- <template> -->
-      <div class="team-card">
+      <!-- <div class="team-card">
         <div class="team-card__user-profile">
           <img class="team-card__image" src="https://images.unsplash.com/photo-1687360440667-493016988a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="user-name">
 
@@ -111,7 +121,7 @@
           </div>
         </div>
         <p class="team-card__about">Марат является основателем и душой компании, имея более 10 лет опыта в сфере ЖКХ и строительства. Его организаторские способности позволяют компании расти и развиваться каждый день.</p>
-      </div>
+      </div> -->
     <!-- </template> -->
   </section>
 
