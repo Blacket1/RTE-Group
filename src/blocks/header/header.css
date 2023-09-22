@@ -106,11 +106,16 @@
 .header__checkbox-label {
   display: none;
 }
-
+.header__container {
+  display: flex;
+}
 @media (max-width:767px) {
   .container {
     padding-left: 16px;
     padding-right: 8px;
+  }
+  .header__container {
+    display: contents;
   }
   .header__burger {
     display: block;
@@ -149,14 +154,16 @@
     width: calc(100vw - 32px);
     padding: 16px 24px;
     opacity: 0;
-    transition: opacity 1s ease-out;
+    /* transition: opacity 1s ease-out; */
   }
 
   .header__checkbox:checked ~ .header__button {
     opacity: 1;
+    transition: opacity 1s ease-out;
   }
   .header__checkbox:checked ~ .header__menu {
     opacity: 1;
+    transition: opacity 1s ease-out;
   }
   .header__burger::after {
     background-image: url(../../images/__closeIcon.svg)
