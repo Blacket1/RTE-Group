@@ -1,0 +1,9 @@
+.header__container-main {
+  padding: 0 100px 0 100px;
+}
+@media (max-width:767px) {
+  .header__container-main {
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+}
