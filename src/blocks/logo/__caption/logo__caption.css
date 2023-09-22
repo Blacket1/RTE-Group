@@ -1,5 +1,7 @@
 .logo__caption {
   color: #FFF;
+  font-size: 18px;
   font-weight: 800;
+  line-height: 18px;
   text-transform: uppercase;
 }
