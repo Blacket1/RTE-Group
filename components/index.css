@@ -21,6 +21,7 @@
 @import url(../src/blocks/logo/__caption/logo__caption.css);
 @import url(../src/blocks/logo/__caption/_hidden/logo__caption_hidden.css);
 
+
 /*inputs*/
 @import url(../src/blocks/input/__container/input__container.css);
 @import url(../src/blocks/input/__field/input__field.css);
@@ -87,8 +88,22 @@
 @import url('../src/blocks/services/__text/services__text.css');
 @import url('../src/blocks/services/__item/_dark/services__item_dark.css');
 
-@import url('../src/blocks/page/page.css');
-@import url('../src/blocks/section-title/section-title.css');
+/*header*/
+@import url(../src/blocks/header/header.css);
+@import url(../src/blocks/header/__container-main/header__container-main.css);
+@import url(../src/blocks/header/__body/header__body.css);
+@import url(../src/blocks/header/__logo/header__logo.css);
+@import url(../src/blocks/header/__container/header__container.css);
+@import url(../src/blocks/header/__main/header__main.css);
+@import url(../src/blocks/header/__contact/header__contact.css);
+@import url(../src/blocks/header/__phone/header__phone.css);
+@import url(../src/blocks/header/__list/header__list.css);
+@import url(../src/blocks/header/__checkbox-label/header__checkbox-label.css);
+@import url(../src/blocks/header/__checkbox/header__checkbox.css);
+@import url(../src/blocks/header/__button/header__button.css);
+@import url(../src/blocks/header/__menu/header__menu.css);
+@import url(../src/blocks/header/__button/header__button.css);
+@import url(../src/blocks/header/__link/header__link.css);
 
 /*стили для блока advantages*/
 
