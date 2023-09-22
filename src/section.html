@@ -1,129 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Section</title>
-  <link rel="stylesheet" href="../components/index.css">
-</head>
+  <body style="background: black">
+    <!--секция header-->
+    <section></section>
 
-<body class=>
+    <!--секция footer-->
+    <section></section>
 
-  <!--секция header-->
-  <section>
+    <!--секция slide-->
+    <section></section>
 
-  </section>
+    <!--секция case-->
+    <section>
+      <a href="#" target="_blank" class="case">
+        <article class="case__content">
+          <img
+            class="case__image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s"
+            alt="Кейс фотография"
+          />
+          <h3 class="case__title">Кейс</h3>
+          <p class="case__description">
+            Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша
+            команда гарантирует безопасное перемещение кранов любого типа и размера.
+            Специализированная техника и опытные водители обеспечат успешную доставку.
+          </p>
+          <div class="case__tags">
+            <p class="case__tag">Перевозка крупногабаритных грузов</p>
+            <p class="case__tag">Казань</p>
+          </div>
+        </article>
+      </a>
+    </section>
 
-  <!--секция footer-->
-  <section>
+    <!--секция services-->
+    <section>
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon2.svg')%>"
+          alt="icon1"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
 
-  </section>
+      <!--services__item более темный-->
+      <div class="services__item services__item_dark">
+        <img
+          src="<%=require('./images/icon/icon96/icon2.svg')%>"
+          alt="icon1"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+    </section>
 
-  <!--секция slide-->
-  <section>
+    <!--секция advantages-->
+    <section>
+      <div class="advantages__item advantages__item_dark">
+        <img
+          src="<%=require('./images/icon/icon56/iconsmall1.svg')%>"
+          alt="icon"
+          class="advantages__icon"
+        />
+        <h4 class="advantages__subtitle">Безопасность</h4>
+        <p class="advantages__text">
+          Ваш экскаватор в надежных руках с RTE Group. Наша команда профессионалов следит за каждым
+          этапом перевозки, используя современное оборудование и проверенные методы для гарантии
+          безопасности вашей техники.
+        </p>
+      </div>
+      <!--данный advantages__item не имеет цвета, а только border, если необходимо увидеть в нем контент нужно изменить цвет страницы-->
+      <div class="advantages__item">
+        <img
+          src="<%=require('./images/icon/icon56/iconsmall1.svg')%>"
+          alt="icon"
+          class="advantages__icon"
+        />
+        <h4 class="advantages__subtitle">Безопасность</h4>
+        <p class="advantages__text">
+          Ваш экскаватор в надежных руках с RTE Group. Наша команда профессионалов следит за каждым
+          этапом перевозки, используя современное оборудование и проверенные методы для гарантии
+          безопасности вашей техники.
+        </p>
+      </div>
+    </section>
 
-  </section>
+    <!--секция whywe-->
+    <section>
+      <div class="whywe__item">
+        <p class="whyme__number">1</p>
+        <h3 class="whyme__title">Опытные логисты и водители</h3>
+        <p class="whyme__description">
+          Сумеют построить маршрут, который сэкономит ваши деньги и время и довезут ваш груз
+          вовремя, в целости и сохранности. Средний опыт наших сотрудников – 15 лет в сфере
+          грузоперевозок.
+        </p>
+      </div>
+    </section>
 
-  <!--секция case-->
-  <section>
-    <a href='#' target='_blank' class='case'>
-      <article class='case__content'>
-        <img class='case__image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s' alt='Кейс фотография'>
-        <h3 class='case__title'>Кейс</h3>
-        <p class='case__description'>Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша команда гарантирует безопасное перемещение кранов любого типа и размера. Специализированная техника и опытные водители обеспечат успешную доставку.</p>
-        <div class='case__tags'>
-          <p class='case__tag'>Перевозка крупногабаритных грузов</p>
-          <p class='case__tag'>Казань</p>
-        </div>
-      </article>
-    </a>
-  </section>
+    <!--секция feedback-->
+    <section>
+      <div class="feedback__item">
+        <span class="feedback__avatar">КП</span>
+        <h3 class="feedback__users-name">Константин Петров</h3>
+        <p class="feedback__text">
+          Очень приятно работать с этой компанией профессионалов. Все очень организованно от
+          загрузки до выгрузки, оплата без проблем, в общем от работы только положительные эмоции.
+          Рекомендую, а компании желаю успехов и процветания. Отдельное спасибо Андрею!
+        </p>
+      </div>
+    </section>
 
-  <!--секция services-->
-  <section>
-    <div class="services__item">
-      <img src="./images/icon/icon96/icon2.svg" alt="icon1" class="services__icon">
-      <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
-      <p class="services__text">RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного оборудования и другие
-        грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с тягачом. Помимо непосредственной перевозки
-        получим все необходимые разрешения от надзорных органов и подберем оптимальный маршрут. </p>
-      <button class='button button__outline'>Подробнее</button>  
-    </div>
-
-    <!--services__item более темный-->
-    <div class="services__item services__item_dark">
-      <img src="./images/icon/icon96/icon2.svg" alt="icon1" class="services__icon">
-      <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
-      <p class="services__text">RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного оборудования и другие
-        грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с тягачом. Помимо непосредственной перевозки
-        получим все необходимые разрешения от надзорных органов и подберем оптимальный маршрут. </p>
-      <button class='button button__outline'>Подробнее</button>  
-    </div>
-  </section>
-
-  <!--секция advantages-->
-  <section>
-    <div class="advantages__item advantages__item_dark">
-      <img src="./images/icon/icon56/iconsmall1.svg" alt="icon" class="advantages__icon">
-      <h4 class="advantages__subtitle">Безопасность</h4>
-      <p class="advantages__text">Ваш экскаватор в надежных руках с RTE Group. Наша команда профессионалов следит за
-        каждым этапом перевозки, используя современное оборудование и проверенные методы для гарантии безопасности вашей
-        техники.</p>
-    </div>
-    <!--данный advantages__item не имеет цвета, а только border, если необходимо увидеть в нем контент нужно изменить цвет страницы-->
-    <div class="advantages__item ">
-      <img src="./images/icon/icon56/iconsmall1.svg" alt="icon" class="advantages__icon">
-      <h4 class="advantages__subtitle">Безопасность</h4>
-      <p class="advantages__text">Ваш экскаватор в надежных руках с RTE Group. Наша команда профессионалов следит за
-        каждым этапом перевозки, используя современное оборудование и проверенные методы для гарантии безопасности вашей
-        техники.</p>
-    </div>
-  </section>
-
-  <!--секция whywe-->
-  <section>
-    <div class='whywe__item'>
-      <p class='whyme__number'>1</p>
-      <h3 class='whyme__title'>Опытные логисты и водители</h3>
-      <p class='whyme__description'>Сумеют построить маршрут, который сэкономит ваши деньги и время и довезут ваш груз вовремя, 
-        в целости и сохранности. Средний опыт наших сотрудников – 15 лет в сфере грузоперевозок.</p>
-    </div>
-  </section>
-
-  <!--секция feedback-->
-  <section>
-    <div class='feedback__item'>
-      <span class='feedback__avatar'>КП</span>
-      <h3 class='feedback__users-name'>Константин Петров</h3>
-      <p class='feedback__text'>Очень приятно работать с этой компанией профессионалов. Все очень организованно от загрузки до выгрузки, оплата 
-        без проблем, в общем от работы только положительные эмоции. Рекомендую, а компании желаю успехов и процветания. Отдельное 
-        спасибо Андрею!</p>
-    </div>
-  </section>
-
-  <!--секция team-->
-  <section>
-    <!-- <template> -->
+    <!--секция team-->
+    <section>
+      <!-- <template> -->
       <div class="team-card">
         <div class="team-card__user-profile">
-          <img class="team-card__image" src="https://images.unsplash.com/photo-1687360440667-493016988a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="user-name">
+          <img
+            class="team-card__image"
+            src="https://images.unsplash.com/photo-1687360440667-493016988a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+            alt="user-name"
+          />
 
           <div class="team-card__user-info">
             <div class="team-card__user-name">Марат Гиниятуллин</div>
             <div class="team-card__user-job">Генеральный директор</div>
           </div>
         </div>
-        <p class="team-card__about">Марат является основателем и душой компании, имея более 10 лет опыта в сфере ЖКХ и строительства. Его организаторские способности позволяют компании расти и развиваться каждый день.</p>
+        <p class="team-card__about">
+          Марат является основателем и душой компании, имея более 10 лет опыта в сфере ЖКХ и
+          строительства. Его организаторские способности позволяют компании расти и развиваться
+          каждый день.
+        </p>
       </div>
-    <!-- </template> -->
-  </section>
+      <!-- </template> -->
+    </section>
 
-  <!--секция faq-->
-  <section>
-
-  </section>
-
-</body>
-
+    <!--секция faq-->
+    <section></section>
+  </body>
 </html>
