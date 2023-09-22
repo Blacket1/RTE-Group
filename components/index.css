@@ -1,4 +1,4 @@
-@import url(../src/vendor/normalize.css);
+@import url('~normalize.css');
 @import url(../src/vendor/fonts.css);
 
 /*общие стили страниц*/
@@ -15,8 +15,11 @@
 
 /*logo*/
 @import url(../src/blocks/logo/logo.css);
-@import url(../src/blocks/logo/__caption/logo__caption.css);
 @import url(../src/blocks/logo/__container/logo__container.css);
+@import url(../src/blocks/logo/__container/_type/logo__container_type_vertical.css);
+@import url(../src/blocks/logo/__container/_type/logo__container_type_horizontal.css);
+@import url(../src/blocks/logo/__caption/logo__caption.css);
+@import url(../src/blocks/logo/__caption/_hidden/logo__caption_hidden.css);
 
 
 /*inputs*/
@@ -101,3 +104,23 @@
 @import url(../src/blocks/header/__menu/header__menu.css);
 @import url(../src/blocks/header/__button/header__button.css);
 @import url(../src/blocks/header/__link/header__link.css);
+
+/*стили для блока advantages*/
+
+@import url('../src/blocks/advantages/__item/advantages__item.css');
+@import url('../src/blocks/advantages/__item/_dark/advantages__item_dark.css');
+@import url('../src/blocks/advantages/__icon/advantages__icon.css');
+@import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
+@import url('../src/blocks/advantages/__text/advantages__text.css');
+
+/*блок whywe*/
+@import url('../src/blocks/whywe/__description/whyme__description.css');
+@import url('../src/blocks/whywe/__item/whywe__item.css');
+@import url('../src/blocks/whywe/__number/whyme__number.css');
+@import url('../src/blocks/whywe/__title/whyme__title.css');
+
+/*блок feedback*/
+@import url('../src/blocks/feedback/__avatar/feedback__avatar.css');
+@import url('../src/blocks/feedback/__item/feedback__item.css');
+@import url('../src/blocks/feedback/__text/feedback__text.css');
+@import url('../src/blocks/feedback/__users-name/feedback__users-name.css');

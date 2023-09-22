@@ -1,0 +1,19 @@
+.whywe__item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 32px;
+    max-width: 528px; 
+}
+
+@media screen and (max-width: 916px) {
+    .whywe__item {
+        align-items: center;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 16px;
+        row-gap: 16px;
+        
+    }
+}
+
