@@ -1,0 +1,11 @@
+.logo__container_type_vertical {
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 9px 10px;
+}
+@media screen and (max-width: 767px) {
+  .logo__container_type_vertical {
+    row-gap: 8px;
+    padding: 7px 8px;
+  }
+}
