@@ -1,0 +1,29 @@
+.slide__image {
+    transform: rotate(-45deg);
+    width: 831px;
+    height: 1093px;
+    top:-145px;
+    right: -243px;
+    position: absolute;
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width: 890px) {
+    .slide__image {
+        width: 685px;
+        height: 901px;
+        top:-60px;
+        right: -190px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .slide__image {
+        width: 643px;
+        height: 846px;
+        top:-115px;
+        right: -186px;
+    }
+}

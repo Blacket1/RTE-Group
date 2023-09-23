@@ -1,0 +1,33 @@
+.slide__description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #00CC66;
+    margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+    .slide__description {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .slide__description {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .slide__description {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+}
+

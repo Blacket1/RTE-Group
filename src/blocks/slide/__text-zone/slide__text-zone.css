@@ -1,0 +1,22 @@
+.slide__text-zone {
+    max-width: 550px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    .slide__text-zone {
+        max-width: 380px;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+    .slide__text-zone {
+        max-width: 100%;
+        text-align: center;
+        padding: 24px 16px;
+    }
+}

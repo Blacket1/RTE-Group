@@ -151,3 +151,14 @@
 @import url('../src/blocks/contacts/__info-link/contacts__info-link.css');
 @import url('../src/blocks/contacts/__info-link/_email/contacts__info-link_email.css');
 @import url('../src/blocks/contacts/__info-icon/contacts__info-icon.css');
+
+/*блок slide*/
+@import url('../src/blocks/slide/slide.css');
+@import url('../src/blocks/slide/__capsule/slide__capsule.css');
+@import url('../src/blocks/slide/__capsule/_border/slide__capsule_border.css');
+@import url('../src/blocks/slide/__description/slide__description.css');
+@import url('../src/blocks/slide/__image/slide__image.css');
+@import url('../src/blocks/slide/__text-span/slide__text-span.css');
+@import url('../src/blocks/slide/__text-zone/slide__text-zone.css');
+@import url('../src/blocks/slide/__text/slide__text.css');
+@import url('../src/blocks/slide/__title/slide__title.css');

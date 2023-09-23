@@ -1,0 +1,27 @@
+.slide__capsule {
+    width: 400px;
+    height: 880px;
+    border-radius: 400px;
+    transform: rotate(45deg);
+    position: absolute;
+    top:-350px;
+    right: -140px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@media screen and (max-width: 890px) {
+    .slide__capsule {
+        width: 355px;
+        height: 781px;
+        border-radius: 355px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .slide__capsule {
+        width: 309px;
+        height: 681px;
+        border-radius: 309px;
+    }
+}
