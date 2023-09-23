@@ -5,7 +5,7 @@
     transform: rotate(45deg);
     position: absolute;
     top:-350px;
-    right: -110px;
+    right: -140px;
     overflow: hidden;
     z-index: -1;
 }
@@ -15,7 +15,6 @@
         width: 355px;
         height: 781px;
         border-radius: 355px;
-        transition: 0.3s ease;
     }
 }
 
