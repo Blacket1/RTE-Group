@@ -1,4 +1,4 @@
-@import url(../src/vendor/normalize.css);
+@import url('~normalize.css');
 @import url(../src/vendor/fonts.css);
 
 /*общие стили страниц*/
@@ -15,18 +15,12 @@
 
 /*logo*/
 @import url(../src/blocks/logo/logo.css);
-@import url(../src/blocks/logo/_horizontal/logo_horizontal_m.css);
-@import url(../src/blocks/logo/_horizontal/logo_horizontal_d.css);
-
-@import url(../src/blocks/logo/__caption/logo__caption.css);
-@import url(../src/blocks/logo/__caption/_size/logo__caption_size_d.css);
-@import url(../src/blocks/logo/__caption/_size/logo__caption_size_m.css);
-
 @import url(../src/blocks/logo/__container/logo__container.css);
-@import url(../src/blocks/logo/__container/_vertical/logo__container_vertical_m.css);
-@import url(../src/blocks/logo/__container/_vertical/logo__container_vertical_d.css);
-@import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_d.css);
-@import url(../src/blocks/logo/__container/_horizontal/logo__container_horizontal_m.css);
+@import url(../src/blocks/logo/__container/_type/logo__container_type_vertical.css);
+@import url(../src/blocks/logo/__container/_type/logo__container_type_horizontal.css);
+@import url(../src/blocks/logo/__caption/logo__caption.css);
+@import url(../src/blocks/logo/__caption/_hidden/logo__caption_hidden.css);
+
 
 /*inputs*/
 @import url(../src/blocks/input/__container/input__container.css);
@@ -78,7 +72,6 @@
 @import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
 @import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
 
-@import url(../src/blocks/form/__button/form__button.css);
 @import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);
 
 /*message - всплывающее окно об отправке формы*/
@@ -95,8 +88,38 @@
 @import url('../src/blocks/services/__text/services__text.css');
 @import url('../src/blocks/services/__item/_dark/services__item_dark.css');
 
-@import url('../src/blocks/page/page.css');
-@import url('../src/blocks/section-title/section-title.css');
+/*footer*/
+@import url(../src/blocks/footer/footer.css);
+@import url(../src/blocks/footer/__logo/footer__logo.css);
+@import url(../src/blocks/footer/__links/footer__links.css);
+@import url(../src/blocks/footer/__links/footer__links.css);
+@import url(../src/blocks/footer/__link/footer__link.css);
+@import url(../src/blocks/footer/__link/_services/footer__link_services.css);
+@import url(../src/blocks/footer/__link/_cases/footer__link_cases.css);
+@import url(../src/blocks/footer/__link/_work/footer__link_work.css);
+@import url(../src/blocks/footer/__link/_about/footer__link_about.css);
+@import url(../src/blocks/footer/__link/_cities/footer__link_cities.css);
+@import url(../src/blocks/footer/__link/_privacy/footer__link_privacy.css);
+@import url(../src/blocks/footer/__link/_autopark/footer__link_autopark.css);
+@import url(../src/blocks/footer/__link/_contacts/footer__link_contacts.css);
+@import url(../src/blocks/footer/__copyright/footer__copyright.css);
+
+/*header*/
+@import url(../src/blocks/header/header.css);
+@import url(../src/blocks/header/__container-main/header__container-main.css);
+@import url(../src/blocks/header/__body/header__body.css);
+@import url(../src/blocks/header/__logo/header__logo.css);
+@import url(../src/blocks/header/__container/header__container.css);
+@import url(../src/blocks/header/__main/header__main.css);
+@import url(../src/blocks/header/__contact/header__contact.css);
+@import url(../src/blocks/header/__phone/header__phone.css);
+@import url(../src/blocks/header/__list/header__list.css);
+@import url(../src/blocks/header/__checkbox-label/header__checkbox-label.css);
+@import url(../src/blocks/header/__checkbox/header__checkbox.css);
+@import url(../src/blocks/header/__button/header__button.css);
+@import url(../src/blocks/header/__menu/header__menu.css);
+@import url(../src/blocks/header/__button/header__button.css);
+@import url(../src/blocks/header/__link/header__link.css);
 
 /*стили для блока advantages*/
 
@@ -105,7 +128,6 @@
 @import url('../src/blocks/advantages/__icon/advantages__icon.css');
 @import url('../src/blocks/advantages/__subtitle/advantages__subtitle.css');
 @import url('../src/blocks/advantages/__text/advantages__text.css');
-
 
 /*блок whywe*/
 @import url('../src/blocks/whywe/__description/whyme__description.css');

@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+  .logo__caption_hidden {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
