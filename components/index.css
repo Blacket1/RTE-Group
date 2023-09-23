@@ -119,3 +119,13 @@
 @import url('../src/blocks/feedback/__text/feedback__text.css');
 @import url('../src/blocks/feedback/__users-name/feedback__users-name.css');
 
+/*блок slide*/
+@import url('../src/blocks/slide/slide.css');
+@import url('../src/blocks/slide/__capsule/slide__capsule.css');
+@import url('../src/blocks/slide/__capsule/_border/slide__capsule_border.css');
+@import url('../src/blocks/slide/__description/slide__description.css');
+@import url('../src/blocks/slide/__image/slide__image.css');
+@import url('../src/blocks/slide/__text-span/slide__text-span.css');
+@import url('../src/blocks/slide/__text-zone/slide__text-zone.css');
+@import url('../src/blocks/slide/__text/slide__text.css');
+@import url('../src/blocks/slide/__title/slide__title.css');
