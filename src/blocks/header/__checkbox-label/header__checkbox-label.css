@@ -1,0 +1,19 @@
+.header__checkbox-label {
+  display: none;
+  background-image: url(../../../images/__menu-icon.svg);
+  cursor: pointer;
+}
+@media (max-width:767px) {
+  .header__checkbox-label {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+  }
+  .header__checkbox-label::after {
+    background-image: url(../../../images/__closeIcon.svg)
+  }
+}
