@@ -1,0 +1,19 @@
+.footer__logo {
+    display: block;
+    box-sizing: border-box;
+    width: 153px;
+    height: 26.7px;
+    background-image: url('../../../../src/images/footer_logo_d.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6.67px 6.67px;
+}
+
+@media screen and (max-width: 900px) {
+    .footer__logo {
+        padding: 7.88px, 8.76px, 7.88px, 8.76px;
+        width: 135px;
+        height: 53.8px;
+        background-image: url('../../../../src/images/footer_logo_m.svg');
+    }
+}
