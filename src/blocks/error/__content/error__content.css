@@ -1,0 +1,11 @@
+.error__content {
+  width: 100%;
+  max-width: 528px;
+}
+
+@media screen and (max-width: 767px) {
+  .error__content {
+    text-align: center;
+    max-width: none;
+  }
+}

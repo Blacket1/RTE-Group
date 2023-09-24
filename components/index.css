@@ -164,3 +164,14 @@
 @import url('../src/blocks/privacy/privacy.css');
 @import url('../src/blocks/privacy/__title/privacy__title.css');
 @import url('../src/blocks/privacy/__text/privacy__text.css');
+
+/* error */
+@import url('../src/blocks/error/error.css');
+@import url('../src/blocks/error/__wrapper/error__wrapper.css');
+@import url('../src/blocks/error/__content/error__content.css');
+@import url('../src/blocks/error/__title/error__title.css');
+@import url('../src/blocks/error/__subtitle/error__subtitle.css');
+@import url('../src/blocks/error/__text/error__text.css');
+@import url('../src/blocks/error/__button/error__button.css');
+@import url('../src/blocks/error/__illustration/error__illustration.css');
+@import url('../src/blocks/error/__icon/error__icon.css');

@@ -55,6 +55,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           template: `${PATH_SRC}/${page}`,
           filename: `./${page}`,
+          templateParameters: require('./components/textlist.json'),
         })
     ),
     new CleanWebpackPlugin(),
