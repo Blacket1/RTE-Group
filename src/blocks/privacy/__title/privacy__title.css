@@ -1,8 +1,8 @@
 .privacy__title {
-  margin: 0 0 32px;
+  margin-bottom: 32px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .privacy__title {
     margin-bottom: 24px;
   }
