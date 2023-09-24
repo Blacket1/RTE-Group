@@ -1,25 +1,27 @@
-
 .page {
-    min-width: 320px;
-    max-width: 1280px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    /* background-color: #262626; */
-    background-color: #1A1A1A;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+  /* background-color: #262626; */
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 112px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-    /*сглаживание*/
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-  
-    /*при изменении масштаба страницы размер шрифта изменялся пропорционально*/
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-  
-    /*рендеринг шрифта*/
-    text-rendering: optimizeLegibility;
-  }
+  /*сглаживание*/
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  /*при изменении масштаба страницы размер шрифта изменялся пропорционально*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+
+  /*рендеринг шрифта*/
+  text-rendering: optimizeLegibility;
+}

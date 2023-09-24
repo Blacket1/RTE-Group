@@ -21,7 +21,6 @@
 @import url(../src/blocks/logo/__caption/logo__caption.css);
 @import url(../src/blocks/logo/__caption/_hidden/logo__caption_hidden.css);
 
-
 /*inputs*/
 @import url(../src/blocks/input/__container/input__container.css);
 @import url(../src/blocks/input/__field/input__field.css);
@@ -151,3 +150,17 @@
 @import url('../src/blocks/slide/__text-zone/slide__text-zone.css');
 @import url('../src/blocks/slide/__text/slide__text.css');
 @import url('../src/blocks/slide/__title/slide__title.css');
+
+/* блок content */
+@import url('../src/blocks/content/content.css');
+
+/* блок title */
+@import url('../src/blocks/title/title.css');
+
+/* блок container */
+@import url('../src/blocks/container/container.css');
+
+/* privacy */
+@import url('../src/blocks/privacy/privacy.css');
+@import url('../src/blocks/privacy/__title/privacy__title.css');
+@import url('../src/blocks/privacy/__text/privacy__text.css');

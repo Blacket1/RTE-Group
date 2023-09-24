@@ -1,0 +1,8 @@
+.privacy__text {
+  line-height: 24px;
+  margin: 0;
+}
+
+.privacy__text:not(:last-of-type) {
+  margin-bottom: 16px;
+}
