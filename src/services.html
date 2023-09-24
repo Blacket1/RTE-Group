@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RTE-Group - Политика конфиденциальности</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__container-main container">
+      <div class="header__body">
+        <a href="" class="header__logo">
+          <img class="logo" src="<%=require('../src/images/__logo.svg')%>" alt="Логотип сервиса РТ Экспресс" />
+        </a>
+        <div class="header__container">
+          <div class="header__main">
+            <div class="header__contact">
+              <img src="<%=require('../src/images/__phone.svg')%>" />
+              <span class="header__phone">+7 917 275-90-13</span>
+            </div>
+          </div>
+
+          <label for="checkbox" class="header__checkbox-label"></label>
+          <input id="checkbox" type="checkbox" class="header__checkbox" />
+
+          <button class="button button__primary header__button">Оформить заявку</button>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a href="" class="header__link">Услуги</a></li>
+              <li><a href="" class="header__link">Автопарк</a></li>
+              <li><a href="" class="header__link">Кейсы</a></li>
+              <li><a href="" class="header__link">Города</a></li>
+              <li><a href="" class="header__link">О компании</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="maintext">
+      <div class="maintext__heading">
+        <h1 class="maintext__title title">
+          <%= services.h3 %>
+        </h1>
+        <p class="maintext__text"><%= services.maintext[0] %></p>
+        <p class="maintext__text"><%= services.maintext[1] %></p>
+      </div>
+      <div class="form form__form-main">
+        <h2 class="form__title">Оставить заявку на перевозку</h2>
+        <form class="form__content" name="mainForm" novalidate>
+          <div class="form__fields">
+            <div class="input__container">
+              <input type="text" id="user-name" class="input__field" name="userName" placeholder=" " required
+                value="" />
+              <label for="user-name" class="input__label-name">Имя*</label>
+            </div>
+            <div class="input__container">
+              <input type="text" id="user-phone" class="input__field" name="userPhone" placeholder=" " required
+                value="" />
+              <label for="user-phone" class="input__label-name">Телефон*</label>
+            </div>
+            <div class="input__container form__field-container_text">
+              <textarea id="goods-data" class="input__field input_textarea" name="goodsData"
+                placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
+                maxlength="255" rows="3"></textarea>
+              <label for="goods-data" class="input__label-name">Краткая характеристика груза</label>
+            </div>
+            <div class="input__checkbox-container">
+              <label for="check-field">
+                <input type="checkbox" id="check-field" class="input__field input_checkbox" name="dataConfirm"
+                  required />
+                <span class="input__field input_checkbox-pseudo"></span>
+              </label>
+              <span class="form__field-span">Согласен на обработку персональных данных в соответствии с
+                <span class="form__field-span_accent">политикой конфиденциальности</span></span>
+              <span class="form__field-error user-name_error"></span>
+            </div>
+          </div>
+          <button type="submit" name="sendButton" class="button button__primary">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon1.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных гр</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item services__item_dark">
+        <img
+          src="<%=require('./images/icon/icon96/icon2.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item services__item_dark">
+        <img
+          src="<%=require('./images/icon/icon96/icon3.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon4.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon5.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item services__item_dark">
+        <img
+          src="<%=require('./images/icon/icon96/icon6.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item services__item_dark">
+        <img
+          src="<%=require('./images/icon/icon96/icon7.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon8.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+      <div class="services__item">
+        <img
+          src="<%=require('./images/icon/icon96/icon9.svg')%>"
+          alt="icon"
+          class="services__icon"
+        />
+        <h4 class="services__subtitle">Перевозка крупногабаритных грузов</h4>
+        <p class="services__text">
+          RTE Group доставит гидрогенераторы, вышки, металлоконструкции, детали промышленного
+          оборудования и другие грузы, с которыми обычные грузовики не справятся. Здесь нужен трал с
+          тягачом. Помимо непосредственной перевозки получим все необходимые разрешения от надзорных
+          органов и подберем оптимальный маршрут.
+        </p>
+        <button class="button button__outline">Подробнее</button>
+      </div>
+    </section>
+  </main>
+
+</body>

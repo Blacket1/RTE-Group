@@ -1,0 +1,12 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(296px, 528px));
+  gap: 20px;
+}
+
+@media screen and (max-width: 676px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(296px, 528px));
+    gap: 16px;
+  }
+}
