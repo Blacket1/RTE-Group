@@ -1,12 +1,16 @@
 .services {
   display: grid;
+  max-width: 1080px;
+  width: 100%;
   grid-template-columns: repeat(2, minmax(296px, 528px));
   gap: 20px;
+  margin-bottom: 128px;
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 768px) {
   .services {
     grid-template-columns: repeat(auto-fit, minmax(296px, 528px));
     gap: 16px;
+    margin-bottom: 80px;
   }
 }
