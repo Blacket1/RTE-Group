@@ -1,6 +1,7 @@
 {
   "name": "rte-group",
   "version": "1.0.0",
+  "repository": "https://github.com/Blacket1/RTE-Group",
   "description": "",
   "main": "index.js",
   "keywords": [],
