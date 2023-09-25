@@ -2,15 +2,15 @@
   display: grid;
   max-width: 1080px;
   width: 100%;
-  grid-template-columns: repeat(2, minmax(296px, 528px));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 528px));
+  gap: 24px;
+  justify-content: center;
   margin-bottom: 128px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .services {
-    grid-template-columns: repeat(auto-fit, minmax(296px, 528px));
-    gap: 16px;
+    row-gap: 8px;
     margin-bottom: 80px;
   }
 }

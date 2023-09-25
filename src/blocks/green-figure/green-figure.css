@@ -1,0 +1,27 @@
+.green-figure {
+  background-image: url(../../images/green-rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 440px;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .green-figure {
+    width: 220px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .green-figure {
+    width: 120px;
+    height: 205px;
+    top: 50px;
+    left: 220px
+  }
+}

@@ -170,6 +170,7 @@
 @import url('../src/blocks/maintext/maintext.css');
 @import url('../src/blocks/maintext/__heading/maintext__heading.css');
 @import url('../src/blocks/maintext/__text/maintext__text.css');
+@import url('../src/blocks/maintext/__title/maintext__title.css');
 /* error */
 @import url('../src/blocks/error/error.css');
 @import url('../src/blocks/error/__wrapper/error__wrapper.css');
@@ -180,3 +181,6 @@
 @import url('../src/blocks/error/__button/error__button.css');
 @import url('../src/blocks/error/__illustration/error__illustration.css');
 @import url('../src/blocks/error/__icon/error__icon.css');
+
+/*зеленая тонкая фигура*/
+@import url('../src/blocks/green-figure/green-figure.css');

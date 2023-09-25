@@ -4,7 +4,7 @@
   padding-bottom: 128px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .maintext {
     flex-direction: column;
     padding-top: 56px;
