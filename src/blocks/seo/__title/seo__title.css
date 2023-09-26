@@ -1,0 +1,12 @@
+.seo__title {
+  font-weight: 700;
+  margin-top: 128px;
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .seo__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+}

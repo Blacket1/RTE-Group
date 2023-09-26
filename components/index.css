@@ -227,3 +227,9 @@
 @import url('../src/blocks/price/__th/price__th.css');
 @import url('../src/blocks/price/__thead/price__thead.css');
 @import url('../src/blocks/price/__tr/price__tr.css');
+@import url('../src/blocks/seo/seo.css');
+@import url('../src/blocks/seo/__title/seo__title.css');
+@import url('../src/blocks/seo/__text/seo__text.css');
+@import url('../src/blocks/feedback/feedback.css');
+@import url('../src/blocks/feedback/__title/feedback__title.css');
+@import url('../src/blocks/feedback/__container/feedback__container.css');

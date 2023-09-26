@@ -1,0 +1,13 @@
+.feedback__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 333px);
+  column-gap: 40px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__container {
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
