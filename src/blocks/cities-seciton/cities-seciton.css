@@ -2,18 +2,23 @@
   background-image: url(../../images/cities.png);
   background-position: inherit;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 24px;
   display: flex;
   max-height: 400px;
   margin: 208px auto;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1024px) {
   .cities-seciton  {
-    margin: 0 0 80px 0;
     background-image: none;
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cities-seciton  {
+    margin: 0 0 80px 0;
   }
 }

@@ -6,10 +6,12 @@
   justify-content: center;
   margin-top: 40px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1024px) {
   .case-section__items {
     grid-template-rows:  repeat(3,1fr);
     grid-template-columns: 1fr;
     justify-items: center;
+    grid-row-gap: 8px;
   }
 }

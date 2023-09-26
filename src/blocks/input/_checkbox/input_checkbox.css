@@ -7,5 +7,5 @@
 }
   
 .input_checkbox:checked + .input_checkbox-pseudo {
-  background-image: url(../../../../src/images/_checkbox_checked.svg);
+  background-image: url(../../../../src/images/checkbox-checked.svg);
 }
