@@ -90,7 +90,84 @@
     </section>
 
     <!--form/contact-->
-    <section></section>
+    <section>
+      <form class="form form__form-main" name="contacts" novalidate>
+        <h2 class="form__title">Связаться с нами</h2>
+        <div class="form__content">
+          <div class="form__fields">
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-name"
+                class="input__field"
+                name="userName"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-name" class="input__label-name">Имя*</label>
+            </div>
+            <div class="input__container">
+              <input
+                type="email"
+                id="user-email"
+                class="input__field"
+                name="email"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-phone" class="input__label-name">E-mail*</label>
+            </div>
+            <div class="input__container form__field-container_text">
+              <textarea
+                id="goods-data"
+                class="input__field input_textarea"
+                name="goodsData"
+                placeholder=" "
+                maxlength="255"
+                rows="3"
+              ></textarea>
+              <label for="goods-data" class="input__label-name">Текст сообщения</label>
+            </div>
+            <div class="input__checkbox-container">
+              <label for="check-field">
+                <input
+                  type="checkbox"
+                  id="check-field"
+                  class="input__field input_checkbox"
+                  name="dataConfirm"
+                  required
+                />
+                <span class="input__field input_checkbox-pseudo"></span>
+              </label>
+              <span class="form__field-span"
+                >Согласен на обработку персональных данных в соответствии с
+                <span class="form__field-span_accent">политикой конфиденциальности</span></span
+              >
+              <span class="form__field-error user-name_error"></span>
+            </div>
+          </div>
+          <button type="submit" name="sendButton" class="button button__primary">Отправить</button>
+        </div>
+      </form>
+
+      <div class="form submit-message">
+        <button
+          type="button"
+          name="closeButton"
+          class="submit-message__close-icon"
+          aria-label="Кнопка закрытия всплывающего окна"
+        ></button>
+        <img
+          class="submit-message__success-icon"
+          src="<%=require('../src/images/__requestConfirm.svg')%>"
+          alt="Иконка-подтверждение успешной отправки формы"
+        />
+        <h2 class="submit-message__title">Ваше обращение отправлено</h2>
+        <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+      </div>
+    </section>
 
     <!--form/vacancy-->
     <section></section>

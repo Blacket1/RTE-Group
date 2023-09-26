@@ -1,0 +1,10 @@
+.cities-seciton__frame {
+  background-image: url(../../../images/cities_frame.png);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .cities-seciton__frame  {
+    display: none;
+  }
+}
