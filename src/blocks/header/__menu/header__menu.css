@@ -1,14 +1,24 @@
 .header__menu {
   position: fixed;
   top: 56px;
-  left: 100px;
+  left: 0;
   width: 100%;
-  height: 56px;
+  padding: 0 100px;
+  height: 0;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  .header__menu {
+    padding: 0 50px;
+  }
 }
 @media (max-width:767px) {
   .header__menu {
-    left: 24px;
+    padding-left: 24px;
+    left: 0;
     opacity: 0;
+    background-color: #1A1A1A;
+
   }
 }
 

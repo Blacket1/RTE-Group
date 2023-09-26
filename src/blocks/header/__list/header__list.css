@@ -11,7 +11,7 @@
 }
 @media (max-width:767px) {
   .header__list {
-    display: block;
+    display: none;
   }
   .header__list li {
     margin: 16px 0;

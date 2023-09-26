@@ -1,5 +1,10 @@
 .header__container-main {
-  padding: 0 100px 0 100px;
+  padding: 0 100px;
+}
+@media screen and (max-width: 1024px) {
+  .header__container-main {
+    padding: 0 50px;
+  }
 }
 @media (max-width: 767px) {
   .header__container-main {
@@ -7,3 +12,4 @@
     padding-right: 8px;
   }
 }
+

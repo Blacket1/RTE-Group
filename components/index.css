@@ -165,13 +165,32 @@
 @import url('../src/blocks/privacy/__title/privacy__title.css');
 @import url('../src/blocks/privacy/__text/privacy__text.css');
 
-/* error */
-@import url('../src/blocks/error/error.css');
-@import url('../src/blocks/error/__wrapper/error__wrapper.css');
-@import url('../src/blocks/error/__content/error__content.css');
-@import url('../src/blocks/error/__title/error__title.css');
-@import url('../src/blocks/error/__subtitle/error__subtitle.css');
-@import url('../src/blocks/error/__text/error__text.css');
-@import url('../src/blocks/error/__button/error__button.css');
-@import url('../src/blocks/error/__illustration/error__illustration.css');
-@import url('../src/blocks/error/__icon/error__icon.css');
+/*home-page*/
+@import url(../src/blocks/main-content/main-content.css);
+
+@import url(../src/blocks/form-section/form-section.css);
+@import url(../src/blocks/form-section/__title/form-section__title.css);
+@import url(../src/blocks/form-section/__info/form-section__info.css);
+@import url(../src/blocks/form-section/__about/form-section__about.css);
+@import url(../src/blocks/form-section/__button/form-section__button.css);
+@import url(../src/blocks/form-section/__capsule/form-section__capsule.css);
+
+@import url(../src/blocks/services-section/services-section.css);
+@import url(../src/blocks/services-section/__title/services-section__title.css);
+
+@import url(../src/blocks/whywe-section/whywe-section.css);
+@import url(../src/blocks/whywe-section/__container/whywe-section__container.css);
+@import url(../src/blocks/whywe-section/__title/whywe-section__title.css);
+@import url(../src/blocks/whywe-section/__capsule/whywe-section__capsule.css);
+
+@import url(../src/blocks/cities-seciton/cities-seciton.css);
+@import url(../src/blocks/cities-seciton/__container/cities-section__container.css);
+@import url(../src/blocks/cities-seciton/__title/cities-seciton__title.css);
+@import url(../src/blocks/cities-seciton/__text/cities-section__text.css);
+@import url(../src/blocks/cities-seciton/__frame/cities-seciton__frame.css);
+
+@import url(../src/blocks/case-section/case-section.css);
+@import url(../src/blocks/case-section/__header/case-section__header.css);
+@import url(../src/blocks/case-section/__title/case-section__title.css);
+@import url(../src/blocks/case-section/__items/case-section__items.css);
+@import url(../src/blocks/case-section/__button/case-section__button.css);

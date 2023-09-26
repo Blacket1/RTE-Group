@@ -1,0 +1,15 @@
+.case-section__items {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .case-section__items {
+    grid-template-rows:  repeat(3,1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

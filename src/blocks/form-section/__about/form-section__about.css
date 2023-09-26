@@ -1,0 +1,6 @@
+.form-section__about {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  column-gap: 24px;
+}
