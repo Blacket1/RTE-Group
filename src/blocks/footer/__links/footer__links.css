@@ -11,7 +11,7 @@
     column-gap: 56px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .footer__links {
         row-gap: 24px;
         grid-template-areas:
