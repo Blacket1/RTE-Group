@@ -9,5 +9,10 @@
   .header__checkbox:checked ~ .header__menu {
     opacity: 1;
     transition: opacity 1s ease-out;
+    height: 640px;
+  }
+  .header__checkbox:checked ~ .header__menu > .header__list {
+    display: block;
+    height: 100%;
   }
 }

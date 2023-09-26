@@ -24,6 +24,8 @@
     padding: 16px 24px;
     opacity: 0;
     /* transition: opacity 1s ease-out; */
+    top: 640px;
+    z-index: 3;
   }
 }
 

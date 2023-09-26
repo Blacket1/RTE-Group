@@ -1,0 +1,15 @@
+.services-section__title {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  height: 474px;
+}
+@media screen and (max-width: 767px) {
+  .services-section__title {
+    height: 100%;
+    margin-bottom: 32px;
+  }
+}

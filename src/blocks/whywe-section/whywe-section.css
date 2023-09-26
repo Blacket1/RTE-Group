@@ -1,0 +1,14 @@
+.whywe-section {
+  margin: 208px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .whywe-section  {
+    flex-direction: column;
+    margin: 160px auto 80px auto;
+    align-items: baseline;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,9 @@
+.case-section {
+  margin-bottom: 208px;
+
+}
+@media screen and (max-width: 767px) {
+  .case-section  {
+    margin-bottom: 152px;
+  }
+}

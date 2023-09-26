@@ -7,5 +7,5 @@
 }
 
 .form__field_checkbox:checked + .form__field_checkbox-pseudo {
-  background-image: url(../../../../images/_checkbox_checked.svg);
+  background-image: url(../../../../images/checkbox-checked.svg);
 }
