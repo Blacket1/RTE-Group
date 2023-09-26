@@ -9,7 +9,7 @@
     padding: 6.67px 6.67px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .footer__logo {
         padding: 7.88px, 8.76px, 7.88px, 8.76px;
         width: 135px;
