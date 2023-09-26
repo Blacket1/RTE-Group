@@ -1,0 +1,14 @@
+.price__tr {
+  border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width: 767px) {
+  .price__tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price__tr:last-of-type {
+    border: none;
+  }
+}

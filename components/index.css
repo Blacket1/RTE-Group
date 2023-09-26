@@ -176,7 +176,6 @@
 @import url(../src/blocks/form-section/__button/form-section__button.css);
 @import url(../src/blocks/form-section/__capsule/form-section__capsule.css);
 
-
 @import url(../src/blocks/services-section/__title/services-section__title.css);
 
 @import url(../src/blocks/whywe-section/whywe-section.css);
@@ -216,3 +215,15 @@
 /*зеленая тонкая фигура*/
 @import url('../src/blocks/green-figure/green-figure.css');
 
+/* страница service */
+@import url('../src/blocks/advantages/__section/advantages__section.css');
+@import url('../src/blocks/advantages/__title/advantages__title.css');
+@import url('../src/blocks/whywe-section/__border/whywe-section__border.css');
+@import url('../src/blocks/whywe-section/__big/whywe-section__big.css');
+@import url('../src/blocks/price/price.css');
+@import url('../src/blocks/price/__title/price__title.css');
+@import url('../src/blocks/price/__table/price__table.css');
+@import url('../src/blocks/price/__td/price__td.css');
+@import url('../src/blocks/price/__th/price__th.css');
+@import url('../src/blocks/price/__thead/price__thead.css');
+@import url('../src/blocks/price/__tr/price__tr.css');

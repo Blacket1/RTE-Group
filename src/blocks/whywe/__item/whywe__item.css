@@ -9,6 +9,7 @@
 }
 .whywe__item:last-of-type {
     border-bottom: 0;
+    padding-bottom: 0;
 }
 @media screen and (max-width: 916px) {
     .whywe__item {

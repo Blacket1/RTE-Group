@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Перевозка экскаватора</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__container-main">
+        <div class="header__body">
+          <div class="logo__container logo__container_type_horizontal">
+            <img
+              class="logo"
+              src="<%=require('../src/images/logo.svg')%>"
+              alt="Логотип сервиса РТ Экспресс"
+            />
+            <span class="logo__caption logo__caption_hidden"><%= home.h1 %></span>
+          </div>
+          <div class="header__container">
+            <div class="header__main">
+              <div class="header__contact">
+                <img src="<%=require('../src/images/phone-icon.svg')%>" />
+                <span class="header__phone">+7 917 275-90-13</span>
+              </div>
+            </div>
+
+            <label for="checkbox" class="header__checkbox-label"></label>
+            <input id="checkbox" type="checkbox" class="header__checkbox" />
+
+            <button class="button button__primary header__button">Оформить заявку</button>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="" class="header__link">Услуги</a></li>
+                <li><a href="" class="header__link">Автопарк</a></li>
+                <li><a href="" class="header__link">Кейсы</a></li>
+                <li><a href="" class="header__link">Города</a></li>
+                <li><a href="" class="header__link">О компании</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="maintext">
+        <div class="green-figure"></div>
+        <div class="maintext__heading">
+          <h1 class="maintext__title title"><%= service.h2 %></h1>
+          <p class="maintext__text"><%= service.text[0] %></p>
+          <p class="maintext__text"><%= service.text[1] %></p>
+        </div>
+        <div class="form form__form-main">
+          <h2 class="form__title">Оставить заявку на перевозку</h2>
+          <form class="form__content" name="mainForm" novalidate>
+            <div class="form__fields">
+              <div class="input__container">
+                <input
+                  type="text"
+                  id="user-name"
+                  class="input__field"
+                  name="userName"
+                  placeholder=" "
+                  required
+                  value=""
+                />
+                <label for="user-name" class="input__label-name">Имя*</label>
+              </div>
+              <div class="input__container">
+                <input
+                  type="text"
+                  id="user-phone"
+                  class="input__field"
+                  name="userPhone"
+                  placeholder=" "
+                  required
+                  value=""
+                />
+                <label for="user-phone" class="input__label-name">Телефон*</label>
+              </div>
+              <div class="input__container form__field-container_text">
+                <textarea
+                  id="goods-data"
+                  class="input__field input_textarea"
+                  name="goodsData"
+                  placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
+                  maxlength="255"
+                  rows="3"
+                ></textarea>
+                <label for="goods-data" class="input__label-name"
+                  >Краткая характеристика груза</label
+                >
+              </div>
+              <div class="input__checkbox-container">
+                <label for="check-field">
+                  <input
+                    type="checkbox"
+                    id="check-field"
+                    class="input__field input_checkbox"
+                    name="dataConfirm"
+                    required
+                  />
+                  <span class="input__field input_checkbox-pseudo"></span>
+                </label>
+                <span class="form__field-span"
+                  >Согласен на обработку персональных данных в соответствии с
+                  <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                >
+                <span class="form__field-error user-name_error"></span>
+              </div>
+            </div>
+            <button type="submit" name="sendButton" class="button button__primary">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title"><%= advantages.h2 %></h2>
+        <ul class="advantages__section">
+          <li class="advantages__item advantages__item_dark">
+            <img
+              src="<%=require('./images/icon/icon56/iconsmall1.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h4 class="advantages__subtitle"><%= advantages.title[0] %></h4>
+            <p class="advantages__text"><%= advantages.text[0] %></p>
+          </li>
+          <li class="advantages__item">
+            <img
+              src="<%=require('./images/icon/icon56/iconsmall2.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h4 class="advantages__subtitle"><%= advantages.title[1] %></h4>
+            <p class="advantages__text"><%= advantages.text[1] %></p>
+          </li>
+          <li class="advantages__item">
+            <img
+              src="<%=require('./images/icon/icon56/iconsmall3.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h4 class="advantages__subtitle"><%= advantages.title[2] %></h4>
+            <p class="advantages__text"><%= advantages.text[2] %></p>
+          </li>
+          <li class="advantages__item advantages__item_dark">
+            <img
+              src="<%=require('./images/icon/icon56/iconsmall4.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h4 class="advantages__subtitle"><%= advantages.title[3] %></h4>
+            <p class="advantages__text"><%= advantages.text[3] %></p>
+          </li>
+        </ul>
+      </section>
+      <section class="whywe-section whywe-section__big">
+        <h1 class="whywe-section__title"><%= whywebig.h2 %></h1>
+        <div class="whywe-section__container">
+          <div class="whywe__item">
+            <p class="whyme__number">1</p>
+            <h3 class="whyme__title"><%= whywebig.title[0] %></h3>
+            <p class="whyme__description"><%= whywebig.text[0] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">2</p>
+            <h3 class="whyme__title"><%= whywebig.title[1] %></h3>
+            <p class="whyme__description"><%= whywebig.text[1] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">3</p>
+            <h3 class="whyme__title"><%= whywebig.title[2] %></h3>
+            <p class="whyme__description"><%= whywebig.text[2] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">4</p>
+            <h3 class="whyme__title"><%= whywebig.title[3] %></h3>
+            <p class="whyme__description"><%= whywebig.text[3] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">5</p>
+            <h3 class="whyme__title"><%= whywebig.title[4] %></h3>
+            <p class="whyme__description"><%= whywebig.text[4] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">6</p>
+            <h3 class="whyme__title"><%= whywebig.title[5] %></h3>
+            <p class="whyme__description"><%= whywebig.text[5] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whyme__number">7</p>
+            <h3 class="whyme__title"><%= whywebig.title[6] %></h3>
+            <p class="whyme__description"><%= whywebig.text[6] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+        </div>
+        <div class="slide__capsule slide__capsule_border whywe-section__border"></div>
+      </section>
+      <section class="price">
+        <h2 class="price__title">Прайс-лист</h2>
+        <table class="price__table">
+          <thead class="price__thead">
+            <tr class="price__tr">
+              <th class="price__th">#</th>
+              <th class="price__th">Услуга</th>
+              <th class="price__th">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="price__tr">
+              <td class="price__td">1</td>
+              <td class="price__td">Услуга 1</td>
+              <td class="price__td">15 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">2</td>
+              <td class="price__td">Услуга 2</td>
+              <td class="price__td">12 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">3</td>
+              <td class="price__td">Услуга 3</td>
+              <td class="price__td">8 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">4</td>
+              <td class="price__td">Услуга 4</td>
+              <td class="price__td">4 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">5</td>
+              <td class="price__td">Услуга 5</td>
+              <td class="price__td">1 500 p</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo"></div>
+      <nav class="footer__links">
+        <a href="#" class="footer__link footer__link_services" target="_blank">Услуги</a>
+        <a href="#" class="footer__link footer__link_cases" target="_blank">Кейсы</a>
+        <a href="#" class="footer__link footer__link_work" target="_blank">Работа у нас</a>
+        <a href="#" class="footer__link footer__link_about" target="_blank">О компании</a>
+        <a href="#" class="footer__link footer__link_cities" target="_blank">Города</a>
+        <a href="#" class="footer__link footer__link_privacy" target="_blank"
+          >Политика конфиденциальности</a
+        >
+        <a href="#" class="footer__link footer__link_autopark" target="_blank">Автопарк</a>
+        <a href="#" class="footer__link footer__link_contacts" target="_blank">Контакты</a>
+      </nav>
+      <p class="footer__copyright">2023 © RTE Group</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.price__th {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.price__th:nth-of-type(2n) {
+  width: 620px;
+}
+
+.price__th:nth-of-type(3n) {
+  width: 400px;
+}
