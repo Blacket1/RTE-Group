@@ -10,7 +10,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 920px) {
     .slide__capsule {
         width: 355px;
         height: 781px;
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 830px) {
     .slide__capsule {
         width: 309px;
         height: 681px;
