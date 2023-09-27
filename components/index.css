@@ -202,6 +202,12 @@
 @import url('../src/blocks/maintext/__text/maintext__text.css');
 @import url('../src/blocks/maintext/__title/maintext__title.css');
 
+/*страница cases*/
+@import url('../src/blocks/cases/cases.css');
+@import url('../src/blocks/cases/__button/cases__button.css');
+@import url('../src/blocks/cases/__buttons/cases__buttons.css');
+@import url('../src/blocks/cases/cases__items/cases__items.css');
+
 /* error */
 @import url('../src/blocks/error/error.css');
 @import url('../src/blocks/error/__wrapper/error__wrapper.css');
@@ -215,4 +221,3 @@
 
 /*зеленая тонкая фигура*/
 @import url('../src/blocks/green-figure/green-figure.css');
-

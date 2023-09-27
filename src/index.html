@@ -34,9 +34,9 @@
             </button>
             <nav class="header__menu">
               <ul class="header__list">
-                <li><a href="" class="header__link">Услуги</a></li>
+                <li><a href="./services.html" class="header__link">Услуги</a></li>
                 <li><a href="" class="header__link">Автопарк</a></li>
-                <li><a href="" class="header__link">Кейсы</a></li>
+                <li><a href="./cases.html" class="header__link">Кейсы</a></li>
                 <li><a href="" class="header__link">Города</a></li>
                 <li><a href="" class="header__link">О компании</a></li>
               </ul>
@@ -52,11 +52,11 @@
           <h1 class="slide__title"><%= home.h1 %></h1>
           <p class="slide__description"><%= home.h3 %></p>
           <p class="slide__text">
-            <%= home.textabout[0] %> <%= home.textabout[1] %><span
+            <%= home.textabout[0] %> <%= home.textabout[1] %>&nbsp;<span
               class="slide__text-span"
               ><%= home.textabout[2] %></span
-            >
-            <%= home.textabout[3] %><span class="slide__text-span"
+            ><br>
+            <%= home.textabout[3] %>&nbsp;<span class="slide__text-span"
               ><%= home.textabout[4] %></span
             >
           </p>
@@ -64,7 +64,7 @@
         <div class="slide__capsule">
           <img
             class="slide__image"
-            src="./images/slide-image.png"
+            src="<%=require('./images/slide-image.png')%>"
             alt="Перевозки транспортной компанией"
           />
         </div>
@@ -330,18 +330,14 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s"
+                src="<%=require('../src/images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
-              <h3 class="case__title">Кейс</h3>
-              <p class="case__description">
-                Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша
-                команда гарантирует безопасное перемещение кранов любого типа и размера.
-                Специализированная техника и опытные водители обеспечат успешную доставку.
-              </p>
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
               <div class="case__tags">
-                <p class="case__tag">Перевозка крупногабаритных грузов</p>
-                <p class="case__tag">Казань</p>
+                <p class="case__tag"><%= casesingle.subtext[0] %></p>
+                <p class="case__tag"><%= casesingle.city[0] %></p>
               </div>
             </article>
           </a>
@@ -349,18 +345,14 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s"
+                src="<%=require('../src/images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
-              <h3 class="case__title">Кейс</h3>
-              <p class="case__description">
-                Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша
-                команда гарантирует безопасное перемещение кранов любого типа и размера.
-                Специализированная техника и опытные водители обеспечат успешную доставку.
-              </p>
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
               <div class="case__tags">
-                <p class="case__tag">Перевозка крупногабаритных грузов</p>
-                <p class="case__tag">Казань</p>
+                <p class="case__tag"><%= casesingle.subtext[1] %></p>
+                <p class="case__tag"><%= casesingle.city[1] %></p>
               </div>
             </article>
           </a>
@@ -368,18 +360,14 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s"
+                src="<%=require('../src/images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
-              <h3 class="case__title">Кейс</h3>
-              <p class="case__description">
-                Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша
-                команда гарантирует безопасное перемещение кранов любого типа и размера.
-                Специализированная техника и опытные водители обеспечат успешную доставку.
-              </p>
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
               <div class="case__tags">
-                <p class="case__tag">Перевозка крупногабаритных грузов</p>
-                <p class="case__tag">Казань</p>
+                <p class="case__tag"><%= casesingle.subtext[2] %></p>
+                <p class="case__tag"><%= casesingle.city[2] %></p>
               </div>
             </article>
           </a>
