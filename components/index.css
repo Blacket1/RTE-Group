@@ -176,7 +176,6 @@
 @import url(../src/blocks/form-section/__button/form-section__button.css);
 @import url(../src/blocks/form-section/__capsule/form-section__capsule.css);
 
-@import url(../src/blocks/services-section/services-section.css);
 @import url(../src/blocks/services-section/__title/services-section__title.css);
 
 @import url(../src/blocks/whywe-section/whywe-section.css);
@@ -190,12 +189,6 @@
 @import url(../src/blocks/cities-seciton/__text/cities-section__text.css);
 @import url(../src/blocks/cities-seciton/__frame/cities-seciton__frame.css);
 
-@import url(../src/blocks/case-section/case-section.css);
-@import url(../src/blocks/case-section/__header/case-section__header.css);
-@import url(../src/blocks/case-section/__title/case-section__title.css);
-@import url(../src/blocks/case-section/__items/case-section__items.css);
-@import url(../src/blocks/case-section/__button/case-section__button.css);
-
 /* страница services */
 @import url('../src/blocks/maintext/maintext.css');
 @import url('../src/blocks/maintext/__heading/maintext__heading.css');
@@ -206,7 +199,7 @@
 @import url('../src/blocks/cases/cases.css');
 @import url('../src/blocks/cases/__button/cases__button.css');
 @import url('../src/blocks/cases/__buttons/cases__buttons.css');
-@import url('../src/blocks/cases/cases__items/cases__items.css');
+@import url('../src/blocks/cases/__items/cases__items.css');
 
 /* error */
 @import url('../src/blocks/error/error.css');
@@ -221,3 +214,31 @@
 
 /*зеленая тонкая фигура*/
 @import url('../src/blocks/green-figure/green-figure.css');
+/* страница service */
+@import url('../src/blocks/advantages/__section/advantages__section.css');
+@import url('../src/blocks/advantages/__title/advantages__title.css');
+@import url('../src/blocks/whywe-section/__border/whywe-section__border.css');
+@import url('../src/blocks/whywe-section/__big/whywe-section__big.css');
+@import url('../src/blocks/price/price.css');
+@import url('../src/blocks/price/__title/price__title.css');
+@import url('../src/blocks/price/__table/price__table.css');
+@import url('../src/blocks/price/__td/price__td.css');
+@import url('../src/blocks/price/__th/price__th.css');
+@import url('../src/blocks/price/__thead/price__thead.css');
+@import url('../src/blocks/price/__tr/price__tr.css');
+@import url('../src/blocks/seo/seo.css');
+@import url('../src/blocks/seo/__title/seo__title.css');
+@import url('../src/blocks/seo/__text/seo__text.css');
+@import url('../src/blocks/feedback/feedback.css');
+@import url('../src/blocks/feedback/__title/feedback__title.css');
+@import url('../src/blocks/feedback/__container/feedback__container.css');
+@import url('../src/blocks/cases/__header/cases__header.css');
+@import url('../src/blocks/cases/__title/cases__title.css');
+@import url('../src/blocks/cases/__green-button/cases__green-button.css');
+@import url('../src/blocks/faq/faq.css');
+@import url('../src/blocks/faq/__title/faq__title.css');
+@import url('../src/blocks/faq/__box/faq__box.css');
+@import url('../src/blocks/faq/__content/faq__content.css');
+@import url('../src/blocks/faq/__label/faq__label.css');
+@import url('../src/blocks/faq/__text/faq__text.css');
+

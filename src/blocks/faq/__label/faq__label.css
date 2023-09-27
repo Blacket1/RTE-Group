@@ -1,0 +1,25 @@
+.faq__label {
+  position: relative;
+  box-sizing: border-box;
+  padding: 24px 40px 24px 0;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  border-bottom: 1px solid #333;
+}
+
+@media screen and (max-width: 1024px) {
+  .faq__label {
+    font-size: 16px;
+    padding: 16px 40px 16px 0;
+  }
+}
+
+.faq__label::after {
+  content: url(../../../images/faq-vector-open.svg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+}

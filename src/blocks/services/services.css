@@ -1,8 +1,7 @@
 .services {
   display: grid;
-  max-width: 1080px;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(328px, 528px));
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
   justify-content: center;
   margin-bottom: 128px;

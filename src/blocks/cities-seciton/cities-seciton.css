@@ -19,6 +19,6 @@
 }
 @media screen and (max-width: 767px) {
   .cities-seciton  {
-    margin: 0 0 80px 0;
+    margin: 80px 0 80px 0;
   }
 }

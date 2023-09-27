@@ -1,0 +1,18 @@
+.cases__green-button {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .cases__green-button {
+    position: absolute;
+    top: 900px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .cases__green-button {
+    position: absolute;
+    top: 1250px;
+    left: 0;
+  }
+}
