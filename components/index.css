@@ -189,12 +189,6 @@
 @import url(../src/blocks/cities-seciton/__text/cities-section__text.css);
 @import url(../src/blocks/cities-seciton/__frame/cities-seciton__frame.css);
 
-@import url(../src/blocks/case-section/case-section.css);
-@import url(../src/blocks/case-section/__header/case-section__header.css);
-@import url(../src/blocks/case-section/__title/case-section__title.css);
-@import url(../src/blocks/case-section/__items/case-section__items.css);
-@import url(../src/blocks/case-section/__button/case-section__button.css);
-
 /* страница services */
 @import url('../src/blocks/maintext/maintext.css');
 @import url('../src/blocks/maintext/__heading/maintext__heading.css');
@@ -205,7 +199,7 @@
 @import url('../src/blocks/cases/cases.css');
 @import url('../src/blocks/cases/__button/cases__button.css');
 @import url('../src/blocks/cases/__buttons/cases__buttons.css');
-@import url('../src/blocks/cases/cases__items/cases__items.css');
+@import url('../src/blocks/cases/__items/cases__items.css');
 
 /* error */
 @import url('../src/blocks/error/error.css');
@@ -238,3 +232,13 @@
 @import url('../src/blocks/feedback/feedback.css');
 @import url('../src/blocks/feedback/__title/feedback__title.css');
 @import url('../src/blocks/feedback/__container/feedback__container.css');
+@import url('../src/blocks/cases/__header/cases__header.css');
+@import url('../src/blocks/cases/__title/cases__title.css');
+@import url('../src/blocks/cases/__green-button/cases__green-button.css');
+@import url('../src/blocks/faq/faq.css');
+@import url('../src/blocks/faq/__title/faq__title.css');
+@import url('../src/blocks/faq/__box/faq__box.css');
+@import url('../src/blocks/faq/__content/faq__content.css');
+@import url('../src/blocks/faq/__label/faq__label.css');
+@import url('../src/blocks/faq/__text/faq__text.css');
+

@@ -1,9 +1,0 @@
-.seo {
-  margin-bottom: 128px;
-}
-
-@media screen and (max-width: 767px) {
-  .seo {
-    margin-bottom: 80px;
-  }
-}
