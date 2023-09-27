@@ -68,17 +68,19 @@
 
     <!--секция slide-->
     <section>
-      <div class="slide">
-        <div class="slide__text-zone">
-          <h1 class="slide__title">RTE Group</h1>
-          <p class="slide__description">Когда размер имеет значение</p>
-          <p class="slide__text">
-            Транспортная&nbsp;компания, специализирующаяся на&nbsp;<span class="slide__text-span"
-              >крупногабаритных</span
-            >
-            и&nbsp;<span class="slide__text-span">негабаритных&nbsp;перевозках</span>
-          </p>
-        </div>
+      <div class="slide__text-zone">
+        <h1 class="slide__title"><%= home.h1 %></h1>
+        <p class="slide__description"><%= home.h3 %></p>
+        <p class="slide__text">
+          <%= home.textabout[0] %> <%= home.textabout[1] %>&nbsp;<span
+            class="slide__text-span"
+            ><%= home.textabout[2] %></span
+          ><br>
+          <%= home.textabout[3] %>&nbsp;<span class="slide__text-span"
+            ><%= home.textabout[4] %></span
+          >
+        </p>
+      </div>
         <div class="slide__capsule">
           <img
             class="slide__image"
@@ -96,18 +98,14 @@
         <article class="case__content">
           <img
             class="case__image"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0XngXjNCZ6ZHQHSKXawuI1CSP69VYSYfX0SnO8TEzhg&s"
+            src="<%=require('../src/images/keys1.jpeg')%>"
             alt="Кейс фотография"
           />
-          <h3 class="case__title">Кейс</h3>
-          <p class="case__description">
-            Перевозка кранов – сложный и ответственный процесс, требующий особой тщательности. Наша
-            команда гарантирует безопасное перемещение кранов любого типа и размера.
-            Специализированная техника и опытные водители обеспечат успешную доставку.
-          </p>
+          <h3 class="case__title"><%= casesingle.title %></h3>
+          <p class="case__description"><%= casesingle.text %></p>
           <div class="case__tags">
-            <p class="case__tag">Перевозка крупногабаритных грузов</p>
-            <p class="case__tag">Казань</p>
+            <p class="case__tag"><%= casesingle.subtext[0] %></p>
+            <p class="case__tag"><%= casesingle.city[0] %></p>
           </div>
         </article>
       </a>

@@ -13,7 +13,7 @@
     -webkit-box-orient: vertical;
 }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 767px) {
     .case__description {
         padding: 0 16px;
     }
