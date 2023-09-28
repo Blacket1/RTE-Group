@@ -15,7 +15,12 @@
   background-color: #222;
 }
 
-
 .input__container:hover {
   border: 1px solid #FFF;
+}
+@media screen and (min-width: 767px) {
+  .input__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

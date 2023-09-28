@@ -5,6 +5,7 @@
   left: -515px;
   top: -42px;
   background-color: #00994C;
+  border: 0;
 }
 @media screen and (max-width: 767px) {
   .whywe-section__capsule  {
