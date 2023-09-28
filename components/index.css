@@ -175,3 +175,23 @@
 @import url('../src/blocks/error/__button/error__button.css');
 @import url('../src/blocks/error/__illustration/error__illustration.css');
 @import url('../src/blocks/error/__icon/error__icon.css');
+
+/* cities */
+@import url('../src/blocks/cities/cities.css');
+@import url('../src/blocks/cities/__img/cities__img.css');
+@import url('../src/blocks/cities/__title/cities__title.css');
+@import url('../src/blocks/cities/__text/cities__text.css');
+@import url('../src/blocks/cities/__deliveries/cities__deliveries.css');
+@import url('../src/blocks/cities/__delivery/cities__delivery.css');
+@import url('../src/blocks/cities/__emblem/cities__emblem.css');
+@import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+.cities__delivery {
+    position: relative;
+    display: flex;
+    border-radius: 24px;
+    background-color: #222;
+    width: 348px;
+    height: 198px;
+}
+
+@media screen and (max-width: 767px) {
+    .cities__delivery {
+        width: 328px;
+        height: 72px;
+    }
+}

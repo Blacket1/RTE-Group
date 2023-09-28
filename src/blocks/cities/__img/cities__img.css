@@ -1,0 +1,22 @@
+.cities__img {
+    background-color: #00994C;
+    transform: rotate(45deg);
+    top:-550px;
+    right: -300px;
+    border: 2px solid #00994C;
+    background-image: url('../../../images/Rectangle_cities_d.png');
+    position: absolute;
+    width: 500px;
+    height: 999px;
+    border-radius: 400px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .cities__img {
+        background-image: url('../../../images/Rectangle_cities_m.png');
+        width: 205px;
+        height: 805px;
+        border-radius: 112px; 
+    }
+}
