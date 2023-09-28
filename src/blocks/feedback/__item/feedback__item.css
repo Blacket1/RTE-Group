@@ -3,6 +3,12 @@
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     gap: 16px 16px;
+}
+
+@media screen and (max-width: 585px) {
+    .feedback__item {
+        max-width: 100%;
+    }
 }
