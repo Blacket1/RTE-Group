@@ -2,17 +2,13 @@
   display: none;
 }
 @media (max-width:767px) {
+  .header__checkbox:checked ~ .header__checkbox-label{
+    background-image: url(../../../images/close-icon.svg);
+  }
+
   .header__checkbox:checked ~ .header__button {
-    opacity: 1;
-    transition: opacity 1s ease-out;
-  }
-  .header__checkbox:checked ~ .header__menu {
-    opacity: 1;
-    transition: opacity 1s ease-out;
-    height: 640px;
-  }
-  .header__checkbox:checked ~ .header__menu > .header__list {
-    display: block;
-    height: 100%;
+    transition: all ease .5s;
+    top: 560px;
+    visibility: visible;
   }
 }

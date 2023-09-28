@@ -8,38 +8,37 @@
 
   <body class="page">
     <header class="header">
-      <div class="header__container-main">
-        <div class="header__body">
-          <div class="logo__container logo__container_type_horizontal">
-            <img
-              class="logo"
-              src="<%=require('../src/images/logo.svg')%>"
-              alt="Логотип сервиса РТ Экспресс"
-            />
-            <span class="logo__caption logo__caption_hidden"><%= home.h1 %></span>
-          </div>
-          <div class="header__container">
-            <div class="header__main">
-              <div class="header__contact">
-                <img src="<%=require('../src/images/phone-icon.svg')%>" />
-                <span class="header__phone">+7 917 275-90-13</span>
-              </div>
+      <div class="header__main-container">
+        <div class="logo__container logo__container_type_horizontal header__logo">
+          <img
+            class="logo"
+            src="<%=require('../src/images/logo.svg')%>"
+            alt="Логотип сервиса РТ Экспресс"
+          />
+          <span class="logo__caption logo__caption_hidden">РТ Экспресс</span>
+        </div>
+        <div class="header__container">
+          <div class="header__phone-container">
+            <div class="header__contact">
+              <img src="<%=require('../src/images/phone-icon.svg')%>" />
+              <span class="header__phone">+7 917 275-90-13</span>
             </div>
-
-            <label for="checkbox" class="header__checkbox-label"></label>
-            <input id="checkbox" type="checkbox" class="header__checkbox" />
-
-            <button class="button button__primary header__button">Оформить заявку</button>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="./services.html" class="header__link">Услуги</a></li>
-                <li><a href="" class="header__link">Автопарк</a></li>
-                <li><a href="./cases.html" class="header__link">Кейсы</a></li>
-                <li><a href="" class="header__link">Города</a></li>
-                <li><a href="" class="header__link">О компании</a></li>
-              </ul>
-            </nav>
+  
           </div>
+          <input type="checkbox" class="header__checkbox" id="checkbox" />
+          <label class="header__checkbox-label" for="checkbox"></label>
+          <button class="button button__primary header__button">
+            Оформить заявку
+          </button>
+          <nav class="header__menu">
+            <ul class="header__links">
+              <li><a class="header__link" href="./services.html">Услуги</a></li>
+              <li><a class="header__link" href="#">Автопарк</a></li>
+              <li><a class="header__link" href="./cases.html">Кейсы</a></li>
+              <li><a class="header__link" href="./cities.html">Города</a></li>
+              <li><a class="header__link" href="#">О компании</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -155,7 +154,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[0] %></h4>
           <p class="services__text"><%= services.text[0] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -165,7 +164,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[1] %></h4>
           <p class="services__text"><%= services.text[1] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -175,7 +174,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[2] %></h4>
           <p class="services__text"><%= services.text[2] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -185,7 +184,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[3] %></h4>
           <p class="services__text"><%= services.text[3] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -195,7 +194,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[4] %></h4>
           <p class="services__text"><%= services.text[4] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -205,7 +204,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[5] %></h4>
           <p class="services__text"><%= services.text[5] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -215,7 +214,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[6] %></h4>
           <p class="services__text"><%= services.text[6] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -225,7 +224,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[7] %></h4>
           <p class="services__text"><%= services.text[7] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -235,7 +234,7 @@
           />
           <h4 class="services__subtitle"><%= services.title[8] %></h4>
           <p class="services__text"><%= services.text[8] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button__outline services-section__button">Подробнее</button>
         </div>
       </section>
       <section class="whywe-section">

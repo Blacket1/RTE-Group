@@ -1,0 +1,26 @@
+.header__links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+}
+.header__links li {
+  margin: 8px 16px;
+}
+@media (max-width:767px) {
+  .header__links {
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 296px
+  }
+  .header__links li {
+    margin: 16px 24px;
+  }
+}
