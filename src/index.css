@@ -1,4 +1,4 @@
-@import url(../src/vendor/normalize.css);
+@import '~normalize.css';
 @import url(../src/vendor/fonts.css);
 
 /*общие стили страниц*/
@@ -242,7 +242,6 @@
 @import url('../src/blocks/faq/__label/faq__label.css');
 @import url('../src/blocks/faq/__text/faq__text.css');
 
-
 /* cities */
 @import url('../src/blocks/cities/cities.css');
 @import url('../src/blocks/cities/__img/cities__img.css');
@@ -252,13 +251,3 @@
 @import url('../src/blocks/cities/__delivery/cities__delivery.css');
 @import url('../src/blocks/cities/__emblem/cities__emblem.css');
 @import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
-
-
-
-
-
-
-
-
-
-

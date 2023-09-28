@@ -4,12 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const PATH_SRC = path.join(__dirname, './src');
+const PATH_SRC = path.join(__dirname, './src/pages');
 const PAGES = fs.readdirSync(PATH_SRC).filter((filename) => filename.endsWith('.html'));
+const dataContent = require('./src/data/content.json');
 
 module.exports = {
   entry: {
-    main: './components/index.js',
+    main: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -55,7 +56,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           template: `${PATH_SRC}/${page}`,
           filename: `./${page}`,
-          templateParameters: require('./components/textlist.json'),
+          templateParameters: dataContent,
         }),
     ),
     new CleanWebpackPlugin(),
