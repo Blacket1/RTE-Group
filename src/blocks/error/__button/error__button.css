@@ -1,0 +1,10 @@
+.error__button {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .error__button {
+    width: 100%;
+    margin-top: 32px;
+  }
+}

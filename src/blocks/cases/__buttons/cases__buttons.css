@@ -1,0 +1,4 @@
+.cases__buttons {
+    display: flex;
+    column-gap: 16px;
+}

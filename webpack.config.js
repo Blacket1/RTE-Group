@@ -1,19 +1,20 @@
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
+const _ = require('lodash');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const PATH_SRC = path.join(__dirname, './src');
+const PATH_SRC = path.join(__dirname, './src/pages');
 const PAGES = fs.readdirSync(PATH_SRC).filter((filename) => filename.endsWith('.html'));
+const templateParameters = require('./src/data/content.json');
 
 module.exports = {
-  entry: {
-    main: './components/index.js',
-  },
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'main.[contenthash].js',
     publicPath: '',
   },
   mode: 'development',
@@ -31,7 +32,7 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(png|svg|jpg|jpeg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
       },
       {
@@ -47,6 +48,25 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.ejs$/i,
+        loader: 'html-loader',
+        options: {
+          preprocessor: (content, loaderContext) => {
+            let result;
+
+            try {
+              result = _.template(content)(templateParameters);
+            } catch (error) {
+              loaderContext.emitError(error);
+
+              return content;
+            }
+
+            return result;
+          },
+        },
+      },
     ],
   },
   plugins: [
@@ -54,8 +74,9 @@ module.exports = {
       (page) =>
         new HtmlWebpackPlugin({
           template: `${PATH_SRC}/${page}`,
-          filename: `./${page}`,
-        })
+          filename: page,
+          templateParameters,
+        }),
     ),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

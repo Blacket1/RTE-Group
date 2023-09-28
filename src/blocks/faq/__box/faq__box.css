@@ -1,0 +1,13 @@
+.faq__box {
+  position: relative;
+}
+
+.faq__box_active {
+  .faq__label::after {
+    content: url(../../../images/faq-vector-close.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+  }
+}

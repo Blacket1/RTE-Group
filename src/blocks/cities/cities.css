@@ -1,0 +1,10 @@
+.cities {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #1a1a1a;;
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    width: 100%;
+}

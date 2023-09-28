@@ -10,7 +10,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-@media screen and (max-width: 548px) {
+@media screen and (max-width: 767px) {
   .advantages__item {
     padding: 16px;
   }

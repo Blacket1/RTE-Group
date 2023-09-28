@@ -1,0 +1,9 @@
+.privacy__title {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .privacy__title {
+    margin-bottom: 24px;
+  }
+}

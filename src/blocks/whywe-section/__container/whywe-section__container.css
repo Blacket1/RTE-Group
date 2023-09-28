@@ -1,0 +1,10 @@
+.whywe-section__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .whywe-section__container  {
+    row-gap: 24px;
+  }
+}

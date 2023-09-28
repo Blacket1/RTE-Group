@@ -1,12 +1,23 @@
 .case__image {
-    width: 328px;
+    width: 100%;
     height: 144px;
     border-radius: 16px;
     object-fit: cover;
+    filter: grayscale(100%);
+   /* position: relative;
+    display: flex;*/
 }
 
-@media screen and (max-width: 727px) {
-    .case__image {
-        width: 312px;
-    }
+/*
+.case__image::before {
+    content: "";
+    background: #808080;
+    opacity: 0.1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
+*/

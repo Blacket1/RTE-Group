@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-KIT</title>
+  </head>
+  <body class="page">
+    <!--form/main-->
+    <section>
+      <div class="form form__form-main">
+        <h2 class="form__title">Оставить заявку на перевозку</h2>
+        <form class="form__content" name="mainForm" novalidate>
+          <div class="form__fields">
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-name"
+                class="input__field"
+                name="userName"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-name" class="input__label-name">Имя*</label>
+            </div>
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-phone"
+                class="input__field"
+                name="userPhone"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-phone" class="input__label-name">Телефон*</label>
+            </div>
+            <div class="input__container form__field-container_text">
+              <textarea
+                id="goods-data"
+                class="input__field input_textarea"
+                name="goodsData"
+                placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
+                maxlength="255"
+                rows="3"
+              ></textarea>
+              <label for="goods-data" class="input__label-name">Краткая характеристика груза</label>
+            </div>
+            <div class="input__checkbox-container">
+              <label for="check-field">
+                <input
+                  type="checkbox"
+                  id="check-field"
+                  class="input__field input_checkbox"
+                  name="dataConfirm"
+                  required
+                />
+                <span class="input__field input_checkbox-pseudo"></span>
+              </label>
+              <span class="form__field-span"
+                >Согласен на обработку персональных данных в соответствии с
+                <span class="form__field-span_accent">политикой конфиденциальности</span></span
+              >
+              <span class="form__field-error user-name_error"></span>
+            </div>
+          </div>
+          <button type="submit" name="sendButton" class="button button__primary">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <!--form/main всплывающее окно об отправке формы -->
+    <section>
+      <div class="form submit-message">
+        <button
+          type="button"
+          name="closeButton"
+          class="submit-message__close-icon"
+          aria-label="Кнопка закрытия всплывающего окна"
+        ></button>
+        <img
+          class="submit-message__success-icon"
+          src="<%=require('../images/request-confirm.svg')%>"
+          alt="Иконка-подтверждение успешной отправки формы"
+        />
+        <h2 class="submit-message__title">Заявка отправлена!</h2>
+        <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+      </div>
+    </section>
+
+    <!--form/contact-->
+    <section>
+      <form class="form form__form-main" name="contacts" novalidate>
+        <h2 class="form__title">Связаться с нами</h2>
+        <div class="form__content">
+          <div class="form__fields">
+            <div class="input__container">
+              <input
+                type="text"
+                id="user-name"
+                class="input__field"
+                name="userName"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-name" class="input__label-name">Имя*</label>
+            </div>
+            <div class="input__container">
+              <input
+                type="email"
+                id="user-email"
+                class="input__field"
+                name="email"
+                placeholder=" "
+                required
+                value=""
+              />
+              <label for="user-phone" class="input__label-name">E-mail*</label>
+            </div>
+            <div class="input__container form__field-container_text">
+              <textarea
+                id="goods-data"
+                class="input__field input_textarea"
+                name="goodsData"
+                placeholder=" "
+                maxlength="255"
+                rows="3"
+              ></textarea>
+              <label for="goods-data" class="input__label-name">Текст сообщения</label>
+            </div>
+            <div class="input__checkbox-container">
+              <label for="check-field">
+                <input
+                  type="checkbox"
+                  id="check-field"
+                  class="input__field input_checkbox"
+                  name="dataConfirm"
+                  required
+                />
+                <span class="input__field input_checkbox-pseudo"></span>
+              </label>
+              <span class="form__field-span"
+                >Согласен на обработку персональных данных в соответствии с
+                <span class="form__field-span_accent">политикой конфиденциальности</span></span
+              >
+              <span class="form__field-error user-name_error"></span>
+            </div>
+          </div>
+          <button type="submit" name="sendButton" class="button button__primary">Отправить</button>
+        </div>
+      </form>
+
+      <div class="form submit-message">
+        <button
+          type="button"
+          name="closeButton"
+          class="submit-message__close-icon"
+          aria-label="Кнопка закрытия всплывающего окна"
+        ></button>
+        <img
+          class="submit-message__success-icon"
+          src="<%=require('../images/request-confirm.svg')%>"
+          alt="Иконка-подтверждение успешной отправки формы"
+        />
+        <h2 class="submit-message__title">Ваше обращение отправлено</h2>
+        <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+      </div>
+    </section>
+
+    <!--form/vacancy-->
+    <section></section>
+
+    <!--input-->
+    <section>
+      <!-- простой инпут -->
+      <div class="input__container">
+        <input
+          type="text"
+          id="input__id"
+          class="input__field"
+          name=""
+          placeholder=" "
+          required
+          value=""
+        />
+        <label for="input__id" class="input__label-name">Input</label>
+      </div>
+      <span class="input__field-error input__id_error"></span>
+
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 10px"></div>
+
+      <div class="input__container">
+        <input
+          type="text"
+          id="input__id"
+          class="input__field input__field_error"
+          name=""
+          placeholder=" "
+          required
+          value="Error"
+        />
+        <label for="input__id" class="input__label-name">Input Error</label>
+      </div>
+      <span class="input__error">Description / Error</span>
+
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 20px"></div>
+
+      <!-- textarea  -->
+      <div class="input__container form__field-container_text">
+        <textarea
+          id="input__id"
+          class="input__field input_textarea"
+          name=""
+          placeholder="Text"
+          maxlength="255"
+          rows="3"
+        ></textarea>
+        <label for="input__id" class="input__label-name">Textarea</label>
+      </div>
+
+      <!-- отступ для визуального отображения (не обращать внимание) -->
+      <div style="height: 10px"></div>
+
+      <!-- checkbox -->
+      <div class="input__checkbox-container">
+        <label for="checkbox-field">
+          <input
+            type="checkbox"
+            id="checkbox-field"
+            class="input__field input_checkbox"
+            name=""
+            required
+          />
+          <span class="input__field input_checkbox-pseudo"></span>
+        </label>
+
+        <label for="checkbox-field-error">
+          <input
+            type="checkbox"
+            id="checkbox-field-error"
+            class="input__field input_checkbox"
+            name=""
+            required
+          />
+          <span class="input__field input_checkbox-pseudo input_checkbox_error"></span>
+        </label>
+      </div>
+    </section>
+
+    <!--logo-->
+    <section>
+      <div class="logo__container logo__container_type_vertical">
+        <img
+          class="logo"
+          src="<%=require('../images/logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+        <span class="logo__caption">РТ Экспресс</span>
+      </div>
+      <div class="logo__container logo__container_type_horizontal">
+        <img
+          class="logo"
+          src="<%=require('../images/logo.svg')%>"
+          alt="Логотип сервиса РТ Экспресс"
+        />
+        <span class="logo__caption logo__caption_hidden">РТ Экспресс</span>
+      </div>
+    </section>
+
+    <!--button-->
+    <section>
+      <button class="button button__primary">Button</button>
+      <!--Зеленая кнопка с белым шрифтом-->
+      <button class="button button__outline">Button</button>
+      <!--Кнопка с зеленым шрифтом и бордером-->
+      <button class="button button__dark">Button</button>
+      <!--Черная кнопка-->
+    </section>
+
+    <!--city-link-->
+    <section></section>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.maintext {
+  display: flex;
+  padding-top: 96px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .maintext {
+    flex-direction: column;
+    padding-top: 56px;
+  }
+}

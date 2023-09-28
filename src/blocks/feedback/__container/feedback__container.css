@@ -1,0 +1,25 @@
+.feedback__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__container {
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feedback__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .feedback__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
