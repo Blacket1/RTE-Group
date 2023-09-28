@@ -242,3 +242,23 @@
 @import url('../src/blocks/faq/__label/faq__label.css');
 @import url('../src/blocks/faq/__text/faq__text.css');
 
+
+/* cities */
+@import url('../src/blocks/cities/cities.css');
+@import url('../src/blocks/cities/__img/cities__img.css');
+@import url('../src/blocks/cities/__title/cities__title.css');
+@import url('../src/blocks/cities/__text/cities__text.css');
+@import url('../src/blocks/cities/__deliveries/cities__deliveries.css');
+@import url('../src/blocks/cities/__delivery/cities__delivery.css');
+@import url('../src/blocks/cities/__emblem/cities__emblem.css');
+@import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
+
+
+
+
+
+
+
+
+
+
