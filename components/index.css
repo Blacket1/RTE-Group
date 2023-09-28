@@ -201,6 +201,32 @@
 @import url('../src/blocks/cases/__buttons/cases__buttons.css');
 @import url('../src/blocks/cases/__items/cases__items.css');
 
+/*страница case-page*/
+@import url('../src/blocks/casepage/casepage.css');
+@import url('../src/blocks/casepage/__citation-icon/casepage__citation-icon.css');
+@import url('../src/blocks/casepage/__citation-text/casepage__citation-text.css');
+@import url('../src/blocks/casepage/__citation/casepage__citation.css');
+@import url('../src/blocks/casepage/__h1/casepage__h1.css');
+@import url('../src/blocks/casepage/__h2/casepage__h2.css');
+@import url('../src/blocks/casepage/__h3/casepage__h3.css');
+@import url('../src/blocks/casepage/__h4/casepage__h4.css');
+@import url('../src/blocks/casepage/__h5/casepage__h5.css');
+@import url('../src/blocks/casepage/__h6/casepage__h6.css');
+@import url('../src/blocks/casepage/__mini-text/casepage__mini-text.css');
+@import url('../src/blocks/casepage/__photo-section/casepage__photo-section.css');
+@import url('../src/blocks/casepage/__photo-title/casepage__photo-title.css');
+@import url('../src/blocks/casepage/__photo/casepage__photo.css');
+@import url('../src/blocks/casepage/__tags/casepage__tags.css');
+@import url('../src/blocks/casepage/__text-section/casepage__text-section.css');
+@import url('../src/blocks/casepage/__text/casepage__text.css');
+
+@import url('../src/blocks/casepage/__table/casepage__table.css');
+@import url('../src/blocks/casepage/__table-body/casepage__table-body.css');
+@import url('../src/blocks/casepage/__table-column/casepage__table-column.css');
+@import url('../src/blocks/casepage/__table-header/casepage__table-header.css');
+@import url('../src/blocks/casepage/__table-row/casepage__table-row.css');
+@import url('../src/blocks/casepage/__table-style/casepage__table-style.css');
+
 /* error */
 @import url('../src/blocks/error/error.css');
 @import url('../src/blocks/error/__wrapper/error__wrapper.css');

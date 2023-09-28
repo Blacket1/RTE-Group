@@ -1,0 +1,12 @@
+.casepage__photo-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 48px;
+}
+
+@media screen and (max-width: 767px) {
+    .casepage__photo-section {
+        padding-top: 32px;
+    }
+}

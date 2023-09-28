@@ -1,0 +1,8 @@
+.casepage__citation {
+    padding: 24px;
+    background-color: #222222;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 32px;
+}
