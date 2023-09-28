@@ -1,0 +1,4 @@
+.header__phone-container {
+  display: flex;
+  z-index: 3;
+}

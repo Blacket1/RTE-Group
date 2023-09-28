@@ -106,20 +106,18 @@
 
 /*header*/
 @import url(../src/blocks/header/header.css);
-@import url(../src/blocks/header/__container-main/header__container-main.css);
-@import url(../src/blocks/header/__body/header__body.css);
 @import url(../src/blocks/header/__logo/header__logo.css);
 @import url(../src/blocks/header/__container/header__container.css);
-@import url(../src/blocks/header/__main/header__main.css);
+@import url(../src/blocks/header/__main-container/header__main-container.css);
+@import url(../src/blocks/header/__menu/header__menu.css);
+@import url(../src/blocks/header/__links/header__links.css);
+@import url(../src/blocks/header/__link/header__link.css);
+@import url(../src/blocks/header/__checkbox/header__checkbox.css);
+@import url(../src/blocks/header/__checkbox-label/header__checkbox-label.css);
+@import url(../src/blocks/header/__button/header__button.css);
+@import url(../src/blocks/header/__phone-container/header__phone-container.css);
 @import url(../src/blocks/header/__contact/header__contact.css);
 @import url(../src/blocks/header/__phone/header__phone.css);
-@import url(../src/blocks/header/__list/header__list.css);
-@import url(../src/blocks/header/__checkbox-label/header__checkbox-label.css);
-@import url(../src/blocks/header/__checkbox/header__checkbox.css);
-@import url(../src/blocks/header/__button/header__button.css);
-@import url(../src/blocks/header/__menu/header__menu.css);
-@import url(../src/blocks/header/__button/header__button.css);
-@import url(../src/blocks/header/__link/header__link.css);
 
 /*блока advantages*/
 
