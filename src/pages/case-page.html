@@ -6,40 +6,7 @@
     <title><%= casepage.h1 %> - кейс</title>
   </head>
   <body class="page">
-    <header class="header">
-      <div class="header__container-main">
-        <div class="header__body">
-          <div class="logo__container logo__container_type_horizontal">
-            <img
-              class="logo"
-              src="<%=require('../src/images/logo.svg')%>"
-              alt="Логотип сервиса РТ Экспресс"
-            />
-            <span class="logo__caption logo__caption_hidden"><%= home.h1 %></span>
-          </div>
-          <div class="header__container">
-            <div class="header__main">
-              <div class="header__contact">
-                <img src="<%=require('../src/images/phone-icon.svg')%>" />
-                <span class="header__phone">+7 917 275-90-13</span>
-              </div>
-            </div>
-            <label for="checkbox" class="header__checkbox-label"></label>
-            <input id="checkbox" type="checkbox" class="header__checkbox" />
-            <button class="button button__primary header__button">Оформить заявку</button>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="./services.html" class="header__link">Услуги</a></li>
-                <li><a href="" class="header__link">Автопарк</a></li>
-                <li><a href="./cases.html" class="header__link">Кейсы</a></li>
-                <li><a href="" class="header__link">Города</a></li>
-                <li><a href="" class="header__link">О компании</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <%= require('../blocks/header/header.ejs').default %>
     <main class="container">
       <section class="maintext">
         <div class="maintext__heading">
@@ -149,7 +116,7 @@
           <p class="casepage__mini-text"><%= casepage.text6[3] %></p>
 
           <div class="casepage__citation">
-            <img class="casepage__citation-icon" src="<%=require('../src/images/icon/Frame36186.svg')%>">
+            <img class="casepage__citation-icon" src="<%=require('../images/icon/Frame36186.svg')%>">
             <div class="casepage__citation-text">
               <p class="casepage__text"><%= casepage.citation[0] %></p>
               <p class="casepage__mini-text"><%= casepage.citation[1] %></p>
@@ -200,26 +167,11 @@
           </div>
         </div>
         <div class="casepage__photo-section">
-          <img class="casepage__photo" src="<%=require('../src/images/car-photo1.png')%>" alt="Фотография <%= casepage.phototitle %>">
+          <img class="casepage__photo" src="<%=require('../images/car-photo1.png')%>" alt="Фотография <%= casepage.phototitle %>">
           <p class="casepage__mini-text casepage__photo-title"><%= casepage.phototitle %></p>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__logo"></div>
-      <nav class="footer__links">
-        <a href="#" class="footer__link footer__link_services" target="_blank">Услуги</a>
-        <a href="#" class="footer__link footer__link_cases" target="_blank">Кейсы</a>
-        <a href="#" class="footer__link footer__link_work" target="_blank">Работа у нас</a>
-        <a href="#" class="footer__link footer__link_about" target="_blank">О компании</a>
-        <a href="#" class="footer__link footer__link_cities" target="_blank">Города</a>
-        <a href="#" class="footer__link footer__link_privacy" target="_blank"
-          >Политика конфиденциальности</a
-        >
-        <a href="#" class="footer__link footer__link_autopark" target="_blank">Автопарк</a>
-        <a href="#" class="footer__link footer__link_contacts" target="_blank">Контакты</a>
-      </nav>
-      <p class="footer__copyright">2023 © RTE Group</p>
-    </footer>
+    <%= require('../blocks/footer/footer.ejs').default %>
   </body>
 </html>
