@@ -7,41 +7,7 @@
   </head>
 
   <body class="page">
-    <header class="header">
-      <div class="header__container-main container">
-        <div class="header__body">
-          <a href="" class="header__logo">
-            <img
-              class="logo"
-              src="<%=require('../images/logo.svg')%>"
-              alt="Логотип сервиса РТ Экспресс"
-            />
-          </a>
-          <div class="header__container">
-            <div class="header__main">
-              <div class="header__contact">
-                <img src="<%=require('../images/phone-icon.svg')%>" />
-                <span class="header__phone">+7 917 275-90-13</span>
-              </div>
-            </div>
-
-            <label for="checkbox" class="header__checkbox-label"></label>
-            <input id="checkbox" type="checkbox" class="header__checkbox" />
-
-            <button class="button button__primary header__button">Оформить заявку</button>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="./services.html" class="header__link">Услуги</a></li>
-                <li><a href="" class="header__link">Автопарк</a></li>
-                <li><a href="./cases.html" class="header__link">Кейсы</a></li>
-                <li><a href="" class="header__link">Города</a></li>
-                <li><a href="" class="header__link">О компании</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <%= require('../blocks/header/header.ejs').default %>
 
     <main class="container">
       <section class="maintext">
