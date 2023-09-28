@@ -6,40 +6,8 @@
     <title><%= cases.h2 %> - Страница с различными кейсами</title>
   </head>
   <body class="page">
-    <header class="header">
-      <div class="header__container-main">
-        <div class="header__body">
-          <div class="logo__container logo__container_type_horizontal">
-            <img
-              class="logo"
-              src="<%=require('../src/images/logo.svg')%>"
-              alt="Логотип сервиса РТ Экспресс"
-            />
-            <span class="logo__caption logo__caption_hidden"><%= home.h1 %></span>
-          </div>
-          <div class="header__container">
-            <div class="header__main">
-              <div class="header__contact">
-                <img src="<%=require('../src/images/phone-icon.svg')%>" />
-                <span class="header__phone">+7 917 275-90-13</span>
-              </div>
-            </div>
-            <label for="checkbox" class="header__checkbox-label"></label>
-            <input id="checkbox" type="checkbox" class="header__checkbox" />
-            <button class="button button__primary header__button">Оформить заявку</button>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="./services.html" class="header__link">Услуги</a></li>
-                <li><a href="" class="header__link">Автопарк</a></li>
-                <li><a href="./cases.html" class="header__link">Кейсы</a></li>
-                <li><a href="" class="header__link">Города</a></li>
-                <li><a href="" class="header__link">О компании</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <%= require('../blocks/header/header.ejs').default %>
+
     <main class="container">
       <section class="maintext">
         <div class="green-figure green-figure__full-color"></div>
@@ -117,17 +85,19 @@
       </section>
       <section class="cases">
         <div class="cases__buttons">
-            <button class="button button__dark cases__button">Все города <img src="<%=require('../src/images/icon/CaretDown.svg')%>">
-            </button>
-            <button class="button button__dark cases__button">Все услуги  <img src="<%=require('../src/images/icon/CaretDown.svg')%>">
-            </button>              
+          <button class="button button__dark cases__button">
+            Все города <img src="<%=require('../images/icon/CaretDown.svg')%>" />
+          </button>
+          <button class="button button__dark cases__button">
+            Все услуги <img src="<%=require('../images/icon/CaretDown.svg')%>" />
+          </button>
         </div>
         <div class="cases__items">
           <a href="./case-page.html" target="_blank" class="case">
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys1.jpeg')%>"
+                src="<%=require('../images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -142,7 +112,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys2.jpeg')%>"
+                src="<%=require('../images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -157,7 +127,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys3.jpeg')%>"
+                src="<%=require('../images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -172,7 +142,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys1.jpeg')%>"
+                src="<%=require('../images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -187,7 +157,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys2.jpeg')%>"
+                src="<%=require('../images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -202,7 +172,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys3.jpeg')%>"
+                src="<%=require('../images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -217,7 +187,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys1.jpeg')%>"
+                src="<%=require('../images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -232,7 +202,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys2.jpeg')%>"
+                src="<%=require('../images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -247,7 +217,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys3.jpeg')%>"
+                src="<%=require('../images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -262,7 +232,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys1.jpeg')%>"
+                src="<%=require('../images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -277,7 +247,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys2.jpeg')%>"
+                src="<%=require('../images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -292,7 +262,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys3.jpeg')%>"
+                src="<%=require('../images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -306,21 +276,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__logo"></div>
-      <nav class="footer__links">
-        <a href="#" class="footer__link footer__link_services" target="_blank">Услуги</a>
-        <a href="#" class="footer__link footer__link_cases" target="_blank">Кейсы</a>
-        <a href="#" class="footer__link footer__link_work" target="_blank">Работа у нас</a>
-        <a href="#" class="footer__link footer__link_about" target="_blank">О компании</a>
-        <a href="#" class="footer__link footer__link_cities" target="_blank">Города</a>
-        <a href="#" class="footer__link footer__link_privacy" target="_blank"
-          >Политика конфиденциальности</a
-        >
-        <a href="#" class="footer__link footer__link_autopark" target="_blank">Автопарк</a>
-        <a href="#" class="footer__link footer__link_contacts" target="_blank">Контакты</a>
-      </nav>
-      <p class="footer__copyright">2023 © RTE Group</p>
-    </footer>
+
+    <%= require('../blocks/footer/footer.ejs').default %>
   </body>
 </html>

@@ -7,41 +7,7 @@
   </head>
 
   <body class="page">
-    <header class="header">
-      <div class="header__main-container">
-        <div class="logo__container logo__container_type_horizontal header__logo">
-          <img
-            class="logo"
-            src="<%=require('../src/images/logo.svg')%>"
-            alt="Логотип сервиса РТ Экспресс"
-          />
-          <span class="logo__caption logo__caption_hidden">РТ Экспресс</span>
-        </div>
-        <div class="header__container">
-          <div class="header__phone-container">
-            <div class="header__contact">
-              <img src="<%=require('../src/images/phone-icon.svg')%>" />
-              <span class="header__phone">+7 917 275-90-13</span>
-            </div>
-  
-          </div>
-          <input type="checkbox" class="header__checkbox" id="checkbox" />
-          <label class="header__checkbox-label" for="checkbox"></label>
-          <button class="button button__primary header__button">
-            Оформить заявку
-          </button>
-          <nav class="header__menu">
-            <ul class="header__links">
-              <li><a class="header__link" href="./services.html">Услуги</a></li>
-              <li><a class="header__link" href="#">Автопарк</a></li>
-              <li><a class="header__link" href="./cases.html">Кейсы</a></li>
-              <li><a class="header__link" href="./cities.html">Города</a></li>
-              <li><a class="header__link" href="#">О компании</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <%= require('../blocks/header/header.ejs').default %>
 
     <main class="container">
       <section class="slide">
@@ -49,10 +15,9 @@
           <h1 class="slide__title"><%= home.h1 %></h1>
           <p class="slide__description"><%= home.h3 %></p>
           <p class="slide__text">
-            <%= home.textabout[0] %> <%= home.textabout[1] %>&nbsp;<span
-              class="slide__text-span"
+            <%= home.textabout[0] %> <%= home.textabout[1] %>&nbsp;<span class="slide__text-span"
               ><%= home.textabout[2] %></span
-            ><br>
+            ><br />
             <%= home.textabout[3] %>&nbsp;<span class="slide__text-span"
               ><%= home.textabout[4] %></span
             >
@@ -61,7 +26,7 @@
         <div class="slide__capsule">
           <img
             class="slide__image"
-            src="<%=require('./images/slide-image.png')%>"
+            src="<%=require('../images/slide-image.png')%>"
             alt="Перевозки транспортной компанией"
           />
         </div>
@@ -148,7 +113,7 @@
         <h1 class="services-section__title services__item">Наши услуги</h1>
         <div class="services__item">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -158,7 +123,7 @@
         </div>
         <div class="services__item">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -168,7 +133,7 @@
         </div>
         <div class="services__item services__item_dark">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -178,7 +143,7 @@
         </div>
         <div class="services__item services__item_dark">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -188,7 +153,7 @@
         </div>
         <div class="services__item">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -198,7 +163,7 @@
         </div>
         <div class="services__item">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -208,7 +173,7 @@
         </div>
         <div class="services__item services__item_dark">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -218,7 +183,7 @@
         </div>
         <div class="services__item services__item_dark">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -228,7 +193,7 @@
         </div>
         <div class="services__item">
           <img
-            src="<%=require('./images/icon/icon96/icon2.svg')%>"
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
             alt="icon1"
             class="services__icon"
           />
@@ -290,7 +255,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys1.jpeg')%>"
+                src="<%=require('../images/keys1.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -305,7 +270,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys2.jpeg')%>"
+                src="<%=require('../images/keys2.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -320,7 +285,7 @@
             <article class="case__content">
               <img
                 class="case__image"
-                src="<%=require('../src/images/keys3.jpeg')%>"
+                src="<%=require('../images/keys3.jpeg')%>"
                 alt="Кейс фотография"
               />
               <h3 class="case__title"><%= casesingle.title %></h3>
@@ -334,62 +299,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__logo"></div>
-      <nav class="footer__links">
-        <a href="#" class="footer__link footer__link_services" target="_blank">Услуги</a>
-        <a href="#" class="footer__link footer__link_cases" target="_blank">Кейсы</a>
-        <a href="#" class="footer__link footer__link_work" target="_blank">Работа у нас</a>
-        <a href="#" class="footer__link footer__link_about" target="_blank">О компании</a>
-        <a href="#" class="footer__link footer__link_cities" target="_blank">Города</a>
-        <a href="#" class="footer__link footer__link_privacy" target="_blank"
-          >Политика конфиденциальности</a
-        >
-        <a href="#" class="footer__link footer__link_autopark" target="_blank">Автопарк</a>
-        <a href="#" class="footer__link footer__link_contacts" target="_blank">Контакты</a>
-      </nav>
-      <p class="footer__copyright">2023 © RTE Group</p>
-    </footer>
-    <!--<ul>
-      <li>
-        <a href="./section.html">./section.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./UI-Kit.html">./UI-Kit.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./privacy-policy.html">./privacy-policy.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./500.html">./500.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./404.html">./404.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./services.html">/services.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./cases.html">/cases.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./case-page.html">/case-page.html</a>
-      </li>
- <br />
-      <li>
-        <a href="./service-page.html">/service-page.html</a>
-      </li>
-      <br />
-      <li>
-        <a href="./cities.html">./cities.html</a>
-      </li>
-    </ul>-->
+
+    <%= require('../blocks/footer/footer.ejs').default %>
   </body>
 </html>
