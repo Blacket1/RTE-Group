@@ -1,9 +1,10 @@
 .case__tags {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding: 0 24px 24px;
     row-gap: 8px;
+    column-gap: 8px;
 }
 
 @media screen and (max-width: 767px) {
