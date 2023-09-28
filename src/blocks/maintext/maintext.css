@@ -1,0 +1,14 @@
+.maintext {
+  display: flex;
+  padding-top: 96px;
+  /*padding-bottom: 128px; перенесено как padding-top*/
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .maintext {
+    flex-direction: column;
+    padding-top: 56px;
+    /*padding-bottom: 80px;*/
+  }
+}

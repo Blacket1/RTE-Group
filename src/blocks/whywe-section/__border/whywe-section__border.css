@@ -1,0 +1,17 @@
+.whywe-section__border {
+  width: 900px;
+  height: 600px;
+  transform: rotate(135deg);
+  top: -23px;
+  left: -400px;
+  border: 2px solid (#0C6);
+}
+
+@media screen and (max-width: 767px) {
+  .whywe-section__border  {
+    width: 160px;
+    height: 300px;
+    top: -130px;
+    left: -90px;
+  }
+}

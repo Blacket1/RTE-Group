@@ -8,7 +8,7 @@
     padding: 0 24px;
 }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 767px) {
     .case__title {
         padding: 0 16px;
     }

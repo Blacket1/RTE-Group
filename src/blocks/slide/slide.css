@@ -2,17 +2,17 @@
     display: flex;
     width: 100%;
     height: 100%;
-    max-width: 1080px;
     min-height: 550px;
     border: 1px solid #FFFFFF14;
     border-radius: 32px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 767px) {
     .slide {
         min-height: 575px;
-        align-items: flex-end
+        align-items: flex-end;
     }
 }

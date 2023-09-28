@@ -1,7 +1,7 @@
 .case {
     display: grid;
-    height: 410px;
-    width: 344px;
+    max-height: 410px;
+    max-width: 344px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     margin: 0;
@@ -9,10 +9,16 @@
     transition: border-color 0.6s ease;
 }
 
-@media screen and (max-width: 727px) {
+@media screen and (max-width: 767px) {
     .case {
-        height: 378px;
-        width: 328px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .case {
+        min-height: 378px;
+        min-width: 328px;
     }
 }
 

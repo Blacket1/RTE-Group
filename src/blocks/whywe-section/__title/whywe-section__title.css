@@ -1,0 +1,11 @@
+.whywe-section__title {
+  font-weight: 700;
+  max-width: 528px;
+  width: 100%;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .whywe-section__title {
+    margin-bottom: 32px;
+  }
+}

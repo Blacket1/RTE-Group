@@ -5,9 +5,10 @@
   line-height: 1.5;
   color: #fff;
   margin:0 0 24px;
+  height: 100%;
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 767px) {
   .services__text {
     margin: 0 0 16px;
   }

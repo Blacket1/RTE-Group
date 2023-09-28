@@ -1,0 +1,6 @@
+.faq__content {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+}

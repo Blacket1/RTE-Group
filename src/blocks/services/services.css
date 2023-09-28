@@ -1,0 +1,17 @@
+.services {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 128px;
+  padding-top: 128px;
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    row-gap: 8px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+}
