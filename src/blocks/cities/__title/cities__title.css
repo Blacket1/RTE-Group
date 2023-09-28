@@ -1,0 +1,16 @@
+.cities__title {
+    padding-top: 96px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .cities__title {
+        padding-top: 56px;
+    }
+}
