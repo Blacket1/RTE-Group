@@ -3,6 +3,7 @@
     height: 144px;
     border-radius: 16px;
     object-fit: cover;
+    filter: grayscale(100%);
    /* position: relative;
     display: flex;*/
 }

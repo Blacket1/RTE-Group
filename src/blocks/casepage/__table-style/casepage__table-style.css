@@ -1,0 +1,7 @@
+.casepage__table-style {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 1080px;
+}
