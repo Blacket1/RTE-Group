@@ -38,30 +38,34 @@
           <h2 class="form__title">Оставить заявку на перевозку</h2>
           <form class="form__content" name="mainForm" novalidate>
             <div class="form__fields">
-              <div class="input__container">
+              <div class="input__container user-name-container">
                 <input
                   type="text"
                   id="user-name"
-                  class="input__field"
+                  class="input__field text"
                   name="userName"
                   placeholder=" "
+                  maxlength="255"
                   required
                   value=""
                 />
-                <label for="user-name" class="input__label-name">Имя*</label>
+                <label for="user-name" class="input__label-name user-name-label">Имя*</label>
               </div>
-              <div class="input__container">
+              <span class="input__error user-name-error"></span>
+              <div class="input__container user-phone-container">
                 <input
                   type="text"
                   id="user-phone"
-                  class="input__field"
+                  class="input__field text"
                   name="userPhone"
                   placeholder=" "
+                  maxlength="255"
                   required
                   value=""
                 />
-                <label for="user-phone" class="input__label-name">Телефон*</label>
+                <label for="user-phone" class="input__label-name user-phone-label">Телефон*</label>
               </div>
+              <span class="input__error user-phone-error"></span>
               <div class="input__container form__field-container_text">
                 <textarea
                   id="goods-data"
@@ -301,5 +305,8 @@
     </main>
 
     <%= require('../blocks/footer/footer.ejs').default %>
+    <li>
+      <a href="./UI-Kit.html">./UI-Kit.html</a>
+    </li>
   </body>
 </html>
