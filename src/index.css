@@ -128,10 +128,10 @@
 @import url('../src/blocks/advantages/__text/advantages__text.css');
 
 /*блок whywe*/
-@import url('../src/blocks/whywe/__description/whyme__description.css');
+@import url('../src/blocks/whywe/__description/whywe__description.css');
 @import url('../src/blocks/whywe/__item/whywe__item.css');
-@import url('../src/blocks/whywe/__number/whyme__number.css');
-@import url('../src/blocks/whywe/__title/whyme__title.css');
+@import url('../src/blocks/whywe/__number/whywe__number.css');
+@import url('../src/blocks/whywe/__title/whywe__title.css');
 
 /*блок feedback*/
 @import url('../src/blocks/feedback/__avatar/feedback__avatar.css');
@@ -237,8 +237,11 @@
 @import url('../src/blocks/error/__illustration/error__illustration.css');
 @import url('../src/blocks/error/__icon/error__icon.css');
 
-/*зеленая тонкая фигура*/
+/*зеленая капсула*/
 @import url('../src/blocks/green-figure/green-figure.css');
+@import url('../src/blocks/green-figure/__border/green-figure__border.css');
+@import url('../src/blocks/green-figure/__full-color/green-figure__full-color.css');
+
 /* страница service */
 @import url('../src/blocks/advantages/__section/advantages__section.css');
 @import url('../src/blocks/advantages/__title/advantages__title.css');
