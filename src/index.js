@@ -113,9 +113,29 @@ function enableValidation () {
     inputHandler(inputElement);
   })
 }
+
 const userName = document.querySelector('#user-name');
 const userPhone = document.querySelector('#user-phone');
-const userText = document.querySelector('#goods-data')
+const userText = document.querySelector('#goods-data');
+const submitMessage = document.querySelector('.submit-message');
+const closeButtonMessage = document.querySelectorAll('.submit-message__close-icon');
+
+//открытие окна подтверждения 
+function openSubmitMessage() {
+  submitMessage.classList.add('submit-message_active');
+}
+
+//закрытие окна подтверждения
+function closeSubmitMessage() {
+  submitMessage.classList.remove('submit-message_active');
+}
+
+closeButtonMessage.forEach((item) => {
+  const submitMessage = item.closest('.submit-message');
+  item.addEventListener('click', function () {
+    closeSubmitMessage();
+  });
+});
 
 //функция собирающая текст из полей формы
 function getFormData() {
@@ -125,12 +145,13 @@ function getFormData() {
     console.log(userText.value);
   }
 }
-
+//обработчик кнопки
 form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   enableValidation();
   if (form.checkValidity()) {
     getFormData();
+    openSubmitMessage()
   }
 });
 

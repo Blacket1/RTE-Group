@@ -79,6 +79,7 @@
 
 /*message - всплывающее окно об отправке формы*/
 @import url(../src/blocks/submit-message/submit-message.css);
+@import url(../src/blocks/submit-message/_active/submit-message_active.css);
 @import url(../src/blocks/submit-message/__close-icon/submit-message__close-icon.css);
 @import url(../src/blocks/submit-message/__success-icon/submit-message__success-icon.css);
 @import url(../src/blocks/submit-message/__title/submit-message__title.css);
