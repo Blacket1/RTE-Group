@@ -24,6 +24,7 @@ function boxHandler(e) {
 //validate
 const form = document.querySelector('.form__content');
 const inputList = Array.from(form.querySelectorAll('.text'));
+const inputText =form.querySelector('.text')
 const buttonElement = form.querySelector('.button__primary');
 
 const showInputError = (formElement, inputElement) => {
@@ -82,7 +83,7 @@ const inputIsValid = (formElement, inputElement) => {
 }
 
 const checkboxIsValid = (formElement) => {
-  if(!formElement.checkValidity()) {
+  if(!formElement.checked) {
     showCheckboxError(formElement);
   } else {
     hideCheckboxError(formElement);
@@ -112,10 +113,24 @@ function enableValidation () {
     inputHandler(inputElement);
   })
 }
+const userName = document.querySelector('#user-name');
+const userPhone = document.querySelector('#user-phone');
+const userText = document.querySelector('#goods-data')
+
+//функция собирающая текст из полей формы
+function getFormData() {
+  console.log(userName.value);
+  console.log(userPhone.value);
+  if(userText.value.length > 0) {
+    console.log(userText.value);
+  }
+}
 
 form.addEventListener('submit', function (evt) {
   evt.preventDefault();
   enableValidation();
-  console.log()
+  if (form.checkValidity()) {
+    getFormData();
+  }
 });
 
