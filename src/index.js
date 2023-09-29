@@ -22,10 +22,7 @@ function boxHandler(e) {
 }
 
 //validate
-const form = document.querySelector('.form__content');
-const inputList = Array.from(form.querySelectorAll('.text'));
-const inputText =form.querySelector('.text')
-const buttonElement = form.querySelector('.button__primary');
+
 
 const showInputError = (formElement, inputElement) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
@@ -90,27 +87,32 @@ const checkboxIsValid = (formElement) => {
   }
 }
 
-const inputHandler = (inputElement) => {
+const inputHandler = (inputList, inputElement, formElement) => {
+  const buttonElement = form.querySelector('.button__primary');
   inputElement.addEventListener('input', function() {
-    toggleButtonState(inputList, buttonElement, form);
-    inputIsValid(form, inputElement);
+    toggleButtonState(inputList, buttonElement, formElement);
+    inputIsValid(formElement, inputElement);
   })
 }
 
-const checkHandler = (form) => {
-  form.addEventListener('click', function() {
-    toggleButtonState(inputList, buttonElement, form);
-    checkboxIsValid(form)
+const checkHandler = (inputList, buttonElement, formElement) => {
+  formElement.addEventListener('click', function() {
+    toggleButtonState(inputList, buttonElement, formElement);
+    checkboxIsValid(formElement)
   })
 }
+
+const form = document.querySelector('.form__content');
 
 function enableValidation () {
-  checkHandler(form);
+  const inputList = Array.from(form.querySelectorAll('.text'));
+  const buttonElement = form.querySelector('.button__primary');
+  checkHandler(inputList, buttonElement, form);
   checkboxIsValid(form);
   inputList.forEach((inputElement) => {
     toggleButtonState(inputList, buttonElement, form);
     inputIsValid(form, inputElement);
-    inputHandler(inputElement);
+    inputHandler(inputList, inputElement, form);
   })
 }
 
@@ -132,7 +134,7 @@ function closeSubmitMessage() {
 
 closeButtonMessage.forEach((item) => {
   const submitMessage = item.closest('.submit-message');
-  item.addEventListener('click', function () {
+  submitMessage.addEventListener('click', function () {
     closeSubmitMessage();
   });
 });
@@ -151,7 +153,6 @@ form.addEventListener('submit', function (evt) {
   enableValidation();
   if (form.checkValidity()) {
     getFormData();
-    openSubmitMessage()
+    openSubmitMessage();
   }
 });
-

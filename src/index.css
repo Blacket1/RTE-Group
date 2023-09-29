@@ -173,6 +173,7 @@
 @import url(../src/blocks/main-content/main-content.css);
 
 @import url(../src/blocks/form-section/form-section.css);
+@import url(../src/blocks/form-block/form-block.css);
 @import url(../src/blocks/form-section/__title/form-section__title.css);
 @import url(../src/blocks/form-section/__info/form-section__info.css);
 @import url(../src/blocks/form-section/__about/form-section__about.css);
