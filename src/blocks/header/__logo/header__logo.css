@@ -1,6 +1,7 @@
 .header__logo {
   overflow: hidden;
   z-index: 4;
+  text-decoration: none;
 }
 .header__logo img {
   max-width: 100%;
