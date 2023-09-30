@@ -1,10 +1,12 @@
 .maintext__heading {
   max-width: 576px;
   margin-right: 24px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .maintext__heading {
     margin: 0 auto;
+    min-width: 296px;
   }
 }

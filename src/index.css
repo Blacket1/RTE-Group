@@ -9,6 +9,7 @@
 
 /*кнопка*/
 @import url('../src/blocks/button/button.css');
+@import url('../src/blocks/button/_inactive/button_inactive.css');
 @import url('../src/blocks/button/__primary/button__primary.css');
 @import url('../src/blocks/button/__outline/button__outline.css');
 @import url('../src/blocks/button/__dark/button__dark.css');
@@ -23,8 +24,10 @@
 
 /*inputs*/
 @import url(../src/blocks/input/__container/input__container.css);
+@import url(../src/blocks/input/__container/_error/input__container_error.css);
 @import url(../src/blocks/input/__field/input__field.css);
 @import url(../src/blocks/input/__label-name/input__label-name.css);
+@import url(../src/blocks/input/__label-name/_error/input__label-name_error.css);
 
 @import url(../src/blocks/input/_textarea/input_textarea.css);
 @import url(../src/blocks/input/__checkbox-container/input__checkbox-container.css);
@@ -33,6 +36,7 @@
 @import url(../src/blocks/input/_checkbox/_error/input_checkbox_error.css);
 @import url(../src/blocks/input/__field/_error/input__field_error.css);
 @import url(../src/blocks/input/__error/input__error.css);
+@import url(../src/blocks/input/__error/_active/input__error_active.css);
 
 /*стили section*/
 
@@ -75,6 +79,7 @@
 
 /*message - всплывающее окно об отправке формы*/
 @import url(../src/blocks/submit-message/submit-message.css);
+@import url(../src/blocks/submit-message/_active/submit-message_active.css);
 @import url(../src/blocks/submit-message/__close-icon/submit-message__close-icon.css);
 @import url(../src/blocks/submit-message/__success-icon/submit-message__success-icon.css);
 @import url(../src/blocks/submit-message/__title/submit-message__title.css);
@@ -168,6 +173,7 @@
 @import url(../src/blocks/main-content/main-content.css);
 
 @import url(../src/blocks/form-section/form-section.css);
+@import url(../src/blocks/form-block/form-block.css);
 @import url(../src/blocks/form-section/__title/form-section__title.css);
 @import url(../src/blocks/form-section/__info/form-section__info.css);
 @import url(../src/blocks/form-section/__about/form-section__about.css);
