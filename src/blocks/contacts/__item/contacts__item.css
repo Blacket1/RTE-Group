@@ -1,9 +1,5 @@
 .contacts__item {
-  margin-top: 24px;
-}
-
-@media screen and (max-width: 576px) {
-  .contacts__item {
-    margin-top: 16px;
-  }
+  width: 264px;
+  margin-top: 80px;
+  flex-shrink: 0;
 }

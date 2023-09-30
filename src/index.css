@@ -60,6 +60,7 @@
 
 /*forms*/
 @import url(../src/blocks/form/form.css);
+@import url('../src/blocks/form/_type/form_type_contacts.css');
 
 @import url(../src/blocks/form/__title/form__title.css);
 @import url(../src/blocks/form/__content/form__content.css);
@@ -143,18 +144,6 @@
 @import url('../src/blocks/feedback/__item/feedback__item.css');
 @import url('../src/blocks/feedback/__text/feedback__text.css');
 @import url('../src/blocks/feedback/__users-name/feedback__users-name.css');
-
-/* блок contacts */
-@import url('../src/blocks/contacts/contacts.css');
-@import url('../src/blocks/contacts/__title/contacts__title.css');
-@import url('../src/blocks/contacts/__list/contacts__list.css');
-@import url('../src/blocks/contacts/__item/contacts__item.css');
-@import url('../src/blocks/contacts/__head/contacts__head.css');
-@import url('../src/blocks/contacts/__info/contacts__info.css');
-@import url('../src/blocks/contacts/__info-text/contacts__info-text.css');
-@import url('../src/blocks/contacts/__info-link/contacts__info-link.css');
-@import url('../src/blocks/contacts/__info-link/_email/contacts__info-link_email.css');
-@import url('../src/blocks/contacts/__info-icon/contacts__info-icon.css');
 
 /*блок slide*/
 @import url('../src/blocks/slide/slide.css');
@@ -297,3 +286,20 @@
 @import url('../src/blocks/cities/__delivery/cities__delivery.css');
 @import url('../src/blocks/cities/__emblem/cities__emblem.css');
 @import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
+
+/* страница contacts */
+@import url('../src/blocks/contacts/contacts.css');
+@import url('../src/blocks/contacts/__content/contacts__content.css');
+@import url('../src/blocks/contacts/__title/contacts__title.css');
+@import url('../src/blocks/contacts/__list/contacts__list.css');
+@import url('../src/blocks/contacts/__item/contacts__item.css');
+@import url('../src/blocks/contacts/__item-title/contacts__item-title.css');
+@import url('../src/blocks/contacts/__sublist/contacts__sublist.css');
+@import url('../src/blocks/contacts/__subitem/contacts__subitem.css');
+@import url('../src/blocks/contacts/__head/contacts__head.css');
+@import url('../src/blocks/contacts/__info/contacts__info.css');
+@import url('../src/blocks/contacts/__text/contacts__text.css');
+@import url('../src/blocks/contacts/__link/contacts__link.css');
+@import url('../src/blocks/contacts/__link/_email/contacts__link_email.css');
+@import url('../src/blocks/contacts/__icon/contacts__icon.css');
+@import url('../src/blocks/contacts/__form/contacts__form.css');

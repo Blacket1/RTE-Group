@@ -1,5 +1,9 @@
 .contacts__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
   margin: 0;
+  column-gap: 30px;
 }

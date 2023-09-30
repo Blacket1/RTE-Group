@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= home.h1 %> - <%= contacts.title %></title>
+  </head>
+  <body class="page">
+    <%= require('../blocks/header/header.ejs').default %>
+
+    <main class="contacts content container">
+      <h1 class="contacts__title title"><%= contacts.page_title %></h1>
+      <div class="contacts__content">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[0].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[0].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[0].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[0].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[0].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[0].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[0].email %>"
+                    ><%= contacts.items[0].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[1].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[1].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[0].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[1].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[1].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[1].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[1].email %>"
+                    ><%= contacts.items[1].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[2].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[2].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[0].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[2].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[2].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[2].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[2].email %>"
+                    ><%= contacts.items[2].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[3].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[3].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[3].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[3].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[3].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[3].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[3].email %>"
+                    ><%= contacts.items[3].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[4].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[4].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[4].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[4].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[4].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[4].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[4].email %>"
+                    ><%= contacts.items[4].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[5].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[5].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[5].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[5].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[5].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[5].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[5].email %>"
+                    ><%= contacts.items[5].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[6].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[6].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[6].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[6].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[6].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[6].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[6].email %>"
+                    ><%= contacts.items[6].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[7].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[7].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[7].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[7].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[7].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[7].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[7].email %>"
+                    ><%= contacts.items[7].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="contacts__item">
+            <h2 class="contacts__item-title"><%= contacts.items[8].title %></h2>
+            <ul class="contacts__sublist">
+              <li class="contacts__subitem">
+                <h3 class="contacts__head">Адрес</h3>
+                <p class="contacts__info">
+                  <span class="contacts__text"><%= contacts.items[8].address %></span>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">Телефон</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link"
+                    href="tel:+<%= contacts.items[8].phone.replace(/\D/g, '') %>"
+                    ><%= contacts.items[8].phone %></a
+                  >
+                  <a
+                    class="contacts__link"
+                    href="tg://resolve?domain=+<%= contacts.items[8].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/telegram-icon.svg')%>"
+                      alt="Telegram"
+                  /></a>
+                  <a
+                    class="contacts__link"
+                    href="https://wa.me/+<%= contacts.items[8].phone.replace(/\D/g, '') %>"
+                  >
+                    <img
+                      class="contacts__icon"
+                      src="<%=require('../images/whatsapp-icon.svg')%>"
+                      alt="Whatsapp"
+                    />
+                  </a>
+                </p>
+              </li>
+              <li class="contacts__subitem">
+                <p class="contacts__head">E-mail</p>
+                <p class="contacts__info">
+                  <a
+                    class="contacts__link contacts__link_email"
+                    href="mailto:<%= contacts.items[8].email %>"
+                    ><%= contacts.items[8].email %></a
+                  >
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="form form_type_contacts contacts__form" name="contacts" novalidate>
+          <h2 class="form__title">Связаться с нами</h2>
+          <div class="form__content">
+            <div class="form__fields">
+              <div class="input__container">
+                <input
+                  type="text"
+                  id="user-name"
+                  class="input__field"
+                  name="userName"
+                  placeholder=" "
+                  required
+                  value=""
+                />
+                <label for="user-name" class="input__label-name">Имя*</label>
+              </div>
+              <div class="input__container">
+                <input
+                  type="email"
+                  id="user-email"
+                  class="input__field"
+                  name="email"
+                  placeholder=" "
+                  required
+                  value=""
+                />
+                <label for="user-phone" class="input__label-name">E-mail*</label>
+              </div>
+              <div class="input__container form__field-container_text">
+                <textarea
+                  id="goods-data"
+                  class="input__field input_textarea"
+                  name="goodsData"
+                  placeholder=" "
+                  maxlength="255"
+                  rows="3"
+                ></textarea>
+                <label for="goods-data" class="input__label-name">Текст сообщения</label>
+              </div>
+              <div class="input__checkbox-container">
+                <label for="check-field">
+                  <input
+                    type="checkbox"
+                    id="check-field"
+                    class="input__field input_checkbox"
+                    name="dataConfirm"
+                    required
+                  />
+                  <span class="input__field input_checkbox-pseudo"></span>
+                </label>
+                <span class="form__field-span"
+                  >Согласен на обработку персональных данных в соответствии с
+                  <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                >
+                <span class="form__field-error user-name_error"></span>
+              </div>
+            </div>
+            <button type="submit" name="sendButton" class="button button__primary">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <%= require('../blocks/footer/footer.ejs').default %>
+  </body>
+</html>

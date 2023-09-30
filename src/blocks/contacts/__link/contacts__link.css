@@ -1,0 +1,9 @@
+.contacts__link {
+  text-decoration: none;
+  color: white;
+  line-height: 24px;
+}
+
+.contacts__link + .contacts__link {
+  margin-left: 8px;
+}
