@@ -2,3 +2,10 @@
     padding-top: 96px;
     padding-bottom: 96px;
 }
+
+@media screen and (max-width: 767px) {
+    .casepage {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}

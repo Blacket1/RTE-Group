@@ -3,11 +3,17 @@
   padding-top: 96px;
   position: relative;
   overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1080px;
+  min-width: 328px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .maintext {
     flex-direction: column;
+    align-items: center;
     padding-top: 56px;
   }
 }
