@@ -9,7 +9,7 @@
   }
 }
 @media screen and (max-width: 535px) {
-  .form {
-    min-width: 300px;
+  .form-block {
+    min-width: 288px;
   }
 }
