@@ -7,3 +7,9 @@
     max-width: 1080px;
     width: 100%;
 }
+
+@media screen and (max-width: 1280px) {
+    .cities {
+        width: 91%;
+    }
+}

@@ -6,3 +6,11 @@
     color: #fff;
     margin: 0;
 }
+
+@media screen and (max-width: 767px) {
+    .casepage__h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+}

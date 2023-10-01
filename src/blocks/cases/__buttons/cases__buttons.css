@@ -1,4 +1,6 @@
 .cases__buttons {
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
