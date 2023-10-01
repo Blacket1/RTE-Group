@@ -1,5 +1,5 @@
 .page {
-  min-width: 320px;
+  /*min-width: 320px;*/
   min-height: 100vh;
   font-family: 'Montserrat', Arial, sans-serif;
   background-color: #1a1a1a;
@@ -29,4 +29,8 @@
   .page {
     padding-top: 64px;
   }
+}
+
+html {
+  overflow-x: hidden;
 }

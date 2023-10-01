@@ -7,6 +7,6 @@
 @media screen and (max-width: 767px) {
   .maintext__heading {
     margin: 0 auto;
-    min-width: 296px;
+    min-width: 288px;
   }
 }
