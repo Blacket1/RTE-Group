@@ -7,6 +7,11 @@
   font-weight: 600;
   line-height: 1.5;
   border-bottom: 1px solid #333;
+  transition: opacity 0.5s ease;
+}
+
+.faq__label:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1024px) {
