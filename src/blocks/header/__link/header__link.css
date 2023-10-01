@@ -1,5 +1,5 @@
 .header__link {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -7,4 +7,10 @@
   text-decoration: none;
   cursor: pointer;
   background-color: #1a1a1a;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }

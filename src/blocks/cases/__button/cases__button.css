@@ -3,6 +3,11 @@
     display: flex;
     justify-content: space-between;
     column-gap: 8px;
+    transition: opacity 0.5s ease;
+}
+
+.cases__button:hover {
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 767px) {
