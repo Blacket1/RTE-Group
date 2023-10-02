@@ -1,4 +1,4 @@
-.casepage__h1 {
+.casepage__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .casepage__h1 {
+    .casepage__title {
         font-size: 28px;
         font-weight: 700;
         line-height: 35px;

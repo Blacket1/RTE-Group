@@ -3,15 +3,27 @@
   height: 600px;
   transform: rotate(135deg);
   top: -23px;
-  left: -400px;
-  border: 2px solid (#0C6);
+  right: 53%;
+  border: 2px solid #00CC66;
 }
 
 @media screen and (max-width: 767px) {
   .whywe-section__border  {
     width: 160px;
     height: 300px;
-    top: -130px;
+    top: -200px;
     left: -90px;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  .whywe-section__border  {
+    top: -165px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .whywe-section__border  {
+    top: -130px;
   }
 }

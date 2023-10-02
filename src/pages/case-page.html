@@ -10,7 +10,6 @@
     <div class="green-figure green-figure__full-color"></div>
     <main class="container">
       <section class="maintext">
-        
         <div class="maintext__heading">
           <h1 class="maintext__title title"><%= casepage.h1[0] %></h1>
           <div class="case__tags casepage__tags">
@@ -82,7 +81,11 @@
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
-                    <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                    <span
+                      onclick="document.location='./privacy-policy.html'"
+                      class="form__field-span_accent"
+                      >политикой конфиденциальности</span
+                    ></span
                   >
                   <span class="form__field-error user-name_error"></span>
                 </div>
@@ -105,35 +108,37 @@
               alt="Иконка-подтверждение успешной отправки формы"
             />
             <h2 class="submit-message__title">Заявка отправлена!</h2>
-            <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <p class="submit-message__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+            </p>
           </div>
         </div>
       </section>
       <section class="casepage">
         <div class="casepage__text-section">
-          <h2 class="casepage__h1"><%= casepage.h1[1] %></h2>
-          
-          <h2 class="casepage__h2"><%= casepage.h2 %></h2>
+          <h1 class="casepage__title"><%= casepage.h1[1] %></h1>
+
+          <h2 class="casepage__subtitle"><%= casepage.h2 %></h2>
           <p class="casepage__text"><%= casepage.text2 %></p>
-          
-          <h3 class="casepage__h3"><%= casepage.h3 %></h3>
+
+          <h3 class="casepage__what-is"><%= casepage.h3 %></h3>
           <p class="casepage__text"><%= casepage.text3 %></p>
 
-          <h4 class="casepage__h4"><%= casepage.h4 %></h4>
+          <h4 class="casepage__advantages"><%= casepage.h4 %></h4>
           <ul class="casepage__text">
             <li><%= casepage.text4[0] %></li>
             <li><%= casepage.text4[1] %></li>
             <li><%= casepage.text4[2] %></li>
           </ul>
 
-          <h5 class="casepage__h5"><%= casepage.h5 %></h5>
+          <h5 class="casepage__tech"><%= casepage.h5 %></h5>
           <ol class="casepage__text">
             <li><%= casepage.text5[0] %></li>
             <li><%= casepage.text5[1] %></li>
             <li><%= casepage.text5[2] %></li>
           </ol>
 
-          <h6 class="casepage__h6"><%= casepage.h6 %></h6>
+          <h6 class="casepage__example"><%= casepage.h6 %></h6>
           <p class="casepage__text"><%= casepage.text6[0] %></p>
           <ul class="casepage__text">
             <li><%= casepage.text6[1] %></li>
@@ -189,11 +194,15 @@
                   <td class="casepage__table-column"><%= casepage.thirdcolumn[2] %></td>
                 </tr>
               </tbody>
-            </table> 
+            </table>
           </div>
         </div>
         <div class="casepage__photo-section">
-          <img class="casepage__photo" src="<%=require('../images/car-photo1.png')%>" alt="Фотография <%= casepage.phototitle %>">
+          <img
+            class="casepage__photo"
+            src="<%=require('../images/car-photo1.png')%>"
+            alt="Фотография <%= casepage.phototitle %>"
+          />
           <p class="casepage__mini-text casepage__photo-title"><%= casepage.phototitle %></p>
         </div>
       </section>

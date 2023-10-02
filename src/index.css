@@ -202,6 +202,9 @@
 
 /*страница cases*/
 @import url('../src/blocks/cases/cases.css');
+@import url('../src/blocks/cases/__option/cases__option.css');
+@import url('../src/blocks/cases/__caret/cases__caret.css');
+@import url('../src/blocks/cases/__select/cases__select.css');
 @import url('../src/blocks/cases/__button/cases__button.css');
 @import url('../src/blocks/cases/__buttons/cases__buttons.css');
 @import url('../src/blocks/cases/__items/cases__items.css');
@@ -211,12 +214,12 @@
 @import url('../src/blocks/casepage/__citation-icon/casepage__citation-icon.css');
 @import url('../src/blocks/casepage/__citation-text/casepage__citation-text.css');
 @import url('../src/blocks/casepage/__citation/casepage__citation.css');
-@import url('../src/blocks/casepage/__h1/casepage__h1.css');
-@import url('../src/blocks/casepage/__h2/casepage__h2.css');
-@import url('../src/blocks/casepage/__h3/casepage__h3.css');
-@import url('../src/blocks/casepage/__h4/casepage__h4.css');
-@import url('../src/blocks/casepage/__h5/casepage__h5.css');
-@import url('../src/blocks/casepage/__h6/casepage__h6.css');
+@import url('../src/blocks/casepage/__title/casepage__title.css');
+@import url('../src/blocks/casepage/__subtitle/casepage__subtitle.css');
+@import url('../src/blocks/casepage/__what-is/casepage__what-is.css');
+@import url('../src/blocks/casepage/__advantages/casepage__advantages.css');
+@import url('../src/blocks/casepage/__tech/casepage__tech.css');
+@import url('../src/blocks/casepage/__example/casepage__example.css');
 @import url('../src/blocks/casepage/__mini-text/casepage__mini-text.css');
 @import url('../src/blocks/casepage/__photo-section/casepage__photo-section.css');
 @import url('../src/blocks/casepage/__photo-title/casepage__photo-title.css');
