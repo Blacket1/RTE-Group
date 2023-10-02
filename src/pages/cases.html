@@ -79,7 +79,7 @@
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
-                    <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                    <span onclick="document.location='./privacy-policy.html'" class="form__field-span_accent">политикой конфиденциальности</span></span
                   >
                   <span class="form__field-error user-name_error"></span>
                 </div>
@@ -102,21 +102,23 @@
               alt="Иконка-подтверждение успешной отправки формы"
             />
             <h2 class="submit-message__title">Заявка отправлена!</h2>
-            <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <p class="submit-message__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+            </p>
           </div>
         </div>
       </section>
       <section class="cases">
         <div class="cases__buttons">
           <button class="button button__dark cases__button">
-            Все города <img src="<%=require('../images/icon/CaretDown.svg')%>" />
+            Все города <img src="<%=require('../images/icon/CaretDown.svg')%>" alt="Иконка стрелки вниз для раскрывающегося списка городов" />
           </button>
           <button class="button button__dark cases__button">
-            Все услуги <img src="<%=require('../images/icon/CaretDown.svg')%>" />
+            Все услуги <img src="<%=require('../images/icon/CaretDown.svg')%>" alt="Иконка стрелки вниз для раскрывающегося списка услуг" />
           </button>
         </div>
         <div class="cases__items">
-          <a href="./case-page.html" target="_blank" class="case">
+          <a href="./case-page.html" class="case">
             <article class="case__content">
               <img
                 class="case__image"

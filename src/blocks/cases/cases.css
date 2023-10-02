@@ -5,8 +5,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    .cases {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+  .cases {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

@@ -78,7 +78,7 @@
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
-                    <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                    <span onclick="document.location='./privacy-policy.html'" class="form__field-span_accent">политикой конфиденциальности</span></span
                   >
                   <span class="form__field-error user-name_error"></span>
                 </div>
@@ -114,7 +114,7 @@
               alt="icon"
               class="advantages__icon"
             />
-            <h4 class="advantages__subtitle"><%= advantages.title[0] %></h4>
+            <h3 class="advantages__subtitle"><%= advantages.title[0] %></h3>
             <p class="advantages__text"><%= advantages.text[0] %></p>
           </li>
           <li class="advantages__item">
@@ -123,7 +123,7 @@
               alt="icon"
               class="advantages__icon"
             />
-            <h4 class="advantages__subtitle"><%= advantages.title[1] %></h4>
+            <h3 class="advantages__subtitle"><%= advantages.title[1] %></h3>
             <p class="advantages__text"><%= advantages.text[1] %></p>
           </li>
           <li class="advantages__item">
@@ -132,7 +132,7 @@
               alt="icon"
               class="advantages__icon"
             />
-            <h4 class="advantages__subtitle"><%= advantages.title[2] %></h4>
+            <h3 class="advantages__subtitle"><%= advantages.title[2] %></h3>
             <p class="advantages__text"><%= advantages.text[2] %></p>
           </li>
           <li class="advantages__item advantages__item_dark">
@@ -141,13 +141,13 @@
               alt="icon"
               class="advantages__icon"
             />
-            <h4 class="advantages__subtitle"><%= advantages.title[3] %></h4>
+            <h3 class="advantages__subtitle"><%= advantages.title[3] %></h3>
             <p class="advantages__text"><%= advantages.text[3] %></p>
           </li>
         </ul>
       </section>
       <section class="whywe-section whywe-section__big">
-        <h1 class="whywe-section__title title"><%= whywebig.h2 %></h1>
+        <h2 class="whywe-section__title title"><%= whywebig.h2 %></h2>
         <div class="whywe-section__container">
           <div class="whywe__item">
             <p class="whywe__number">1</p>

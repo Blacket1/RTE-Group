@@ -1,0 +1,33 @@
+.cases__select {
+  appearance: none;
+  margin: 0;
+  border: none;
+  width: 176px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  color: #fff;
+  transition: opacity 0.5s ease;
+}
+
+.cases__select:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .cases__select {
+    padding: 8px 15px;
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .cases__select {
+    width: 140px;
+  }
+}

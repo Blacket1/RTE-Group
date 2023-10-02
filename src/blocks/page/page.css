@@ -7,10 +7,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 112px;
-  box-sizing: border-box;/*
-  position: relative;
-  overflow-x: hidden;*/
+  padding-top: 224x;
+  box-sizing: border-box;
 
   /*сглаживание*/
   -moz-osx-font-smoothing: grayscale;
@@ -27,4 +25,9 @@
 
 html {
   overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+  .page {
+    padding-top: 80px;
+  }
 }
