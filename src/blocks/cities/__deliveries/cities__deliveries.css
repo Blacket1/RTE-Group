@@ -1,12 +1,13 @@
 .cities__deliveries {
     padding-top: 96px;
-    margin: 0 auto;
+    margin: 0;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1159px) {
     .cities__deliveries {
         grid-template-columns: repeat(2, 1fr);
     }
