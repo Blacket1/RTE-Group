@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 112px;
+  padding-top: 224px;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -27,4 +27,9 @@
 
 html {
   overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+  .page {
+    padding-top: 80px;
+  }
 }
