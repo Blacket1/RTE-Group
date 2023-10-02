@@ -1,5 +1,6 @@
 .whywe-section {
   margin: 208px 0;
+  max-width: 1080px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -9,8 +9,6 @@
   flex-direction: column;
   padding-top: 224px;
   box-sizing: border-box;
-  position: relative;
-  overflow-x: hidden;
 
   /*сглаживание*/
   -moz-osx-font-smoothing: grayscale;

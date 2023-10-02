@@ -1,5 +1,6 @@
 .feedback {
   padding-bottom: 128px;
+  max-width: 1080px;
 }
 
 @media screen and (max-width: 767px) {
