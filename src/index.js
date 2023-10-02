@@ -147,12 +147,14 @@ function getFormData() {
     console.log(userText.value);
   }
 }
-//обработчик кнопки
-form.addEventListener('submit', function (evt) {
-  evt.preventDefault();
-  enableValidation();
-  if (form.checkValidity()) {
-    getFormData();
-    openSubmitMessage();
-  }
-});
+//обработчик кнопки, навешиваем если есть форма(избавляемся от ошибок на странице где нет форм)
+if (form) {
+  form.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    enableValidation();
+    if (form.checkValidity()) {
+      getFormData();
+      openSubmitMessage();
+    }
+  });
+}

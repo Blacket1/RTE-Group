@@ -202,6 +202,9 @@
 
 /*страница cases*/
 @import url('../src/blocks/cases/cases.css');
+@import url('../src/blocks/cases/__option/cases__option.css');
+@import url('../src/blocks/cases/__caret/cases__caret.css');
+@import url('../src/blocks/cases/__select/cases__select.css');
 @import url('../src/blocks/cases/__button/cases__button.css');
 @import url('../src/blocks/cases/__buttons/cases__buttons.css');
 @import url('../src/blocks/cases/__items/cases__items.css');
