@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: 100%;
+    max-width: 1080px;
     min-height: 550px;
     border: 1px solid #FFFFFF14;
     border-radius: 32px;
