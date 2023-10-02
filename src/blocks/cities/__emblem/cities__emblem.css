@@ -1,15 +1,15 @@
 .cities__emblem {
-    position: absolute;
+    /*position: absolute;
     left: 24px;
-    top: 24px;
+    top: 24px;*/
     width: 52.52px;
     height: 64px;
 }
 
 @media screen and (max-width: 767px) {
     .cities__emblem {
-        left: 16px;
-        top: 16px;
+        /*left: 16px;
+        top: 16px;*/
         width: 32.82px;
         height: 40px;
     }
