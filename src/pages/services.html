@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= home.h1 %> - Услуги</title>
+    <title>Services</title>
   </head>
 
   <body class="page">
@@ -79,7 +79,11 @@
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
-                    <span class="form__field-span_accent">политикой конфиденциальности</span></span
+                    <span
+                      onclick="document.location='./privacy-policy.html'"
+                      class="form__field-span_accent"
+                      >политикой конфиденциальности</span
+                    ></span
                   >
                   <span class="form__field-error user-name_error"></span>
                 </div>
@@ -102,106 +106,109 @@
               alt="Иконка-подтверждение успешной отправки формы"
             />
             <h2 class="submit-message__title">Заявка отправлена!</h2>
-            <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <p class="submit-message__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="">
-        <ul class="services">
-          <li class="services__item">
-            <img
-              src="<%=require('../images/icon/icon96/icon1.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[0] %></h3>
-            <p class="services__text"><%= services.text[0] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item services__item_dark">
-            <img
-              src="<%=require('../images/icon/icon96/icon2.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[1] %></h3>
-            <p class="services__text"><%= services.text[1] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item services__item_dark">
-            <img
-              src="<%=require('../images/icon/icon96/icon3.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[2] %></h3>
-            <p class="services__text"><%= services.text[2] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item">
-            <img
-              src="<%=require('../images/icon/icon96/icon4.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[3] %></h3>
-            <p class="services__text"><%= services.text[3] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item">
-            <img
-              src="<%=require('../images/icon/icon96/icon5.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[4] %></h3>
-            <p class="services__text"><%= services.text[4] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item services__item_dark">
-            <img
-              src="<%=require('../images/icon/icon96/icon6.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[5] %></h3>
-            <p class="services__text"><%= services.text[5] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item services__item_dark">
-            <img
-              src="<%=require('../images/icon/icon96/icon7.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[6] %></h3>
-            <p class="services__text"><%= services.text[6] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item">
-            <img
-              src="<%=require('../images/icon/icon96/icon8.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[7] %></h3>
-            <p class="services__text"><%= services.text[7] %></p>
-            <button onclick="document.location='./service-page.html'" class="button button__outline">Подробнее</button>
-          </li>
-          <li class="services__item">
-            <img
-              src="<%=require('../images/icon/icon96/icon9.svg')%>"
-              alt="icon"
-              class="services__icon"
-            />
-            <h3 class="services__subtitle"><%= services.title[8] %></h3>
-            <p class="services__text"><%= services.text[8] %></p>
-            <button class="button button__outline">Подробнее</button>
-          </li>
-        </ul>
+      <section class="services">
+        <div class="services__item">
+          <img
+            src="<%=require('../images/icon/icon96/icon1.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[0] %></h3>
+          <p class="services__text"><%= services.text[0] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item services__item_dark">
+          <img
+            src="<%=require('../images/icon/icon96/icon2.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[1] %></h3>
+          <p class="services__text"><%= services.text[1] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item services__item_dark">
+          <img
+            src="<%=require('../images/icon/icon96/icon3.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[2] %></h3>
+          <p class="services__text"><%= services.text[2] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item">
+          <img
+            src="<%=require('../images/icon/icon96/icon4.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[3] %></h3>
+          <p class="services__text"><%= services.text[3] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item">
+          <img
+            src="<%=require('../images/icon/icon96/icon5.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[4] %></h3>
+          <p class="services__text"><%= services.text[4] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item services__item_dark">
+          <img
+            src="<%=require('../images/icon/icon96/icon6.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[5] %></h3>
+          <p class="services__text"><%= services.text[5] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item services__item_dark">
+          <img
+            src="<%=require('../images/icon/icon96/icon7.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[6] %></h3>
+          <p class="services__text"><%= services.text[6] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
+        <div class="services__item">
+          <img
+            src="<%=require('../images/icon/icon96/icon8.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[7] %></h3>
+          <p class="services__text"><%= services.text[7] %></p>
+          <button onclick="document.location='./service-page.html'" class="button button__outline">
+            Подробнее
+          </button>
+        </div>
+        <div class="services__item">
+          <img
+            src="<%=require('../images/icon/icon96/icon9.svg')%>"
+            alt="icon"
+            class="services__icon"
+          />
+          <h3 class="services__subtitle"><%= services.title[8] %></h3>
+          <p class="services__text"><%= services.text[8] %></p>
+          <button class="button button__outline">Подробнее</button>
+        </div>
       </section>
     </main>
+
     <%= require('../blocks/footer/footer.ejs').default %>
   </body>
 </html>
