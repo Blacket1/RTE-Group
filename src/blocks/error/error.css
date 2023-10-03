@@ -1,6 +1,13 @@
 .error {
   display: flex;
   align-items: center;
-  padding-top: 56px;
-  padding-bottom: 80px;
+  padding-top: 96px;
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 767px) {
+  .error {
+    padding-top: 56px;
+    padding-bottom: 12px;
+  }
 }

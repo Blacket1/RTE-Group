@@ -288,3 +288,6 @@
 @import url('../src/blocks/cities/__delivery/cities__delivery.css');
 @import url('../src/blocks/cities/__emblem/cities__emblem.css');
 @import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
+
+/* services page */
+@import url('../src/blocks/services-page/services-page.css');
