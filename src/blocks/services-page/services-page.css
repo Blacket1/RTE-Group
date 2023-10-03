@@ -1,0 +1,9 @@
+.services-page {
+  margin-bottom: -76px;
+}
+
+@media screen and (max-width: 767px) {
+  .services-page {
+    margin-bottom: -31px;
+  }
+}
