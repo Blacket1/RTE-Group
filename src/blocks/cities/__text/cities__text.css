@@ -1,19 +1,13 @@
 .cities__text {
-    display: block;
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    max-width: 551px;
-    z-index: 1;
-}
-
-@media screen and (max-width: 767px) {
-    .cities__text {
-        padding-top: 24px;
-    }
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 551px;
+  z-index: 1;
+  margin-top: 16px;
 }

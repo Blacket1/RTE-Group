@@ -302,3 +302,6 @@
 /* cases */
 @import url('../src/blocks/cases-page/cases-page.css');
 @import url('../src/blocks/cases-page/__maintext-text/cases-page__maintext-text.css');
+
+/* cities page */
+@import url('../src/blocks/cities-page/cities-page.css');
