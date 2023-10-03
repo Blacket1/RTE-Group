@@ -298,3 +298,7 @@
 @import url('../src/blocks/case-page/__maintext-text/case-page__maintext-text.css');
 @import url('../src/blocks/case-page/__maintext-title/case-page__maintext-title.css');
 @import url('../src/blocks/case-page/__maintext-heading/case-page__maintext-heading.css');
+
+/* cases */
+@import url('../src/blocks/cases-page/cases-page.css');
+@import url('../src/blocks/cases-page/__maintext-text/cases-page__maintext-text.css');
