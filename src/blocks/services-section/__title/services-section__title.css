@@ -9,7 +9,9 @@
 }
 @media screen and (max-width: 767px) {
   .services-section__title {
+    font-size: 28px;
+    line-height: 35px;
     height: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 }

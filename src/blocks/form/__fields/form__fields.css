@@ -4,3 +4,10 @@
   row-gap: 14px;
   margin: 24px 0 24px 0;
 }
+
+@media screen and (max-width: 767px) {
+  .form__fields {
+    margin: 15px 0;
+    row-gap: 10px;
+  }
+}

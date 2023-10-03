@@ -3,3 +3,10 @@
   font-weight: 700;
   line-height: 45px;
 }
+
+@media screen and (max-width: 767px) {
+  .form-section__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}

@@ -14,5 +14,6 @@
   .slide {
     min-height: 575px;
     align-items: flex-end;
+    margin-top: 15px;
   }
 }

@@ -6,6 +6,8 @@
 }
 @media screen and (max-width: 767px) {
   .whywe-section__title {
+    font-size: 28px;
+    line-height: 35px;
     margin-bottom: 32px;
   }
 }

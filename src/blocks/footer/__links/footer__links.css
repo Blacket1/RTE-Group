@@ -1,27 +1,28 @@
 .footer__links {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas:
-    "services cases work"
-    "about cities privacy"
-    "autopark contacts privacy"; 
-    row-gap: 8px;
-    column-gap: 56px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    'services cases work'
+    'about cities privacy'
+    'autopark contacts privacy';
+  row-gap: 8px;
+  column-gap: 56px;
 }
 
 @media screen and (max-width: 767px) {
-    .footer__links {
-        row-gap: 24px;
-        grid-template-areas:
-        "services"
-        "autopark"
-        "cases"
-        "cities"
-        "about"
-        "contacts"
-        "work"
-        "privacy";
-    }
+  .footer__links {
+    margin-top: 10px;
+    row-gap: 16px;
+    grid-template-areas:
+      'services'
+      'autopark'
+      'cases'
+      'cities'
+      'about'
+      'contacts'
+      'work'
+      'privacy';
+  }
 }

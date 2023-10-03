@@ -36,7 +36,7 @@
       <section class="form-section">
         <div class="form-block">
           <div class="form form__form-main">
-            <h2 class="form__title">Оставить заявку на перевозку</h2>
+            <h2 class="form__title">Оставить заявку<span> на перевозку</span></h2>
             <form class="form__content" name="mainForm" novalidate>
               <div class="form__fields">
                 <div class="input__container user-name-container">
@@ -119,7 +119,9 @@
               alt="Иконка-подтверждение успешной отправки формы"
             />
             <h2 class="submit-message__title">Заявка отправлена!</h2>
-            <p class="submit-message__subtitle">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <p class="submit-message__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+            </p>
           </div>
         </div>
         <div class="form-section__info">
@@ -213,7 +215,12 @@
           />
           <h4 class="services__subtitle"><%= services.title[7] %></h4>
           <p class="services__text"><%= services.text[7] %></p>
-          <button onclick="document.location='./service-page.html'" class="button button__outline services-section__button">Подробнее</button>
+          <button
+            onclick="document.location='./service-page.html'"
+            class="button button__outline services-section__button"
+          >
+            Подробнее
+          </button>
         </div>
         <div class="services__item">
           <img
@@ -272,7 +279,12 @@
       <section class="cases">
         <div class="cases__header">
           <div class="cases__title title">Кейсы</div>
-          <button onclick="document.location='./cases.html'" class="button button__outline cases__green-button">Все кейсы</button>
+          <button
+            onclick="document.location='./cases.html'"
+            class="button button__outline cases__green-button"
+          >
+            Все кейсы
+          </button>
         </div>
         <div class="cases__items">
           <a href="#" target="_blank" class="case">

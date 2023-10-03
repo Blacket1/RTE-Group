@@ -21,3 +21,9 @@
     padding-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .whywe__item {
+    padding-bottom: 4px;
+  }
+}

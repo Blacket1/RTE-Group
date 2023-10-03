@@ -28,3 +28,9 @@
 html {
   overflow-x: hidden;
 }
+
+@media screen and (max-width: 767px) {
+  .page {
+    padding-top: 64px;
+  }
+}
