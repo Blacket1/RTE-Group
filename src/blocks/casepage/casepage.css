@@ -1,13 +1,13 @@
 .casepage {
-    padding-top: 96px;
-    padding-bottom: 96px;
-    max-width: 1080px;
-    width: 100%;
+  padding-top: 58px;
+  padding-bottom: 30px;
+  max-width: 1080px;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-    .casepage {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+  .casepage {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }

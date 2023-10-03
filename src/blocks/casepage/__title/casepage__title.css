@@ -1,16 +1,14 @@
 .casepage__title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 45px;
-    color: #fff;
-    margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #fff;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-    .casepage__title {
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 35px;
-    }
+  .casepage__title {
+    display: none;
+  }
 }

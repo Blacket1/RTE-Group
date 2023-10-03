@@ -291,3 +291,10 @@
 
 /* services page */
 @import url('../src/blocks/services-page/services-page.css');
+
+/* case page */
+@import url('../src/blocks/case-page/case-page.css');
+@import url('../src/blocks/case-page/__maintext/case-page__maintext.css');
+@import url('../src/blocks/case-page/__maintext-text/case-page__maintext-text.css');
+@import url('../src/blocks/case-page/__maintext-title/case-page__maintext-title.css');
+@import url('../src/blocks/case-page/__maintext-heading/case-page__maintext-heading.css');
