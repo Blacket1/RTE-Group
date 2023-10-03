@@ -1,6 +1,8 @@
 .casepage {
     padding-top: 96px;
     padding-bottom: 96px;
+    max-width: 1080px;
+    width: 100%;
 }
 
 @media screen and (max-width: 767px) {

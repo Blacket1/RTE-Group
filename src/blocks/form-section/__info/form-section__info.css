@@ -1,16 +1,13 @@
 .form-section__info {
   margin-top: 25px;
   margin-left: 72px;
-  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .form-section__info {
-    margin-left: 30px;
-    margin-top: 80px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .form-section__info {
     margin-left: 0;
+    margin-top: 80px;
   }
 }

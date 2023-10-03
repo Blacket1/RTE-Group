@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= home.h1 %> cities</title>
+    <title><%= home.h1 %> - Города</title>
   </head>
   <body class="page">
     <%= require('../blocks/header/header.ejs').default %>
-    <div class="green-figure green-figure__full-color"></div>
-    <main class="cities">
-      <h2 class="cities__title">Города</h2>
-      <p class="cities__text">
+    <main class="container">
+      <div class="green-figure green-figure__full-color"></div>
+      <div class="cities">
+        <h1 class="cities__title">Города</h1>
+        <p class="cities__text">
         В мире негабаритных грузоперевозок границы и расстояния часто теряют свою значимость. В RTE
         Group мы понимаем, что потребности в перевозках могут возникнуть в любом уголке нашей
         огромной страны, и мы готовы ответить на эти потребности.
-      </p>
-      <p class="cities__text">
+        </p>
+        <p class="cities__text">
         Наша компания не привязана к какому-то конкретному городу или региону России. Мы верим в то,
         что качественные грузоперевозки должны быть доступны всем, независимо от их географического
         местоположения. Благодаря широкой сети партнеров и опытному персоналу, мы можем принимать
         заказы на негабаритные грузоперевозки из любого города России.
-      </p>
-      <p class="cities__text">
+        </p>
+        <p class="cities__text">
         С нами вы можете быть уверены, что ваш груз будет доставлен своевременно и безопасно,
         независимо от того, находитесь ли вы в Москве, Владивостоке или в любом другом регионе
         страны. Мы осуществляем транспортировку грузов с соблюдением всех стандартов качества и с
@@ -29,40 +30,40 @@
       </p>
       <nav class="cities__deliveries">
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Kazan.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Казани</p>
+          <img src="<%=require('../images/emblem-Kazan.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[0] %>" />
+          <p class="cities__emblem-name"><%= citilink[0] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-NizhniyNovgorod.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Нижнем Новгороде</p>
+          <img src="<%=require('../images/emblem-NizhniyNovgorod.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[4] %>" />
+          <p class="cities__emblem-name"><%= citilink[1] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Ufa.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Уфе</p>
+          <img src="<%=require('../images/emblem-Ufa.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[1] %>" />
+          <p class="cities__emblem-name"><%= citilink[2] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Samara.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Самаре</p>
+          <img src="<%=require('../images/emblem-Samara.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[2] %>" />
+          <p class="cities__emblem-name"><%= citilink[3] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Izhevsk.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Ижевске</p>
+          <img src="<%=require('../images/emblem-Izhevsk.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[5] %>" />
+          <p class="cities__emblem-name"><%= citilink[4] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Perm.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Перми</p>
+          <img src="<%=require('../images/emblem-Perm.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[6] %>" />
+          <p class="cities__emblem-name"><%= citilink[5] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Ulyanovsk.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Ульяновске</p>
+          <img src="<%=require('../images/emblem-Ulyanovsk.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[3] %>" />
+          <p class="cities__emblem-name"><%= citilink[6] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Cheboksary.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Чебоксарах</p>
+          <img src="<%=require('../images/emblem-Cheboksary.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[7] %>" />
+          <p class="cities__emblem-name"><%= citilink[7] %></p>
         </a>
         <a href="#" class="cities__delivery" target="_blank">
-          <img src="<%=require('../images/emblem-Yoshkar-Ola.svg')%>" class="cities__emblem" />
-          <p class="cities__emblem-name">Доставка в Йошкар-Оле</p>
+          <img src="<%=require('../images/emblem-Yoshkar-Ola.svg')%>" class="cities__emblem" alt="Герб города <%= contacts.city[8] %>" />
+          <p class="cities__emblem-name"><%= citilink[8] %></p>
         </a>
       </nav>
     </main>

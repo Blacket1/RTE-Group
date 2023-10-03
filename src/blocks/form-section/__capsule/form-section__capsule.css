@@ -12,6 +12,7 @@
   .form-section__capsule {
     left: -372px;
     top: 546px;
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {

@@ -15,5 +15,10 @@
     cursor: pointer;
     z-index: 1;
     background-color: #222222;
+    transition: opacity 0.5s ease;
+  }
+
+  .header__checkbox-label:hover {
+    opacity: 0.5;
   }
 }

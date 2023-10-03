@@ -1,6 +1,16 @@
 .cases__buttons {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  display: flex;
+  gap: 16px;
 }
+
+@media screen and (max-width: 767px) {
+  .cases__buttons {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+    .cases__buttons {
+      justify-content: center;
+    }
+  }
