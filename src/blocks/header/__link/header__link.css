@@ -1,5 +1,5 @@
 .header__link {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -7,4 +7,5 @@
   text-decoration: none;
   cursor: pointer;
   background-color: #1a1a1a;
+  padding: 8px 16px;
 }

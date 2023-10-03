@@ -1,18 +1,18 @@
 .slide {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    min-height: 550px;
-    border: 1px solid #FFFFFF14;
-    border-radius: 32px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
+  border: 1px solid #ffffff14;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+  margin: 32px auto 0;
 }
 
 @media screen and (max-width: 767px) {
-    .slide {
-        min-height: 575px;
-        align-items: flex-end;
-    }
+  .slide {
+    min-height: 575px;
+    align-items: flex-end;
+  }
 }
