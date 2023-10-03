@@ -12,9 +12,9 @@
 
 @media screen and (max-width: 767px) {
   .services {
-    row-gap: 8px;
-    margin-bottom: 80px;
-    padding-top: 80px;
+    row-gap: 13px;
+    margin-bottom: 42px;
+    padding-top: 76px;
     grid-template-columns: 1fr;
     justify-items: center;
   }
