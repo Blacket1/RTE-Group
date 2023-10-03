@@ -79,7 +79,11 @@
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
-                    <span onclick="document.location='./privacy-policy.html'" class="form__field-span_accent">политикой конфиденциальности</span></span
+                    <span
+                      onclick="document.location='./privacy-policy.html'"
+                      class="form__field-span_accent"
+                      >политикой конфиденциальности</span
+                    ></span
                   >
                   <span class="form__field-error user-name_error"></span>
                 </div>
@@ -110,12 +114,24 @@
       </section>
       <section class="cases">
         <div class="cases__buttons">
-          <button class="button button__dark cases__button">
-            Все города <img src="<%=require('../images/icon/CaretDown.svg')%>" alt="Иконка стрелки вниз для раскрывающегося списка городов" />
-          </button>
-          <button class="button button__dark cases__button">
-            Все услуги <img src="<%=require('../images/icon/CaretDown.svg')%>" alt="Иконка стрелки вниз для раскрывающегося списка услуг" />
-          </button>
+          <div class="cases__caret">
+            <select class="cases__select" name="city">
+              <option class="cases__option" value="">Все города</option>
+              <option class="cases__option" value="">Город1</option>
+              <option class="cases__option" value="">Город2</option>
+              <option class="cases__option" value="">Город3</option>
+              <option class="cases__option" value="">Город4</option>
+            </select>
+          </div>
+          <div class="cases__caret">
+            <select class="cases__select" name="service">
+              <option class="cases__option" value="">Все услуги</option>
+              <option class="cases__option" value="">Услуга1</option>
+              <option class="cases__option" value="">Услуга2</option>
+              <option class="cases__option" value="">Услуга3</option>
+              <option class="cases__option" value="">Услуга4</option>
+            </select>
+          </div>
         </div>
         <div class="cases__items">
           <a href="./case-page.html" class="case">
