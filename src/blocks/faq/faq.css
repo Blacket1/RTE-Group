@@ -1,10 +1,11 @@
 .faq {
-  padding-bottom: 128px;
+  padding-bottom: 50px;
   max-width: 1080px;
 }
 
 @media screen and (max-width: 767px) {
   .faq {
-    padding-bottom: 80px;
+    margin-top: 40px;
+    padding-bottom: 6px;
   }
 }

@@ -305,3 +305,10 @@
 
 /* cities page */
 @import url('../src/blocks/cities-page/cities-page.css');
+
+/* service page */
+@import url('../src/blocks/service-page/service-page.css');
+@import url('../src/blocks/service-page/__maintext/service-page__maintext.css');
+@import url('../src/blocks/service-page/__maintext-heading/service-page__maintext-heading.css');
+@import url('../src/blocks/service-page/__maintext-text/service-page__maintext-text.css');
+@import url('../src/blocks/service-page/__cases-items/service-page__cases-items.css');

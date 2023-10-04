@@ -2,3 +2,10 @@
   font-weight: 700;
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .feedback__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}

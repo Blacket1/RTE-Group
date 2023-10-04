@@ -4,11 +4,11 @@
   transform: rotate(135deg);
   top: -23px;
   right: 53%;
-  border: 2px solid #00CC66;
+  border: 2px solid #00cc66;
 }
 
 @media screen and (max-width: 767px) {
-  .whywe-section__border  {
+  .whywe-section__border {
     width: 160px;
     height: 300px;
     top: -200px;
@@ -17,13 +17,13 @@
 }
 
 @media screen and (max-width: 506px) {
-  .whywe-section__border  {
+  .whywe-section__border {
     top: -165px;
   }
 }
 
-@media screen and (max-width: 356px) {
-  .whywe-section__border  {
-    top: -130px;
+@media screen and (max-width: 375px) {
+  .whywe-section__border {
+    top: -125px;
   }
 }

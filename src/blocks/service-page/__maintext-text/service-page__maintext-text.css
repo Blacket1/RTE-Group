@@ -1,0 +1,7 @@
+.service-page__maintext-text {
+  max-width: 535px;
+}
+
+.service-page__maintext-text:last-of-type {
+  margin-bottom: 0;
+}
