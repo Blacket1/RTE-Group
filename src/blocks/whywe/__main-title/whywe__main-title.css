@@ -1,0 +1,14 @@
+.whywe__main-title {
+  font-weight: 700;
+  max-width: 528px;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .whywe__main-title {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 32px;
+  }
+}

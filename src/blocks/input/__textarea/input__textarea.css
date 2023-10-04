@@ -1,0 +1,9 @@
+.input__textarea {
+  padding-top: 20px;
+  cursor: pointer;
+  resize: none;
+}
+
+.input__textarea:not(:focus)::placeholder {
+  color: transparent;
+}

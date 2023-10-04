@@ -1,11 +1,4 @@
 .logo__container {
-  display: flex;
-  align-items: center;
-  opacity: 1;
-  transition: opacity 0.5s ease;
+  width: 36px;
+  height: 32px;
 }
-
-.logo__container:hover {
-  opacity: 0.5;
-}
-

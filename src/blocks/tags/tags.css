@@ -1,0 +1,9 @@
+.tags {
+  padding: 0 0 32px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .tags {
+      padding: 0 0 24px 0;
+  }
+}

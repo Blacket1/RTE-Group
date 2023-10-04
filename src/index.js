@@ -28,9 +28,9 @@ const showInputError = (formElement, inputElement) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   const labelName = formElement.querySelector(`.${inputElement.id}-label`);
   const inputContainer = formElement.querySelector(`.${inputElement.id}-container`);
-  inputContainer.classList.add('input__container_error');
+  inputContainer.classList.add('input_red-error');
   labelName.classList.add('input__label-name_error');
-  errorElement.classList.add('input__error_active');
+  errorElement.classList.add('form__error_active');
   errorElement.textContent = 'Поле обязательно для заполнения';
 };
 
@@ -38,20 +38,20 @@ const hideInputError = (formElement, inputElement) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   const labelName = formElement.querySelector(`.${inputElement.id}-label`);
   const inputContainer = formElement.querySelector(`.${inputElement.id}-container`);
-  inputContainer.classList.remove('input__container_error');
+  inputContainer.classList.remove('input_red-error');
   labelName.classList.remove('input__label-name_error');
-  errorElement.classList.remove('input__error_active');
+  errorElement.classList.remove('form__error_active');
   errorElement.textContent = '';
 };
 
 const showCheckboxError = (formElement) => {
-  const checkbox = formElement.querySelector('.input_checkbox-pseudo');
-  checkbox.classList.add('input_checkbox_error');
+  const checkbox = formElement.querySelector('.form__checkbox-pseudo');
+  checkbox.classList.add('form__checkbox_error');
 }
 
 const hideCheckboxError = (formElement) => {
-  const checkbox = formElement.querySelector('.input_checkbox-pseudo');
-  checkbox.classList.remove('input_checkbox_error');
+  const checkbox = formElement.querySelector('.form__checkbox-pseudo');
+  checkbox.classList.remove('form__checkbox_error');
 }
 
 
@@ -87,8 +87,10 @@ const checkboxIsValid = (formElement) => {
   }
 }
 
+const form = document.querySelector('.form__content');
+
 const inputHandler = (inputList, inputElement, formElement) => {
-  const buttonElement = form.querySelector('.button__primary');
+  const buttonElement = formElement.querySelector('.button_primary');
   inputElement.addEventListener('input', function() {
     toggleButtonState(inputList, buttonElement, formElement);
     inputIsValid(formElement, inputElement);
@@ -102,11 +104,9 @@ const checkHandler = (inputList, buttonElement, formElement) => {
   })
 }
 
-const form = document.querySelector('.form__content');
-
 function enableValidation () {
   const inputList = Array.from(form.querySelectorAll('.text'));
-  const buttonElement = form.querySelector('.button__primary');
+  const buttonElement = form.querySelector('.button_primary');
   checkHandler(inputList, buttonElement, form);
   checkboxIsValid(form);
   inputList.forEach((inputElement) => {

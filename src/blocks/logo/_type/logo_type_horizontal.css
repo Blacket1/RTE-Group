@@ -1,0 +1,17 @@
+.logo_type_horizontal {
+  column-gap: 10px;
+}
+.logo__container {
+  width: 30px;
+  height: 27px;
+}
+@media screen and (max-width: 767px) {
+  .logo_type_horizontal {
+    padding: 10px;
+    width: fit-content;
+  }
+  .logo__conatiner {
+    width: 40px;
+    height: 36px;
+  }
+}

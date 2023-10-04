@@ -8,7 +8,7 @@
   <body class="page">
     <%= require('../blocks/header/header.ejs').default %>
     <main class="cases-page container">
-      <div class="green-figure green-figure__full-color"></div>
+      <div class="green-figure green-figure_full-color"></div>
       <section class="cases-page__maintext maintext">
         <div class="maintext__heading">
           <h1 class="maintext__title title"><%= cases.h2 %></h1>
@@ -18,11 +18,11 @@
           <p class="cases-page__maintext-text maintext__text"><%= cases.text[3] %></p>
         </div>
         <div class="form-block">
-          <div class="form form__form-main">
+          <div class="form">
             <h2 class="form__title">Оставить заявку<span> на перевозку</span></h2>
             <form class="form__content" name="mainForm" novalidate>
               <div class="form__fields">
-                <div class="input__container user-name-container">
+                <div class="input user-name-container">
                   <input
                     type="text"
                     id="user-name"
@@ -35,8 +35,8 @@
                   />
                   <label for="user-name" class="input__label-name user-name-label">Имя*</label>
                 </div>
-                <span class="input__error user-name-error"></span>
-                <div class="input__container user-phone-container">
+                <span class="form__error user-name-error"></span>
+                <div class="input user-phone-container">
                   <input
                     type="tel"
                     id="user-phone"
@@ -52,11 +52,11 @@
                     >Телефон*</label
                   >
                 </div>
-                <span class="input__error user-phone-error"></span>
-                <div class="input__container form__field-container_text">
+                <span class="form__error user-phone-error"></span>
+                <div class="input form__text">
                   <textarea
                     id="goods-data"
-                    class="input__field input_textarea"
+                    class="input__field input__textarea"
                     name="goodsData"
                     placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
                     maxlength="255"
@@ -66,29 +66,29 @@
                     >Краткая характеристика груза</label
                   >
                 </div>
-                <div class="input__checkbox-container">
+                <div class="form__checkbox-container">
                   <label for="check-field">
                     <input
                       type="checkbox"
                       id="check-field"
-                      class="input__field input_checkbox"
+                      class="form__field form__checkbox"
                       name="dataConfirm"
                       required
                     />
-                    <span class="input__field input_checkbox-pseudo"></span>
+                    <span class="form__field form__checkbox-pseudo"></span>
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
                     <span
                       onclick="document.location='./privacy-policy.html'"
-                      class="form__field-span_accent"
+                      class="form__accent"
                       >политикой конфиденциальности</span
                     ></span
                   >
-                  <span class="form__field-error user-name_error"></span>
+                  <span class="form__field-error"></span>
                 </div>
               </div>
-              <button type="submit" name="sendButton" class="button button__primary">
+              <button type="submit" name="sendButton" class="button button_primary">
                 Отправить
               </button>
             </form>

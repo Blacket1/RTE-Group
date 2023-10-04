@@ -10,33 +10,27 @@
 /*кнопка*/
 @import url('../src/blocks/button/button.css');
 @import url('../src/blocks/button/_inactive/button_inactive.css');
-@import url('../src/blocks/button/__primary/button__primary.css');
-@import url('../src/blocks/button/__outline/button__outline.css');
+@import url('../src/blocks/button/_primary/button_primary.css');
+@import url('../src/blocks/button/_outline/button_outline.css');
 @import url('../src/blocks/button/__dark/button__dark.css');
 
 /*logo*/
 @import url(../src/blocks/logo/logo.css);
 @import url(../src/blocks/logo/__container/logo__container.css);
-@import url(../src/blocks/logo/__container/_type/logo__container_type_vertical.css);
-@import url(../src/blocks/logo/__container/_type/logo__container_type_horizontal.css);
+@import url(../src/blocks/logo/_type/logo_type_vertical.css);
+@import url(../src/blocks/logo/_type/logo_type_horizontal.css);
 @import url(../src/blocks/logo/__caption/logo__caption.css);
 @import url(../src/blocks/logo/__caption/_hidden/logo__caption_hidden.css);
 
 /*inputs*/
-@import url(../src/blocks/input/__container/input__container.css);
-@import url(../src/blocks/input/__container/_error/input__container_error.css);
+@import url(../src/blocks/input/input.css);
+@import url(../src/blocks/input/_red-error/input_red-error.css);
 @import url(../src/blocks/input/__field/input__field.css);
 @import url(../src/blocks/input/__label-name/input__label-name.css);
 @import url(../src/blocks/input/__label-name/_error/input__label-name_error.css);
 
-@import url(../src/blocks/input/_textarea/input_textarea.css);
-@import url(../src/blocks/input/__checkbox-container/input__checkbox-container.css);
-@import url(../src/blocks/input/_checkbox/input_checkbox.css);
-@import url(../src/blocks/input/_checkbox/_pseudo/input_checkbox-pseudo.css);
-@import url(../src/blocks/input/_checkbox/_error/input_checkbox_error.css);
+@import url(../src/blocks/input/__textarea/input__textarea.css);
 @import url(../src/blocks/input/__field/_error/input__field_error.css);
-@import url(../src/blocks/input/__error/input__error.css);
-@import url(../src/blocks/input/__error/_active/input__error_active.css);
 
 /*стили section*/
 
@@ -46,8 +40,8 @@
 @import url('../src/blocks/case/__description/case__description.css');
 @import url('../src/blocks/case/__title/case__title.css');
 @import url('../src/blocks/case/__image/case__image.css');
-@import url('../src/blocks/case/__tag/case__tag.css');
 @import url('../src/blocks/case/__tags/case__tags.css');
+@import url('../src/blocks/case/__tag/case__tag.css');
 
 /*team*/
 @import url(..//src/blocks/team-card/team-card.css);
@@ -61,19 +55,22 @@
 /*forms*/
 @import url(../src/blocks/form/form.css);
 
+@import url(../src/blocks/form/__error/form__error.css);
+@import url(../src/blocks/form/__error/_active/form__error_active.css);
 @import url(../src/blocks/form/__title/form__title.css);
 @import url(../src/blocks/form/__content/form__content.css);
 @import url(../src/blocks/form/__field/form__field.css);
 @import url(../src/blocks/form/__fields/form__fields.css);
+@import url(../src/blocks/form/__text/form__text.css);
 @import url(../src/blocks/form/__field-container/form__field-container.css);
 @import url(../src/blocks/form/__label-name/form__label-name.css);
 
-@import url(../src/blocks/form/__field-container/_text/form__field-container_text.css);
 @import url(../src/blocks/form/__field-span/form__field-span.css);
-@import url(../src/blocks/form/__field-span/_accent/form__field-span_accent.css);
+@import url(../src/blocks/form/__accent/form__accent.css);
 @import url(../src/blocks/form/__checkbox-container/form__checkbox-container.css);
-@import url(../src/blocks/form/__field/_checkbox/form__field_checkbox.css);
-@import url(../src/blocks/form/__field/_checkbox/_pseudo/form__field_checkbox-pseudo.css);
+@import url(../src/blocks/form/__checkbox/form__checkbox.css);
+@import url(../src/blocks/form/__checkbox-pseudo/form__checkbox-pseudo.css);
+@import url(../src/blocks/form/__checkbox/_error/form__checkbox_error.css);
 
 @import url(../src/blocks/form/__field/_textarea/form__field_textarea.css);
 
@@ -88,6 +85,8 @@
 /*блок services*/
 @import url('../src/blocks/services/services.css');
 @import url('../src/blocks/services/__item/services__item.css');
+@import url('../src/blocks/services/__title/services__title.css');
+@import url('../src/blocks/services/__button/services__button.css');
 @import url('../src/blocks/services/__icon/services__icon.css');
 @import url('../src/blocks/services/__subtitle/services__subtitle.css');
 @import url('../src/blocks/services/__text/services__text.css');
@@ -133,10 +132,14 @@
 @import url('../src/blocks/advantages/__text/advantages__text.css');
 
 /*блок whywe*/
+@import url('../src/blocks/whywe/whywe.css');
 @import url('../src/blocks/whywe/__description/whywe__description.css');
 @import url('../src/blocks/whywe/__item/whywe__item.css');
 @import url('../src/blocks/whywe/__number/whywe__number.css');
+@import url('../src/blocks/whywe/__main-title/whywe__main-title.css');
+@import url('../src/blocks/whywe/__container/whywe__container.css');
 @import url('../src/blocks/whywe/__title/whywe__title.css');
+@import url('../src/blocks/whywe/_big/whywe_big.css');
 
 /*блок feedback*/
 @import url('../src/blocks/feedback/__avatar/feedback__avatar.css');
@@ -154,6 +157,9 @@
 @import url('../src/blocks/slide/__text-zone/slide__text-zone.css');
 @import url('../src/blocks/slide/__text/slide__text.css');
 @import url('../src/blocks/slide/__title/slide__title.css');
+
+@import url('../src/blocks/whywe/__border/whywe__border.css');
+@import url('../src/blocks/whywe/__capsule/whywe__capsule.css');
 
 /* блок content */
 @import url('../src/blocks/content/content.css');
@@ -180,19 +186,11 @@
 @import url(../src/blocks/form-section/__button/form-section__button.css);
 @import url(../src/blocks/form-section/__capsule/form-section__capsule.css);
 
-@import url(../src/blocks/services-section/__title/services-section__title.css);
-@import url(../src/blocks/services-section/__button/services-section__button.css);
-
-@import url(../src/blocks/whywe-section/whywe-section.css);
-@import url(../src/blocks/whywe-section/__container/whywe-section__container.css);
-@import url(../src/blocks/whywe-section/__title/whywe-section__title.css);
-@import url(../src/blocks/whywe-section/__capsule/whywe-section__capsule.css);
-
-@import url(../src/blocks/cities-seciton/cities-seciton.css);
-@import url(../src/blocks/cities-seciton/__container/cities-section__container.css);
-@import url(../src/blocks/cities-seciton/__title/cities-seciton__title.css);
-@import url(../src/blocks/cities-seciton/__text/cities-section__text.css);
-@import url(../src/blocks/cities-seciton/__frame/cities-seciton__frame.css);
+@import url(../src/blocks/cities-section/cities-section.css);
+@import url(../src/blocks/cities-section/__container/cities-section__container.css);
+@import url(../src/blocks/cities-section/__title/cities-section__title.css);
+@import url(../src/blocks/cities-section/__text/cities-section__text.css);
+@import url(../src/blocks/cities-section/__frame/cities-section__frame.css);
 
 /* страница services */
 @import url('../src/blocks/maintext/maintext.css');
@@ -224,7 +222,6 @@
 @import url('../src/blocks/casepage/__photo-section/casepage__photo-section.css');
 @import url('../src/blocks/casepage/__photo-title/casepage__photo-title.css');
 @import url('../src/blocks/casepage/__photo/casepage__photo.css');
-@import url('../src/blocks/casepage/__tags/casepage__tags.css');
 @import url('../src/blocks/casepage/__text-section/casepage__text-section.css');
 @import url('../src/blocks/casepage/__text/casepage__text.css');
 
@@ -234,6 +231,7 @@
 @import url('../src/blocks/casepage/__table-header/casepage__table-header.css');
 @import url('../src/blocks/casepage/__table-row/casepage__table-row.css');
 @import url('../src/blocks/casepage/__table-style/casepage__table-style.css');
+@import url('../src/blocks/tags/tags.css');
 
 /* error */
 @import url('../src/blocks/error/error.css');
@@ -249,13 +247,11 @@
 /*зеленая капсула*/
 @import url('../src/blocks/green-figure/green-figure.css');
 @import url('../src/blocks/green-figure/__border/green-figure__border.css');
-@import url('../src/blocks/green-figure/__full-color/green-figure__full-color.css');
+@import url('../src/blocks/green-figure/_full-color/green-figure_full-color.css');
 
 /* страница service */
 @import url('../src/blocks/advantages/__section/advantages__section.css');
 @import url('../src/blocks/advantages/__title/advantages__title.css');
-@import url('../src/blocks/whywe-section/__border/whywe-section__border.css');
-@import url('../src/blocks/whywe-section/__big/whywe-section__big.css');
 @import url('../src/blocks/price/price.css');
 @import url('../src/blocks/price/__title/price__title.css');
 @import url('../src/blocks/price/__table/price__table.css');
@@ -298,6 +294,8 @@
 @import url('../src/blocks/case-page/__maintext-text/case-page__maintext-text.css');
 @import url('../src/blocks/case-page/__maintext-title/case-page__maintext-title.css');
 @import url('../src/blocks/case-page/__maintext-heading/case-page__maintext-heading.css');
+@import url('../src/blocks/case-page/__tags/case-page__tags.css');
+@import url('../src/blocks/case-page/__tag/case-page__tag.css');
 
 /* cases */
 @import url('../src/blocks/cases-page/cases-page.css');
@@ -308,7 +306,6 @@
 
 /* service page */
 @import url('../src/blocks/service-page/service-page.css');
-@import url('../src/blocks/service-page/__maintext/service-page__maintext.css');
 @import url('../src/blocks/service-page/__maintext-heading/service-page__maintext-heading.css');
 @import url('../src/blocks/service-page/__maintext-text/service-page__maintext-text.css');
-@import url('../src/blocks/service-page/__cases-items/service-page__cases-items.css');
+@import url('../src/blocks/cases/__items/_service/cases__items_service.css');

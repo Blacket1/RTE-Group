@@ -1,9 +1,0 @@
-.whywe-section__big {
-  margin: 125px 0 0;
-}
-
-@media screen and (max-width: 767px) {
-  .whywe-section__big {
-    margin-top: 0;
-  }
-}

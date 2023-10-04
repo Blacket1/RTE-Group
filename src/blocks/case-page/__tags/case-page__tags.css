@@ -1,0 +1,14 @@
+.case-page__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 24px 24px;
+  row-gap: 8px;
+  column-gap: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .case-page__tags {
+      padding: 0 16px 16px;
+  }
+}

@@ -1,8 +1,0 @@
-.form__field_checkbox-pseudo {
-  display: inline-block;
-  vertical-align: middle; 
-  width: 24px;
-  height: 24px;
-  background-image: url(../../../../../images/checkbox-disabled.svg);
-  margin-right: 16px;
-}

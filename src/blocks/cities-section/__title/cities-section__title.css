@@ -1,0 +1,12 @@
+.cities-section__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .cities-section__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}

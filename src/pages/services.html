@@ -9,7 +9,7 @@
   <body class="page">
     <%= require('../blocks/header/header.ejs').default %>
     <main class="services-page container">
-      <div class="green-figure green-figure__full-color"></div>
+      <div class="green-figure green-figure_full-color"></div>
       <section class="maintext">
         <div class="green-figure"></div>
         <div class="maintext__heading">
@@ -18,11 +18,11 @@
           <p class="maintext__text"><%= services.maintext[1] %></p>
         </div>
         <div class="form-block">
-          <div class="form form__form-main">
+          <div class="form">
             <h2 class="form__title">Оставить заявку<span> на перевозку</span></h2>
             <form class="form__content" name="mainForm" novalidate>
               <div class="form__fields">
-                <div class="input__container user-name-container">
+                <div class="input user-name-container">
                   <input
                     type="text"
                     id="user-name"
@@ -35,8 +35,8 @@
                   />
                   <label for="user-name" class="input__label-name user-name-label">Имя*</label>
                 </div>
-                <span class="input__error user-name-error"></span>
-                <div class="input__container user-phone-container">
+                <span class="form__error user-name-error"></span>
+                <div class="input user-phone-container">
                   <input
                     type="tel"
                     id="user-phone"
@@ -52,11 +52,11 @@
                     >Телефон*</label
                   >
                 </div>
-                <span class="input__error user-phone-error"></span>
-                <div class="input__container form__field-container_text">
+                <span class="form__error user-phone-error"></span>
+                <div class="input form__text">
                   <textarea
                     id="goods-data"
-                    class="input__field input_textarea"
+                    class="input__field input__textarea"
                     name="goodsData"
                     placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
                     maxlength="255"
@@ -66,29 +66,29 @@
                     >Краткая характеристика груза</label
                   >
                 </div>
-                <div class="input__checkbox-container">
+                <div class="form__checkbox-container">
                   <label for="check-field">
                     <input
                       type="checkbox"
                       id="check-field"
-                      class="input__field input_checkbox"
+                      class="form__field form__checkbox"
                       name="dataConfirm"
                       required
                     />
-                    <span class="input__field input_checkbox-pseudo"></span>
+                    <span class="form__field form__checkbox-pseudo"></span>
                   </label>
                   <span class="form__field-span"
                     >Согласен на обработку персональных данных в соответствии с
                     <span
                       onclick="document.location='./privacy-policy.html'"
-                      class="form__field-span_accent"
+                      class="form__accent"
                       >политикой конфиденциальности</span
                     ></span
                   >
-                  <span class="form__field-error user-name_error"></span>
+                  <span class="form__field-error"></span>
                 </div>
               </div>
-              <button type="submit" name="sendButton" class="button button__primary">
+              <button type="submit" name="sendButton" class="button button_primary">
                 Отправить
               </button>
             </form>
@@ -122,7 +122,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[0] %></h3>
           <p class="services__text"><%= services.text[0] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -132,7 +132,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[1] %></h3>
           <p class="services__text"><%= services.text[1] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -142,7 +142,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[2] %></h3>
           <p class="services__text"><%= services.text[2] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -152,7 +152,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[3] %></h3>
           <p class="services__text"><%= services.text[3] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -162,7 +162,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[4] %></h3>
           <p class="services__text"><%= services.text[4] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -172,7 +172,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[5] %></h3>
           <p class="services__text"><%= services.text[5] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item services__item_dark">
           <img
@@ -182,7 +182,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[6] %></h3>
           <p class="services__text"><%= services.text[6] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
         <div class="services__item">
           <img
@@ -192,7 +192,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[7] %></h3>
           <p class="services__text"><%= services.text[7] %></p>
-          <button onclick="document.location='./service-page.html'" class="button button__outline">
+          <button onclick="document.location='./service-page.html'" class="button button_outline">
             Подробнее
           </button>
         </div>
@@ -204,7 +204,7 @@
           />
           <h3 class="services__subtitle"><%= services.title[8] %></h3>
           <p class="services__text"><%= services.text[8] %></p>
-          <button class="button button__outline">Подробнее</button>
+          <button class="button button_outline">Подробнее</button>
         </div>
       </section>
     </main>
