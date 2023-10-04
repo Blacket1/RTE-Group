@@ -2,12 +2,13 @@
   overflow: hidden;
   z-index: 4;
   text-decoration: none;
+  padding: 7px;
 }
 .header__logo img {
   max-width: 100%;
   display: block;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .header__logo {
     position: fixed;
     top: 0;

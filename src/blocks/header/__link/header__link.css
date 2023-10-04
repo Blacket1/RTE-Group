@@ -7,10 +7,24 @@
   text-decoration: none;
   cursor: pointer;
   background-color: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 32px;
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .header__link {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 24px;
+    border-radius: 0;
+    width: 100%;
+    height: 56px;
+  }
 }
 
 .header__link:hover {
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+

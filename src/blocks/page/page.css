@@ -1,5 +1,4 @@
 .page {
-  /*min-width: 320px;*/
   min-height: 100vh;
   font-family: 'Montserrat', Arial, sans-serif;
   background-color: #1a1a1a;
@@ -7,7 +6,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 224px;
+  padding-top: 111px;
   box-sizing: border-box;
 
   /*сглаживание*/
@@ -26,8 +25,9 @@
 html {
   overflow-x: hidden;
 }
+
 @media screen and (max-width: 767px) {
   .page {
-    padding-top: 80px;
+    padding-top: 64px;
   }
 }

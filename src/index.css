@@ -288,3 +288,27 @@
 @import url('../src/blocks/cities/__delivery/cities__delivery.css');
 @import url('../src/blocks/cities/__emblem/cities__emblem.css');
 @import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
+
+/* services page */
+@import url('../src/blocks/services-page/services-page.css');
+
+/* case page */
+@import url('../src/blocks/case-page/case-page.css');
+@import url('../src/blocks/case-page/__maintext/case-page__maintext.css');
+@import url('../src/blocks/case-page/__maintext-text/case-page__maintext-text.css');
+@import url('../src/blocks/case-page/__maintext-title/case-page__maintext-title.css');
+@import url('../src/blocks/case-page/__maintext-heading/case-page__maintext-heading.css');
+
+/* cases */
+@import url('../src/blocks/cases-page/cases-page.css');
+@import url('../src/blocks/cases-page/__maintext-text/cases-page__maintext-text.css');
+
+/* cities page */
+@import url('../src/blocks/cities-page/cities-page.css');
+
+/* service page */
+@import url('../src/blocks/service-page/service-page.css');
+@import url('../src/blocks/service-page/__maintext/service-page__maintext.css');
+@import url('../src/blocks/service-page/__maintext-heading/service-page__maintext-heading.css');
+@import url('../src/blocks/service-page/__maintext-text/service-page__maintext-text.css');
+@import url('../src/blocks/service-page/__cases-items/service-page__cases-items.css');

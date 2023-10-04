@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+  .cases-page__maintext-text:last-of-type {
+    margin-bottom: 40px;
+  }
+}

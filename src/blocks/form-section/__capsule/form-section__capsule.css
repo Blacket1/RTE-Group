@@ -4,21 +4,19 @@
   transform: rotate(120deg);
   position: absolute;
   border-radius: 400px;
-  border: 2px solid #0C6;
-  /* left: -370px;
-  top: 110px; */
+  border: 2px solid #0c6;
   left: -400.042px;
-  top: 310.126px;
+  top: 80px;
 }
 @media screen and (max-width: 1024px) {
-  .form-section__capsule  {
+  .form-section__capsule {
     left: -372px;
     top: 546px;
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .form-section__capsule  {
+  .form-section__capsule {
     display: none;
   }
 }

@@ -1,12 +1,12 @@
 .cases {
-    padding-top: 128px;
-    padding-bottom: 128px;
-    max-width: 1080px;
+  padding-bottom: 43px;
+  max-width: 1080px;
+  margin-top: -42px;
 }
 
 @media screen and (max-width: 767px) {
   .cases {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 105px;
+    padding-bottom: 10px;
   }
 }

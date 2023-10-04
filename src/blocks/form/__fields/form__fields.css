@@ -1,6 +1,13 @@
 .form__fields {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
-  margin: 24px 0 24px 0;
+  row-gap: 14px;
+  margin: 24px 0 28px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .form__fields {
+    margin: 15px 0;
+    row-gap: 10px;
+  }
 }
