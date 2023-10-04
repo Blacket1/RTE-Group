@@ -1,11 +1,12 @@
 .privacy {
+  max-width: 1140px;
   padding-top: 96px;
-  padding-bottom: 96px;
+  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {
   .privacy {
     padding-top: 56px;
-    padding-bottom: 104px;
+    padding-bottom: 35px;
   }
 }
