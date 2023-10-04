@@ -1,5 +1,5 @@
 .whywe-section {
-  margin-top: 80px;
+  margin-top: 208px;
   max-width: 1080px;
   position: relative;
   display: grid;
@@ -10,7 +10,7 @@
 @media screen and (max-width: 767px) {
   .whywe-section {
     flex-direction: column;
-    margin: 116px auto 0;
+    margin: 160px auto 0;
     grid-template-columns: repeat(1, 1fr);
     align-items: baseline;
   }

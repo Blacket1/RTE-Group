@@ -5,7 +5,7 @@
 @import url('../src/blocks/page/page.css');
 @import url('../src/blocks/section-title/section-title.css');
 
-/*стили UI-Kit*/
+/*////////стили UI-Kit////////*/
 
 /*кнопка*/
 @import url('../src/blocks/button/button.css');
@@ -38,7 +38,7 @@
 @import url(../src/blocks/input/__error/input__error.css);
 @import url(../src/blocks/input/__error/_active/input__error_active.css);
 
-/*стили section*/
+/*////////стили section////////*/
 
 /*блок case*/
 @import url('../src/blocks/case/case.css');
@@ -124,7 +124,7 @@
 @import url(../src/blocks/header/__contact/header__contact.css);
 @import url(../src/blocks/header/__phone/header__phone.css);
 
-/*блока advantages*/
+/*блок advantages*/
 
 @import url('../src/blocks/advantages/__item/advantages__item.css');
 @import url('../src/blocks/advantages/__item/_dark/advantages__item_dark.css');
@@ -164,6 +164,27 @@
 /* блок container */
 @import url('../src/blocks/container/container.css');
 
+/* верхний блок внутренних страниц */
+@import url('../src/blocks/maintext/maintext.css');
+@import url('../src/blocks/maintext/__heading/maintext__heading.css');
+@import url('../src/blocks/maintext/__text/maintext__text.css');
+@import url('../src/blocks/maintext/__title/maintext__title.css');
+
+/*зеленая капсула на внутренних страницах*/
+@import url('../src/blocks/green-figure/green-figure.css');
+@import url('../src/blocks/green-figure/__border/green-figure__border.css');
+@import url('../src/blocks/green-figure/__full-color/green-figure__full-color.css');
+
+/*секция cases для страниц home service-page*/
+@import url('../src/blocks/cases/cases.css');
+@import url('../src/blocks/cases/__green-button/cases__green-button.css');
+@import url('../src/blocks/cases/__header/cases__header.css');
+@import url('../src/blocks/cases/__items/cases__items.css');
+@import url('../src/blocks/cases/__title/cases__title.css');
+@import url('../src/blocks/cases/__title/_home/cases__title_home.css');
+
+/*////////страницы////////*/
+
 /* privacy */
 @import url('../src/blocks/privacy/privacy.css');
 @import url('../src/blocks/privacy/__title/privacy__title.css');
@@ -194,21 +215,6 @@
 @import url(../src/blocks/cities-seciton/__text/cities-section__text.css);
 @import url(../src/blocks/cities-seciton/__frame/cities-seciton__frame.css);
 
-/* страница services */
-@import url('../src/blocks/maintext/maintext.css');
-@import url('../src/blocks/maintext/__heading/maintext__heading.css');
-@import url('../src/blocks/maintext/__text/maintext__text.css');
-@import url('../src/blocks/maintext/__title/maintext__title.css');
-
-/*страница cases*/
-@import url('../src/blocks/cases/cases.css');
-@import url('../src/blocks/cases/__option/cases__option.css');
-@import url('../src/blocks/cases/__caret/cases__caret.css');
-@import url('../src/blocks/cases/__select/cases__select.css');
-@import url('../src/blocks/cases/__button/cases__button.css');
-@import url('../src/blocks/cases/__buttons/cases__buttons.css');
-@import url('../src/blocks/cases/__items/cases__items.css');
-
 /*страница case-page*/
 @import url('../src/blocks/casepage/casepage.css');
 @import url('../src/blocks/casepage/__citation-icon/casepage__citation-icon.css');
@@ -227,6 +233,8 @@
 @import url('../src/blocks/casepage/__tags/casepage__tags.css');
 @import url('../src/blocks/casepage/__text-section/casepage__text-section.css');
 @import url('../src/blocks/casepage/__text/casepage__text.css');
+@import url('../src/blocks/casepage/__maintext/casepage__maintext.css');
+@import url('../src/blocks/casepage/__maintext-heading/casepage__maintext-heading.css');
 
 @import url('../src/blocks/casepage/__table/casepage__table.css');
 @import url('../src/blocks/casepage/__table-body/casepage__table-body.css');
@@ -246,11 +254,6 @@
 @import url('../src/blocks/error/__illustration/error__illustration.css');
 @import url('../src/blocks/error/__icon/error__icon.css');
 
-/*зеленая капсула*/
-@import url('../src/blocks/green-figure/green-figure.css');
-@import url('../src/blocks/green-figure/__border/green-figure__border.css');
-@import url('../src/blocks/green-figure/__full-color/green-figure__full-color.css');
-
 /* страница service */
 @import url('../src/blocks/advantages/__section/advantages__section.css');
 @import url('../src/blocks/advantages/__title/advantages__title.css');
@@ -269,9 +272,6 @@
 @import url('../src/blocks/feedback/feedback.css');
 @import url('../src/blocks/feedback/__title/feedback__title.css');
 @import url('../src/blocks/feedback/__container/feedback__container.css');
-@import url('../src/blocks/cases/__header/cases__header.css');
-@import url('../src/blocks/cases/__title/cases__title.css');
-@import url('../src/blocks/cases/__green-button/cases__green-button.css');
 @import url('../src/blocks/faq/faq.css');
 @import url('../src/blocks/faq/__title/faq__title.css');
 @import url('../src/blocks/faq/__box/faq__box.css');
@@ -289,19 +289,12 @@
 @import url('../src/blocks/cities/__emblem/cities__emblem.css');
 @import url('../src/blocks/cities/__emblem-name/cities__emblem-name.css');
 
-/* services page */
-@import url('../src/blocks/services-page/services-page.css');
-
-/* case page */
-@import url('../src/blocks/case-page/case-page.css');
-@import url('../src/blocks/case-page/__maintext/case-page__maintext.css');
-@import url('../src/blocks/case-page/__maintext-text/case-page__maintext-text.css');
-@import url('../src/blocks/case-page/__maintext-title/case-page__maintext-title.css');
-@import url('../src/blocks/case-page/__maintext-heading/case-page__maintext-heading.css');
-
 /* cases */
 @import url('../src/blocks/cases-page/cases-page.css');
-@import url('../src/blocks/cases-page/__maintext-text/cases-page__maintext-text.css');
+@import url('../src/blocks/cases-page/__buttons/cases-page__buttons.css');
+@import url('../src/blocks/cases-page/__caret/cases-page__caret.css');
+@import url('../src/blocks/cases-page/__select/cases-page__select.css');
+@import url('../src/blocks/cases-page/__option/cases-page__option.css');
 
 /* cities page */
 @import url('../src/blocks/cities-page/cities-page.css');
@@ -311,4 +304,4 @@
 @import url('../src/blocks/service-page/__maintext/service-page__maintext.css');
 @import url('../src/blocks/service-page/__maintext-heading/service-page__maintext-heading.css');
 @import url('../src/blocks/service-page/__maintext-text/service-page__maintext-text.css');
-@import url('../src/blocks/service-page/__cases-items/service-page__cases-items.css');
+

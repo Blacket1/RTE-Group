@@ -1,9 +1,9 @@
 .maintext__title {
-  margin-bottom: 32px;
+  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {
   .maintext__title {
-    margin-bottom: 24px;
+    padding-bottom: 8px;
   }
 }

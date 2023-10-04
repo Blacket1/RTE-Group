@@ -9,15 +9,15 @@
     <%= require('../blocks/header/header.ejs').default %>
     <main class="case-page container">
       <div class="green-figure green-figure__full-color"></div>
-      <section class="case-page__maintext maintext">
-        <div class="case-page__maintext-heading maintext__heading">
-          <h1 class="case-page__maintext-title maintext__title title"><%= casepage.h1[0] %></h1>
+      <section class="maintext casepage__maintext">
+        <div class="maintext__heading casepage__maintext-heading">
+          <h1 class="maintext__title title"><%= casepage.h1[0] %></h1>
           <div class="case__tags casepage__tags">
             <p class="case__tag"><%= casesingle.subtext[0] %></p>
             <p class="case__tag"><%= casesingle.city[0] %></p>
           </div>
-          <p class="case-page__maintext-text maintext__text"><%= casepage.text1[0] %></p>
-          <p class="case-page__maintext-text maintext__text"><%= casepage.text1[1] %></p>
+          <p class="maintext__text"><%= casepage.text1[0] %></p>
+          <p class="maintext__text"><%= casepage.text1[1] %></p>
         </div>
         <div class="form-block">
           <div class="form form__form-main">
