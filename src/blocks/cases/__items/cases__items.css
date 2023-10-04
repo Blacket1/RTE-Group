@@ -4,7 +4,7 @@
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   justify-content: center;
-  padding-top: 21px;
+  padding-top: 42px;
 }
 
 @media screen and (max-width: 980px) {
