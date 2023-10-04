@@ -158,8 +158,13 @@
 @import url('../src/blocks/slide/__text/slide__text.css');
 @import url('../src/blocks/slide/__title/slide__title.css');
 
+@import url('../src/blocks/slide-capsule/slide-capsule.css');
+@import url('../src/blocks/slide-capsule/_border/slide-capsule_border.css');
+
 @import url('../src/blocks/whywe/__border/whywe__border.css');
 @import url('../src/blocks/whywe/__capsule/whywe__capsule.css');
+
+
 
 /* блок content */
 @import url('../src/blocks/content/content.css');

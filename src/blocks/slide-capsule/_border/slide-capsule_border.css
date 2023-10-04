@@ -1,0 +1,7 @@
+.slide-capsule_border {
+  border: 2px solid #00cc66;
+  background-color: transparent;
+  top: -320px;
+  right: -155px;
+  z-index: -2;
+}
