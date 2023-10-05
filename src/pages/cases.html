@@ -7,15 +7,15 @@
   </head>
   <body class="page">
     <%= require('../blocks/header/header.ejs').default %>
-    <main class="cases-page container">
+    <main class="container">
       <div class="green-figure green-figure__full-color"></div>
-      <section class="cases-page__maintext maintext">
+      <section class="maintext">
         <div class="maintext__heading">
           <h1 class="maintext__title title"><%= cases.h2 %></h1>
-          <p class="cases-page__maintext-text maintext__text"><%= cases.text[0] %></p>
-          <p class="cases-page__maintext-text maintext__text"><%= cases.text[1] %></p>
-          <p class="cases-page__maintext-text maintext__text"><%= cases.text[2] %></p>
-          <p class="cases-page__maintext-text maintext__text"><%= cases.text[3] %></p>
+          <p class="maintext__text"><%= cases.text[0] %></p>
+          <p class="maintext__text"><%= cases.text[1] %></p>
+          <p class="maintext__text"><%= cases.text[2] %></p>
+          <p class="maintext__text"><%= cases.text[3] %></p>
         </div>
         <div class="form-block">
           <div class="form form__form-main">
@@ -112,24 +112,24 @@
           </div>
         </div>
       </section>
-      <section class="cases">
-        <div class="cases__buttons">
-          <div class="cases__caret">
-            <select class="cases__select" name="city">
-              <option class="cases__option" value="">Все города</option>
-              <option class="cases__option" value="">Город1</option>
-              <option class="cases__option" value="">Город2</option>
-              <option class="cases__option" value="">Город3</option>
-              <option class="cases__option" value="">Город4</option>
+      <section class="cases-page">
+        <div class="cases-page__buttons">
+          <div class="cases-page__caret">
+            <select class="cases-page__select" name="city">
+              <option class="cases-page__option" value="">Все города</option>
+              <option class="cases-page__option" value="">Город1</option>
+              <option class="cases-page__option" value="">Город2</option>
+              <option class="cases-page__option" value="">Город3</option>
+              <option class="cases-page__option" value="">Город4</option>
             </select>
           </div>
-          <div class="cases__caret">
-            <select class="cases__select" name="service">
-              <option class="cases__option" value="">Все услуги</option>
-              <option class="cases__option" value="">Услуга1</option>
-              <option class="cases__option" value="">Услуга2</option>
-              <option class="cases__option" value="">Услуга3</option>
-              <option class="cases__option" value="">Услуга4</option>
+          <div class="cases-page__caret">
+            <select class="cases-page__select" name="service">
+              <option class="cases-page__option" value="">Все услуги</option>
+              <option class="cases-page__option" value="">Услуга1</option>
+              <option class="cases-page__option" value="">Услуга2</option>
+              <option class="cases-page__option" value="">Услуга3</option>
+              <option class="cases-page__option" value="">Услуга4</option>
             </select>
           </div>
         </div>

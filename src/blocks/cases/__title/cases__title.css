@@ -1,3 +1,10 @@
 .cases__title {
   font-weight: 700;
+  padding-bottom: 21px;
+}
+
+@media screen and (max-width: 767px) {
+  .cases__title {
+    padding-bottom: 19px;
+  }
 }

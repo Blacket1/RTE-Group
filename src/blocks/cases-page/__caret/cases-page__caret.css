@@ -1,9 +1,9 @@
-.cases__caret {
+.cases-page__caret {
   position: relative;
   background-size: contain;
 }
 
-.cases__caret::after {
+.cases-page__caret::after {
   content: url(../../../images/icon/CaretDown.svg);
   width: 24px;
   height: 24px;
@@ -14,14 +14,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .cases__caret::after {
+  .cases-page__caret::after {
     right: 16px;
     top: 8px;
   }
 }
 
 @media screen and (max-width: 359px) {
-  .cases__caret::after {
+  .cases-page__caret::after {
     width: 16px;
     height: 16px;
   }

@@ -1,4 +1,4 @@
-.cases__select {
+.cases-page__select {
   appearance: none;
   margin: 0;
   border: none;
@@ -15,19 +15,19 @@
   transition: opacity 0.5s ease;
 }
 
-.cases__select:hover {
+.cases-page__select:hover {
   opacity: 0.5;
 }
 
 @media screen and (max-width: 767px) {
-  .cases__select {
+  .cases-page__select {
     padding: 8px 15px;
     width: 160px;
   }
 }
 
 @media screen and (max-width: 359px) {
-  .cases__select {
+  .cases-page__select {
     width: 140px;
   }
 }

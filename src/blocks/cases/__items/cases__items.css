@@ -4,7 +4,7 @@
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   justify-content: center;
-  padding-top: 21px;
+  padding-top: 24px;
 }
 
 @media screen and (max-width: 980px) {
@@ -13,12 +13,6 @@
     justify-items: center;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cases__items {
-    padding-top: 30px;
   }
 }
 

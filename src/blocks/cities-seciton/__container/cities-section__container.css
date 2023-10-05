@@ -10,6 +10,14 @@
   max-width: 376px;
   flex-shrink: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .cities-section__container {
+    margin: 0;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .cities-section__container {
     margin: 0 auto;
