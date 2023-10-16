@@ -1,0 +1,14 @@
+.services__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #fff;
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .services__subtitle {
+    margin: 14px 0 17px;
+  }
+}

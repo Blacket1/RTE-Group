@@ -1,0 +1,24 @@
+.whywe__number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight:500;
+    line-height: 29px;
+    margin: 0;
+    color: #00CC66;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 916px) {
+    .whywe__number {
+        font-size: 16px;
+        line-height: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}

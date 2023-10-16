@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  border: 0;
+  border-radius: 32px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+}

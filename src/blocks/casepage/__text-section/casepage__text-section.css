@@ -1,0 +1,5 @@
+.casepage__text-section {
+    display: grid;
+    row-gap: 32px;
+    overflow-x: auto;
+}

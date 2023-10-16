@@ -1,0 +1,21 @@
+.header__button {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 11px;
+}
+@media (max-width: 767px) {
+  .header__button {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+    padding: 16px 24px;
+    height: auto;
+  }
+}

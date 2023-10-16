@@ -1,0 +1,13 @@
+.error__illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 384px;
+}
+
+@media screen and (max-width: 767px) {
+  .error__illustration {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+.privacy__title {
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .privacy__title {
+    word-wrap: break-word;
+    letter-spacing: 0.06em;
+    width: 100%;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
+}

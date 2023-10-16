@@ -1,0 +1,16 @@
+.header__main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+@media (max-width:767px) {
+  .header__main-container {
+    justify-content: center;
+    position: relative;
+  }
+}

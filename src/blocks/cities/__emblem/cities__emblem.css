@@ -1,0 +1,11 @@
+.cities__emblem {
+    width: 52.52px;
+    height: 64px;
+}
+
+@media screen and (max-width: 767px) {
+    .cities__emblem {
+        width: 32.82px;
+        height: 40px;
+    }
+}

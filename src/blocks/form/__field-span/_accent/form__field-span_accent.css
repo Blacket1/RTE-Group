@@ -1,0 +1,9 @@
+.form__field-span_accent {
+  color: #00cc66;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.form__field-span_accent:hover {
+  opacity: 0.5;
+}

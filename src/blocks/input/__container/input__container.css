@@ -1,0 +1,26 @@
+.input__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 32px;
+  border: 1px solid rgba(128, 128, 128, 0.50);
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 56px;
+  transition: border 1s;
+  position: relative;
+  background-color: #222;
+}
+
+.input__container:hover {
+  border: 1px solid #FFF;
+}
+@media screen and (min-width: 767px) {
+  .input__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

@@ -1,0 +1,24 @@
+.header__checkbox-label {
+  display: none;
+}
+@media (max-width:767px) {
+  .header__checkbox-label {
+    display: flex;
+    background-image: url(../../../images/menu-icon.svg);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right:0;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #222222;
+    transition: opacity 0.5s ease;
+  }
+
+  .header__checkbox-label:hover {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,14 @@
+.cases__green-button {
+  position: absolute;
+  right: 0px;
+  top: 127px;
+}
+
+@media screen and (max-width: 767px) {
+  .cases__green-button {
+    margin-top: 16px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+}

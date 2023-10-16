@@ -1,0 +1,10 @@
+.form__field-container_text {
+  min-height: 100px;
+  justify-content: start;
+}
+
+@media screen and (max-width: 767px) {
+  .form__field-container_text {
+    min-height: 141px;
+  }
+}

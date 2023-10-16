@@ -1,0 +1,17 @@
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 528px;
+  width: 100%;
+  padding: 24px 32px 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    padding: 16px;
+  }
+}

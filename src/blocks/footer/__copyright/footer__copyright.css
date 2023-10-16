@@ -1,0 +1,10 @@
+.footer__copyright {
+  color: var(--main, #fff);
+  text-align: center;
+  /* body */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}

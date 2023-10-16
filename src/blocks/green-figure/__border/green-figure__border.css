@@ -1,0 +1,7 @@
+.green-figure__border {
+    background-color: transparent;
+    border: 2px solid #0c6;
+    right: -155px;
+    top: -340px;
+    z-index: -2;
+}

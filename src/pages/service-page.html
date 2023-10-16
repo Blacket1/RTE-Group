@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Перевозка экскаватора</title>
+  </head>
+
+  <body class="page">
+    <%= require('../blocks/header/header.ejs').default %>
+    <main class="container">
+      <div class="green-figure green-figure__full-color"></div>
+      <section class="service-page__maintext maintext">
+        <div class="service-page__maintext-heading maintext__heading">
+          <h1 class="maintext__title title"><%= service.h2 %></h1>
+          <p class="service-page__maintext-text maintext__text"><%= service.text[0] %></p>
+          <p class="service-page__maintext-text maintext__text"><%= service.text[1] %></p>
+        </div>
+        <div class="form-block">
+          <div class="form form__form-main">
+            <h2 class="form__title">Оставить заявку<span> на перевозку</span></h2>
+            <form class="form__content" name="mainForm" novalidate>
+              <div class="form__fields">
+                <div class="input__container user-name-container">
+                  <input
+                    type="text"
+                    id="user-name"
+                    class="input__field text"
+                    name="userName"
+                    placeholder=" "
+                    maxlength="255"
+                    required
+                    value=""
+                  />
+                  <label for="user-name" class="input__label-name user-name-label">Имя*</label>
+                </div>
+                <span class="input__error user-name-error"></span>
+                <div class="input__container user-phone-container">
+                  <input
+                    type="tel"
+                    id="user-phone"
+                    class="input__field text"
+                    name="userPhone"
+                    placeholder=" "
+                    maxlength="255"
+                    required
+                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                    value=""
+                  />
+                  <label for="user-phone" class="input__label-name user-phone-label"
+                    >Телефон*</label
+                  >
+                </div>
+                <span class="input__error user-phone-error"></span>
+                <div class="input__container form__field-container_text">
+                  <textarea
+                    id="goods-data"
+                    class="input__field input_textarea"
+                    name="goodsData"
+                    placeholder="Укажите, что именно вы хотите перевезти, откуда и куда, какие габариты и масса у вашего груза"
+                    maxlength="255"
+                    rows="3"
+                  ></textarea>
+                  <label for="goods-data" class="input__label-name"
+                    >Краткая характеристика груза</label
+                  >
+                </div>
+                <div class="input__checkbox-container">
+                  <label for="check-field">
+                    <input
+                      type="checkbox"
+                      id="check-field"
+                      class="input__field input_checkbox"
+                      name="dataConfirm"
+                      required
+                    />
+                    <span class="input__field input_checkbox-pseudo"></span>
+                  </label>
+                  <span class="form__field-span"
+                    >Согласен на обработку персональных данных в соответствии с
+                    <span
+                      onclick="document.location='./privacy-policy.html'"
+                      class="form__field-span_accent"
+                      >политикой конфиденциальности</span
+                    ></span
+                  >
+                  <span class="form__field-error user-name_error"></span>
+                </div>
+              </div>
+              <button type="submit" name="sendButton" class="button button__primary">
+                Отправить
+              </button>
+            </form>
+          </div>
+          <div class="form submit-message">
+            <button
+              type="button"
+              name="closeButton"
+              class="submit-message__close-icon"
+              aria-label="Кнопка закрытия всплывающего окна"
+            ></button>
+            <img
+              class="submit-message__success-icon"
+              src="<%=require('../images/request-confirm.svg')%>"
+              alt="Иконка-подтверждение успешной отправки формы"
+            />
+            <h2 class="submit-message__title">Заявка отправлена!</h2>
+            <p class="submit-message__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title title"><%= advantages.h2 %></h2>
+        <ul class="advantages__section">
+          <li class="advantages__item advantages__item_dark">
+            <img
+              src="<%=require('../images/icon/icon56/iconsmall1.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h3 class="advantages__subtitle"><%= advantages.title[0] %></h3>
+            <p class="advantages__text"><%= advantages.text[0] %></p>
+          </li>
+          <li class="advantages__item">
+            <img
+              src="<%=require('../images/icon/icon56/iconsmall2.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h3 class="advantages__subtitle"><%= advantages.title[1] %></h3>
+            <p class="advantages__text"><%= advantages.text[1] %></p>
+          </li>
+          <li class="advantages__item">
+            <img
+              src="<%=require('../images/icon/icon56/iconsmall3.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h3 class="advantages__subtitle"><%= advantages.title[2] %></h3>
+            <p class="advantages__text"><%= advantages.text[2] %></p>
+          </li>
+          <li class="advantages__item advantages__item_dark">
+            <img
+              src="<%=require('../images/icon/icon56/iconsmall4.svg')%>"
+              alt="icon"
+              class="advantages__icon"
+            />
+            <h3 class="advantages__subtitle"><%= advantages.title[3] %></h3>
+            <p class="advantages__text"><%= advantages.text[3] %></p>
+          </li>
+        </ul>
+      </section>
+      <section class="whywe-section whywe-section__big">
+        <h2 class="whywe-section__title title"><%= whywebig.h2 %></h2>
+        <div class="whywe-section__container">
+          <div class="whywe__item">
+            <p class="whywe__number">1</p>
+            <h3 class="whywe__title"><%= whywebig.title[0] %></h3>
+            <p class="whywe__description"><%= whywebig.text[0] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">2</p>
+            <h3 class="whywe__title"><%= whywebig.title[1] %></h3>
+            <p class="whywe__description"><%= whywebig.text[1] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">3</p>
+            <h3 class="whywe__title"><%= whywebig.title[2] %></h3>
+            <p class="whywe__description"><%= whywebig.text[2] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">4</p>
+            <h3 class="whywe__title"><%= whywebig.title[3] %></h3>
+            <p class="whywe__description"><%= whywebig.text[3] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">5</p>
+            <h3 class="whywe__title"><%= whywebig.title[4] %></h3>
+            <p class="whywe__description"><%= whywebig.text[4] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">6</p>
+            <h3 class="whywe__title"><%= whywebig.title[5] %></h3>
+            <p class="whywe__description"><%= whywebig.text[5] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+          <div class="whywe__item">
+            <p class="whywe__number">7</p>
+            <h3 class="whywe__title"><%= whywebig.title[6] %></h3>
+            <p class="whywe__description"><%= whywebig.text[6] %></p>
+            <div class="whyme__vector"></div>
+          </div>
+        </div>
+        <div class="slide__capsule slide__capsule_border whywe-section__border"></div>
+      </section>
+      <section class="price">
+        <h2 class="price__title title">Прайс-лист</h2>
+        <table class="price__table">
+          <thead class="price__thead">
+            <tr class="price__tr">
+              <th class="price__th">#</th>
+              <th class="price__th">Услуга</th>
+              <th class="price__th">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="price__tr">
+              <td class="price__td">1</td>
+              <td class="price__td">Услуга 1</td>
+              <td class="price__td">15 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">2</td>
+              <td class="price__td">Услуга 2</td>
+              <td class="price__td">12 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">3</td>
+              <td class="price__td">Услуга 3</td>
+              <td class="price__td">8 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">4</td>
+              <td class="price__td">Услуга 4</td>
+              <td class="price__td">4 500 p</td>
+            </tr>
+            <tr class="price__tr">
+              <td class="price__td">5</td>
+              <td class="price__td">Услуга 5</td>
+              <td class="price__td">1 500 p</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="seo">
+        <h2 class="seo__title title">SEO-статья</h2>
+        <p class="seo__text"><%= cases.text[0] %></p>
+        <p class="seo__text"><%= cases.text[1] %></p>
+        <p class="seo__text"><%= cases.text[2] %></p>
+        <p class="seo__text"><%= cases.text[3] %></p>
+      </section>
+      <section class="cases">
+        <div class="cases__header">
+          <div class="cases__title title">Кейсы</div>
+        </div>
+        <div class="cases__items">
+          <a href="#" target="_blank" class="case">
+            <article class="case__content">
+              <img
+                class="case__image"
+                src="<%=require('../images/keys1.jpeg')%>"
+                alt="Кейс фотография"
+              />
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
+              <div class="case__tags">
+                <p class="case__tag"><%= casesingle.subtext[0] %></p>
+                <p class="case__tag"><%= casesingle.city[0] %></p>
+              </div>
+            </article>
+          </a>
+          <a href="#" target="_blank" class="case">
+            <article class="case__content">
+              <img
+                class="case__image"
+                src="<%=require('../images/keys2.jpeg')%>"
+                alt="Кейс фотография"
+              />
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
+              <div class="case__tags">
+                <p class="case__tag"><%= casesingle.subtext[1] %></p>
+                <p class="case__tag"><%= casesingle.city[1] %></p>
+              </div>
+            </article>
+          </a>
+          <a href="#" target="_blank" class="case">
+            <article class="case__content">
+              <img
+                class="case__image"
+                src="<%=require('../images/keys3.jpeg')%>"
+                alt="Кейс фотография"
+              />
+              <h3 class="case__title"><%= casesingle.title %></h3>
+              <p class="case__description"><%= casesingle.text %></p>
+              <div class="case__tags">
+                <p class="case__tag"><%= casesingle.subtext[2] %></p>
+                <p class="case__tag"><%= casesingle.city[2] %></p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <button
+            onclick="document.location='./cases.html'"
+            class="button button__outline cases__green-button"
+          >
+            Все кейсы
+          </button>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title title">Отзывы клиентов</h2>
+        <div class="feedback__container">
+          <div class="feedback__item">
+            <span class="feedback__avatar">КП</span>
+            <h3 class="feedback__users-name">Константин Петров</h3>
+            <p class="feedback__text">
+              Очень приятно работать с этой компанией профессионалов. Все очень организованно от
+              загрузки до выгрузки, оплата без проблем, в общем от работы только положительные
+              эмоции. Рекомендую, а компании желаю успехов и процветания. Отдельное спасибо Андрею!
+            </p>
+          </div>
+          <div class="feedback__item">
+            <span class="feedback__avatar">КП</span>
+            <h3 class="feedback__users-name">Константин Петров</h3>
+            <p class="feedback__text">
+              Очень приятно работать с этой компанией профессионалов. Все очень организованно от
+              загрузки до выгрузки, оплата без проблем, в общем от работы только положительные
+              эмоции. Рекомендую, а компании желаю успехов и процветания. Отдельное спасибо Андрею!
+            </p>
+          </div>
+          <div class="feedback__item">
+            <span class="feedback__avatar">КП</span>
+            <h3 class="feedback__users-name">Константин Петров</h3>
+            <p class="feedback__text">
+              Очень приятно работать с этой компанией профессионалов. Все очень организованно от
+              загрузки до выгрузки, оплата без проблем, в общем от работы только положительные
+              эмоции. Рекомендую, а компании желаю успехов и процветания. Отдельное спасибо Андрею!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title title"><%= faq.h2 %></h2>
+        <div class="faq__box">
+          <div class="faq__label"><%= faq.title[0] %></div>
+          <div class="faq__content"><p class="faq__text"><%= faq.text %></p></div>
+        </div>
+        <div class="faq__box">
+          <div class="faq__label"><%= faq.title[1] %></div>
+          <div class="faq__content"><p class="faq__text"><%= faq.text %></p></div>
+        </div>
+        <div class="faq__box">
+          <div class="faq__label"><%= faq.title[2] %></div>
+          <div class="faq__content"><p class="faq__text"><%= faq.text %></p></div>
+        </div>
+        <div class="faq__box">
+          <div class="faq__label"><%= faq.title[3] %></div>
+          <div class="faq__content"><p class="faq__text"><%= faq.text %></p></div>
+        </div>
+        <div class="faq__box">
+          <div class="faq__label"><%= faq.title[4] %></div>
+          <div class="faq__content"><p class="faq__text"><%= faq.text %></p></div>
+        </div>
+      </section>
+    </main>
+
+    <%= require('../blocks/footer/footer.ejs').default %>
+  </body>
+</html>

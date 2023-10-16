@@ -1,0 +1,15 @@
+.casepage__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #fff;
+    padding-top: 16px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .casepage__subtitle {
+        padding-top: 0;
+    }
+}

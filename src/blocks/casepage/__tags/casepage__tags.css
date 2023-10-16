@@ -1,0 +1,9 @@
+.casepage__tags {
+    padding: 16px 0 16px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .casepage__tags {
+        padding: 16px 0 8px 0;
+    }
+}

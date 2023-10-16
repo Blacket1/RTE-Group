@@ -1,0 +1,24 @@
+.footer {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: calc(100vw - 100px);
+  padding-top: 128px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 32px 0;
+    gap: 24px;
+    padding-top: 80px;
+  }
+}

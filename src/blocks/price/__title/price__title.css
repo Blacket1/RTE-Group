@@ -1,0 +1,11 @@
+.price__title {
+  font-weight: 700;
+  padding: 0;
+  margin: 128px 0 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .price__title {
+    margin: 64px 0 40px;
+  }
+}

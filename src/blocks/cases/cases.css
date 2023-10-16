@@ -1,0 +1,13 @@
+.cases {
+  max-width: 1080px;
+  padding-top: 133px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .cases {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+}

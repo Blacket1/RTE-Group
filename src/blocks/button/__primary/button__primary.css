@@ -1,0 +1,10 @@
+.button__primary {
+    background-color: #00CC66;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.button__primary:hover {
+    background-color: #00994C;
+    transition: .3s;
+}

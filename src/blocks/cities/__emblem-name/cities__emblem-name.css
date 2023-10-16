@@ -1,0 +1,17 @@
+.cities__emblem-name {
+    margin: 0;
+    max-width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34.8px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+    .cities__emblem-name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,10 @@
+.form-section__info {
+  margin-top: 25px;
+  margin-left: 72px;
+}
+@media screen and (max-width: 1024px) {
+  .form-section__info {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+}

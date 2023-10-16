@@ -1,0 +1,14 @@
+.header__checkbox {
+  display: none;
+}
+@media (max-width:767px) {
+  .header__checkbox:checked ~ .header__checkbox-label{
+    background-image: url(../../../images/close-icon.svg);
+  }
+
+  .header__checkbox:checked ~ .header__button {
+    transition: all ease .5s;
+    top: 560px;
+    visibility: visible;
+  }
+}
