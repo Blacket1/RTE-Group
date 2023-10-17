@@ -11,5 +11,7 @@
   Анна Ветюгова  
   Николай Карецкий
 
-ССылка на [бриф](https://www.notion.so/RTE-Group-27-225c9de2273f456ea0be627d3e5e3190) проекта 
-ССылка на [сайт](https://blacket1.github.io/RTE-Group/)
+Сcылка на [бриф](https://www.notion.so/RTE-Group-27-225c9de2273f456ea0be627d3e5e3190) проекта
+
+
+Сcылка на [сайт](https://blacket1.github.io/RTE-Group/)
